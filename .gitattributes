@@ -1,0 +1,4 @@
+# Original evidence must retain exact bytes across Windows/Linux checkouts.
+data/raw/** -text
+data/stability/** -text
+data/environments/** -text
