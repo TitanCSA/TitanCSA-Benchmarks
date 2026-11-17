@@ -1,0 +1,12 @@
+{
+  "validated_utc": "2026-11-17T13:22:08.188037+00:00",
+  "owned_clean_guest_initialization": "executed_successfully_via_PowerShell_Direct",
+  "restored_checkpoint": "Clean-Benchmark-Baseline",
+  "inherited_Filter_INF_guard": "passed",
+  "pinned_artifact_digest_checks": 9,
+  "artifact_manifest_changed": false,
+  "vjoy_sdk_extraction": "executed_successfully",
+  "reset_saved_checkpoint_regression": "Detected Saved state was not resumed; fixed Off-or-Saved start and repeated initialization successfully",
+  "final_lab_state": "Saved",
+  "host_drivers_changed": false
+}

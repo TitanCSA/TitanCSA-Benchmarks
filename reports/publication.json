@@ -1,32 +1,32 @@
 {
-  "verified_utc": "2026-11-17T13:16:57.174501+00:00",
+  "verified_utc": "2026-11-17T13:21:15.400754+00:00",
   "repository": "https://github.com/TitanCSA/TitanCSA-Benchmarks",
   "pages_url": "https://titancsa.github.io/TitanCSA-Benchmarks/",
   "checks": [
     {
       "url": "https://titancsa.github.io/TitanCSA-Benchmarks/",
       "status": 200,
-      "bytes": 32947
+      "bytes": 33247
     },
     {
       "url": "https://titancsa.github.io/TitanCSA-Benchmarks/sitemap.xml",
       "status": 200,
-      "bytes": 3939
+      "bytes": 4091
     },
     {
       "url": "https://titancsa.github.io/TitanCSA-Benchmarks/assets/raw-results.zip",
       "status": 200,
-      "bytes": 4358083
+      "bytes": 4358131
     },
     {
       "url": "https://titancsa.github.io/TitanCSA-Benchmarks/methodology/incident-wdf-001/",
       "status": 200,
-      "bytes": 32524
+      "bytes": 32815
     },
     {
       "url": "https://titancsa.github.io/TitanCSA-Benchmarks/methodology/etw/",
       "status": 200,
-      "bytes": 30774
+      "bytes": 31065
     },
     {
       "url": "https://titancsa.github.io/TitanCSA-Benchmarks/",
@@ -46,6 +46,20 @@
   ],
   "workflows": [
     {
+      "name": "Publish validated benchmark site",
+      "head_sha": "59232a344f40e99e731342ee737208730dc3e141",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/TitanCSA/TitanCSA-Benchmarks/actions/runs/44091380967"
+    },
+    {
+      "name": "Validate code and measured data",
+      "head_sha": "59232a344f40e99e731342ee737208730dc3e141",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/TitanCSA/TitanCSA-Benchmarks/actions/runs/44091380930"
+    },
+    {
       "name": "Validate code and measured data",
       "head_sha": "f193080857b4096456670ca78d376b7f228d231d",
       "status": "completed",
@@ -58,20 +72,6 @@
       "status": "completed",
       "conclusion": "success",
       "url": "https://github.com/TitanCSA/TitanCSA-Benchmarks/actions/runs/44089961033"
-    },
-    {
-      "name": "Validate code and measured data",
-      "head_sha": "b5b3dab3523a45f4ae7eb697efb8a6b786616c80",
-      "status": "completed",
-      "conclusion": "success",
-      "url": "https://github.com/TitanCSA/TitanCSA-Benchmarks/actions/runs/44089200200"
-    },
-    {
-      "name": "Publish validated benchmark site",
-      "head_sha": "b5b3dab3523a45f4ae7eb697efb8a6b786616c80",
-      "status": "completed",
-      "conclusion": "success",
-      "url": "https://github.com/TitanCSA/TitanCSA-Benchmarks/actions/runs/44089200147"
     }
   ],
   "limits": "HTTP access and a successful deployment do not guarantee search indexing. Native build and privileged runtime are distinct workflows."

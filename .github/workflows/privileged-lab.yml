@@ -15,6 +15,30 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Import external owned lab configuration
+        shell: powershell
+        run: |
+          $ErrorActionPreference='Stop'
+          if(!$env:TITANCSA_BENCHMARK_LAB_CONFIG){throw 'Dedicated runner lab configuration is unavailable'}
+          $source=(Resolve-Path -LiteralPath $env:TITANCSA_BENCHMARK_LAB_CONFIG).Path
+          $workspace=(Resolve-Path .).Path.TrimEnd('\')+'\'
+          if($source.StartsWith($workspace,[StringComparison]::OrdinalIgnoreCase)){throw 'Lab configuration must be outside checkout cleanup scope'}
+          New-Item -ItemType Directory -Path .local -Force|Out-Null
+          Copy-Item -LiteralPath $source -Destination .local/lab.json
+          . .\automation\Lab.ps1
+          $null=Get-BenchmarkLab
+      - name: Prepare pinned dependencies and tools
+        shell: powershell
+        run: |
+          $ErrorActionPreference='Stop'
+          foreach($script in 'prepare-sources.py','prepare-vjoy-sdk.py','fetch_artifacts.py'){
+            python (Join-Path scripts $script)
+            if($LASTEXITCODE -ne 0){throw ('Dependency preparation failed: '+$script)}
+          }
+          .\automation\build-benchmarks.ps1
       - name: Run reviewed local VM campaign
         shell: powershell
         run: .\automation\run-all-benchmarks.ps1

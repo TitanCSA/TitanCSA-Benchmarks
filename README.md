@@ -20,7 +20,7 @@ This publisher-operated lab uses a dedicated Windows 11 Hyper-V VM. Results desc
 
 ## Build and measure
 
-Run `python scripts/prepare-sources.py` to fetch the audited SDK commits, then `cmake -S . -B build -A x64` and `cmake --build build --config Release`. The C++ tools require Windows/MSVC. Python report tools run on Windows or Linux.
+Run `python scripts/prepare-sources.py` to fetch the audited SDK commits and `python scripts/prepare-vjoy-sdk.py` for the pinned joystick SDK, then `cmake -S . -B build -A x64` and `cmake --build build --config Release`. The C++ tools require Windows/MSVC. Python report tools run on Windows or Linux.
 
 The native tools refuse to generate or receive test inputs without the dedicated guest marker. **Never put that marker on your workstation or install the benchmark drivers on the host.** Provision only a disposable lab VM. See [reproduction](docs/methodology/reproducibility.md) for setup, installation, run and reset commands.
 
