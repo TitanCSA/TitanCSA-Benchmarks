@@ -1,32 +1,32 @@
 {
-  "verified_utc": "2026-11-17T13:08:26.545422+00:00",
+  "verified_utc": "2026-11-17T13:16:57.174501+00:00",
   "repository": "https://github.com/TitanCSA/TitanCSA-Benchmarks",
   "pages_url": "https://titancsa.github.io/TitanCSA-Benchmarks/",
   "checks": [
     {
       "url": "https://titancsa.github.io/TitanCSA-Benchmarks/",
       "status": 200,
-      "bytes": 32654
+      "bytes": 32947
     },
     {
       "url": "https://titancsa.github.io/TitanCSA-Benchmarks/sitemap.xml",
       "status": 200,
-      "bytes": 3785
+      "bytes": 3939
     },
     {
       "url": "https://titancsa.github.io/TitanCSA-Benchmarks/assets/raw-results.zip",
       "status": 200,
-      "bytes": 4353325
+      "bytes": 4358083
     },
     {
       "url": "https://titancsa.github.io/TitanCSA-Benchmarks/methodology/incident-wdf-001/",
       "status": 200,
-      "bytes": 32225
+      "bytes": 32524
     },
     {
       "url": "https://titancsa.github.io/TitanCSA-Benchmarks/methodology/etw/",
       "status": 200,
-      "bytes": 30475
+      "bytes": 30774
     },
     {
       "url": "https://titancsa.github.io/TitanCSA-Benchmarks/",
@@ -45,6 +45,20 @@
     }
   ],
   "workflows": [
+    {
+      "name": "Validate code and measured data",
+      "head_sha": "f193080857b4096456670ca78d376b7f228d231d",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/TitanCSA/TitanCSA-Benchmarks/actions/runs/44089961200"
+    },
+    {
+      "name": "Publish validated benchmark site",
+      "head_sha": "f193080857b4096456670ca78d376b7f228d231d",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/TitanCSA/TitanCSA-Benchmarks/actions/runs/44089961033"
+    },
     {
       "name": "Validate code and measured data",
       "head_sha": "b5b3dab3523a45f4ae7eb697efb8a6b786616c80",

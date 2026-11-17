@@ -11,7 +11,7 @@ with sync_playwright() as p:
     for width in [1440,390]:
         page=browser.new_page(viewport={'width':width,'height':960 if width==1440 else 844},device_scale_factor=1,color_scheme='light')
         page.on('pageerror',lambda e:errors.append(str(e)))
-        for route in ['', 'vdevice/latency/','vdevice/comparisons/','vdevice/joystick/','interceptor/results/','gamepad/results/','methodology/incident-wdf-001/','data/']:
+        for route in ['', 'vdevice/latency/','vdevice/comparisons/','vdevice/joystick/','interceptor/results/','gamepad/results/','methodology/incident-wdf-001/','methodology/diagnostics/','methodology/etw/','methodology/stability/','comparisons/main-projects/','data/']:
             response=page.goto(base+route,wait_until='networkidle')
             assert response.status==200,(route,response.status)
             assert page.locator('h1').count()==1,route

@@ -1,6 +1,6 @@
 # Executed campaign report
 
-Updated: 2026-11-17T13:09:17.743995+00:00
+Updated: 2026-11-17T13:17:37.055559+00:00
 
 This is a partial, genuinely executed campaign, not completion of the full requested hardware/protocol/endurance matrix.
 

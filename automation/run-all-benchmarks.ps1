@@ -1,3 +1,5 @@
+# Initial vendor-HID/XUSB comparison only. Other families have separate runners.
+# Do not dispatch repeated controller teardown while WDF-001 remains unresolved.
 . (Join-Path $PSScriptRoot 'Lab.ps1')
 $lab=Get-BenchmarkLab
 if(!(Get-VMSnapshot -VM (Get-VM -Id $lab.vm_id) -Name 'Clean-Benchmark-Baseline' -ErrorAction SilentlyContinue)){throw 'A reviewed clean lab baseline is required'}

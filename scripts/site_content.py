@@ -162,7 +162,7 @@ updated: 2026-11-17
 ---
 # Download the evidence
 
-[Raw CSV/JSON and environment archive](assets/raw-results.zip) · [HID per-run results](assets/results.json) · [HID aggregate intervals](assets/aggregates.json) · [Xbox per-run results](assets/xinput-results.json)
+[Raw CSV/JSON and environment archive](assets/raw-results.zip) · [HID per-run results](assets/results.json) · [HID aggregate intervals](assets/aggregates.json) · [Controller per-run results](assets/xinput-results.json) · [Joystick results](assets/joystick-results.json) · [Stability records](assets/stability-results.json) · [Resource diagnostics](methodology/diagnostics.md)
 
 Data are CC BY 4.0; benchmark code is MIT. Upstream software and repository metadata retain their own terms. Cite the run ID and exact repository revision. Raw runs are append-only: a failed run is retained, and a retry receives a new identifier.
 

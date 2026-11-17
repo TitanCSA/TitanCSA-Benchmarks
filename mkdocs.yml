@@ -64,6 +64,7 @@ nav:
   - Methodology:
       - Measurement boundaries: methodology/measurement.md
       - Instrumented WPR trial: methodology/etw.md
+      - Distributions and resources: methodology/diagnostics.md
       - Environment: methodology/environment.md
       - Hyper-V isolation: methodology/hyperv.md
       - Reproduce a campaign: methodology/reproducibility.md

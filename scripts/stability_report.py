@@ -38,5 +38,7 @@ The wall-clock-derived WMI boot timestamp changed between the initial post-check
 
 [Raw CSV/JSON](../assets/raw-results.zip) · [Per-run qualification](../assets/results.json) · [Environment](environment.md)
 '''
-    (ROOT/'docs/methodology/stability.md').write_text(text,encoding='utf8');print('Monitored stability trials:',len(runs))
+    (ROOT/'docs/methodology/stability.md').write_text(text,encoding='utf8')
+    (ROOT/'docs/assets/stability-results.json').write_bytes((ROOT/'data/processed/stability-results.json').read_bytes())
+    print('Monitored stability trials:',len(runs))
 if __name__=='__main__':main()
