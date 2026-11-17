@@ -13,6 +13,8 @@ description: Explicit boundaries for the TitanCSA benchmark campaign, including 
 - Windows `libvirtualhid` driver-backed profiles require a license according to upstream documentation. No license was purchased or bypassed. Source review is not a runtime performance result.
 - oblitum/Interception documents separate commercial-use terms. No commercial license was identified for this publisher's promotional comparison, so its driver is not installed or scored. Its public source and ABI are audited.
 - Microsoft VHF/UdeCx samples were identified as reference architectures; no newly compiled unsigned sample driver was treated as a signed, working competitor.
-- Multi-hour soak, crash-injection, physical reconnect, physical-device protocol coverage, DS4/DualSense/Xbox One/GIP comparisons and dedicated kernel CPU/DPC attribution require additional executed campaigns. Their status remains unexecuted unless a raw result is supplied.
+- DS4 and Xbox One/GIP have selected virtual delivery results, not exhaustive protocol coverage. GIP-filter and ViGEm-filter attempts with extra uncorrelated captured reports remain excluded from the latency table.
+- Multi-hour soak, crash-injection, physical reconnect, DualSense, physical-device protocol coverage and total driver CPU attribution require additional campaigns. A five-minute monitored HID trial and one separately instrumented WPR/DPC trial are available; neither establishes long-term stability.
+- WDF-001 reproduced a Vdevice queue-purge guest bugcheck in DS4 and GIP controller/filter campaigns. It remains unresolved. Successful completed runs do not override that finding.
 
 Failed runs are listed in the processed results and retained with their diagnostics. No simulation enters the measured charts. No superiority claim is made from a feature checklist or from an unverified filter path.

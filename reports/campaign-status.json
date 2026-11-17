@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-17T13:04:20.216368+00:00",
+  "updated_utc": "2026-11-17T13:09:17.743995+00:00",
   "mission_status": "partial_campaign_executed_open_driver_incident",
   "measured_series": 89,
   "invalid_annotated_series": 31,
@@ -95,10 +95,10 @@
   ],
   "dataset_sha256": {
     "data/processed/aggregates.json": "a08f29c20cc039b8ff16ab028cfe7423f3bb73f423344d104ab8befe82d8b0ae",
-    "data/processed/joystick-results.json": "6c8960e2a057e38ee68c0c01cc710b07edc5b2f1e82da1c70150abae5a744e58",
+    "data/processed/joystick-results.json": "8e93ab1356145fca4caab872cc10c57fe1550dfc194dadda513a7d225589b199",
     "data/processed/results.json": "1ddb76b1dfbbd2b2fccb66f452761eda0d7a7a3f931308c6e056a7dc7176e633",
     "data/processed/stability-results.json": "1d0ee4888db4a0aeee9d05f594b219a24e9d14324c3e48beefed5b08be7f707e",
-    "data/processed/xinput-results.json": "d41cf0fe091cb873a2917a2e59102df8f25a553a1ac8a155a9225fa7cbd4d971"
+    "data/processed/xinput-results.json": "9f25918fae70f97dc914613702a17ceef77eeae5d2e3bcefd4b4ee5a929af76f"
   },
   "not_executed": {
     "physical_hardware": "No dedicated physical agent, USB assignment or external timing apparatus",

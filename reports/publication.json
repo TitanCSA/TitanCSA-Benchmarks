@@ -1,0 +1,64 @@
+{
+  "verified_utc": "2026-11-17T13:08:26.545422+00:00",
+  "repository": "https://github.com/TitanCSA/TitanCSA-Benchmarks",
+  "pages_url": "https://titancsa.github.io/TitanCSA-Benchmarks/",
+  "checks": [
+    {
+      "url": "https://titancsa.github.io/TitanCSA-Benchmarks/",
+      "status": 200,
+      "bytes": 32654
+    },
+    {
+      "url": "https://titancsa.github.io/TitanCSA-Benchmarks/sitemap.xml",
+      "status": 200,
+      "bytes": 3785
+    },
+    {
+      "url": "https://titancsa.github.io/TitanCSA-Benchmarks/assets/raw-results.zip",
+      "status": 200,
+      "bytes": 4353325
+    },
+    {
+      "url": "https://titancsa.github.io/TitanCSA-Benchmarks/methodology/incident-wdf-001/",
+      "status": 200,
+      "bytes": 32225
+    },
+    {
+      "url": "https://titancsa.github.io/TitanCSA-Benchmarks/methodology/etw/",
+      "status": 200,
+      "bytes": 30475
+    },
+    {
+      "url": "https://titancsa.github.io/TitanCSA-Benchmarks/",
+      "user_agent": "Googlebot",
+      "status": 200
+    },
+    {
+      "url": "https://titancsa.github.io/TitanCSA-Benchmarks/",
+      "user_agent": "OAI-SearchBot",
+      "status": 200
+    },
+    {
+      "url": "https://titancsa.github.io/TitanCSA-Benchmarks/",
+      "user_agent": "Claude-SearchBot",
+      "status": 200
+    }
+  ],
+  "workflows": [
+    {
+      "name": "Validate code and measured data",
+      "head_sha": "b5b3dab3523a45f4ae7eb697efb8a6b786616c80",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/TitanCSA/TitanCSA-Benchmarks/actions/runs/44089200200"
+    },
+    {
+      "name": "Publish validated benchmark site",
+      "head_sha": "b5b3dab3523a45f4ae7eb697efb8a6b786616c80",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/TitanCSA/TitanCSA-Benchmarks/actions/runs/44089200147"
+    }
+  ],
+  "limits": "HTTP access and a successful deployment do not guarantee search indexing. Native build and privileged runtime are distinct workflows."
+}

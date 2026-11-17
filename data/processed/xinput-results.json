@@ -19,10 +19,20 @@
     "mean_us": 210.2323,
     "submission_p50_us": 65.15,
     "stack_captured": false,
+    "p90_us": 141.43,
+    "p95_us": 297.58499999999975,
+    "stdev_us": 1234.6662407601425,
     "producer_cpu_lifetime_ms": 46.875,
     "producer_peak_working_set_bytes": 5595136,
     "receiver_cpu_lifetime_ms": 31.25,
-    "receiver_peak_working_set_bytes": 8564736
+    "receiver_peak_working_set_bytes": 8564736,
+    "hashes": {
+      "xinput-done.json": "313157565d6e8d58d6bd79424ef966ce311cb914fe9043e2f81d5b8a3c2740ca",
+      "xinput-receiver.json": "660a86838d9060f449671a644a538513a819ea06063eaef19c05c5268e9e1a7a",
+      "xinput-reception.csv": "d1683f6e55fe4f1cbe70550e34c695b61025b301701b57e90f1b8fc7a3f9f7e7",
+      "xinput-run.json": "a9bf1306e971b8cebcb8fefac06722e9adabb3bc15108f8f0d5e3bd2668b4f3f",
+      "xinput-submission.csv": "81b0db3357f7efe9449b5415e3743146f5516a5a297f5243b923820e4c1bcb16"
+    }
   },
   {
     "run_id": "0a77dcf87e5b44e39194d5295ef997b6-1-vdevice",
@@ -44,10 +54,20 @@
     "mean_us": 74.9441,
     "submission_p50_us": 56.75,
     "stack_captured": false,
+    "p90_us": 110.51,
+    "p95_us": 146.44999999999987,
+    "stdev_us": 54.49843653514085,
     "producer_cpu_lifetime_ms": 46.875,
     "producer_peak_working_set_bytes": 5169152,
     "receiver_cpu_lifetime_ms": 46.875,
-    "receiver_peak_working_set_bytes": 7921664
+    "receiver_peak_working_set_bytes": 7921664,
+    "hashes": {
+      "xinput-done.json": "3d7e30fde9105fbdc95886b8774e4528ad32a21cc2b5f21994c9db65231cf1cf",
+      "xinput-receiver.json": "a3d72212ce39cfb0fac85f33082c24236f1bb65f0d29ff95235cd21ec945f16d",
+      "xinput-reception.csv": "51e0a8913519cd905cb379c63eeab7ad49891d5d5c69cd6040f613772efe1713",
+      "xinput-run.json": "7e996c9fb695634e7445fee7bd9237254b0458c378fe26cb1ffd3c0d2f49653d",
+      "xinput-submission.csv": "ac600395dab62f9bfe30e8a4502b95d73bd352558b70330bd59d9df309939c1a"
+    }
   },
   {
     "run_id": "0a77dcf87e5b44e39194d5295ef997b6-2-vdevice",
@@ -69,10 +89,20 @@
     "mean_us": 60.6308,
     "submission_p50_us": 53.2,
     "stack_captured": false,
+    "p90_us": 73.12,
+    "p95_us": 80.0,
+    "stdev_us": 15.530409685033586,
     "producer_cpu_lifetime_ms": 15.625,
     "producer_peak_working_set_bytes": 5181440,
     "receiver_cpu_lifetime_ms": 0.0,
-    "receiver_peak_working_set_bytes": 7987200
+    "receiver_peak_working_set_bytes": 7987200,
+    "hashes": {
+      "xinput-done.json": "a7a3203d8ef8b575619d0e81ec4df18c7c771506574312bd62323d4300fe620a",
+      "xinput-receiver.json": "13527e1511c2787e27aa47b8fba36d35a5081096212753f5cf41c40bed776dae",
+      "xinput-reception.csv": "3fbf332f55e9277ef97b6fcd5143a5a5433b6c7fbcc3504806d40b947c06509e",
+      "xinput-run.json": "f3b96fcc153af27147e1c7286fbee2296da13e72b22b5e58d4e222f42b61b2e9",
+      "xinput-submission.csv": "0c6926cbd8d1b59f248ea179f9cff36689e3216e6ab23ab0864b15adadac10b4"
+    }
   },
   {
     "run_id": "1fd7db8415844ac9a01b8bcd98762543-0-vdevice",
@@ -94,10 +124,22 @@
     "mean_us": 40.6083,
     "submission_p50_us": 53.6,
     "stack_captured": true,
+    "p90_us": 65.84,
+    "p95_us": 73.42499999999998,
+    "stdev_us": 28.701919470503906,
     "producer_cpu_lifetime_ms": 62.5,
     "producer_peak_working_set_bytes": 5201920,
     "receiver_cpu_lifetime_ms": 31.25,
-    "receiver_peak_working_set_bytes": 7913472
+    "receiver_peak_working_set_bytes": 7913472,
+    "hashes": {
+      "pnp-stack.txt": "288c6ddae0edbc949255d9ff1074628ac537fa96f5046b1a66ce258c242aad19",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "858f9785325f8eaaa6048fbd17364323c35838cf1b0b0c7d34850cfd86342924",
+      "xinput-receiver.json": "cef270f4236f53c3abd966139c9a83d2f6a98b33c1331d43e37de790993389b9",
+      "xinput-reception.csv": "7f322efc325f6c8ceb69f621b745028d04258d5c7c3e1d3f900a957491b4bfce",
+      "xinput-run.json": "cf4958475b17678014e62e217f2b28df41c91c04a1de701bd3764ed12475aa1e",
+      "xinput-submission.csv": "436ec120d8c7e6ae8b684d6f88032169712b54e86f50f6f4451c208c82528b87"
+    }
   },
   {
     "run_id": "36751732b9824096847251e9f82b04f7-0-vdevice",
@@ -111,7 +153,21 @@
     "profile": "xbox-one-gip",
     "receiver_api": "XInput",
     "executable_hashes_recorded": true,
-    "reason": "Capture count differs from generated-state count; background/protocol reports not individually correlated"
+    "reason": "Capture count differs from generated-state count; background/protocol reports not individually correlated",
+    "hashes": {
+      "adapter-done.json": "9e1a9fe0b1c0fe2c9641c96673cb7eb29bd93f1b2ececef1bd2bdaf4fa2d1322",
+      "adapter-init.json": "3434c39f0195f383290cad43993bfc7cfe103649a4ecde345b51ed022dcb8740",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "adapter.csv": "acdf011a52dfc05490a15dc115513f1e0909904ab1614b45169e4ee35ec4e763",
+      "first-gip.json": "b0e18c7a591a1b41a86d797d3ca4af5ba2d5d93c62253efbce39216ffe420118",
+      "pnp-stack.txt": "083d9a4317b754b7a787c0296b9eb0f236de10699783885e325db84f10d506b5",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "cac7ff4fe57f5a143273bd0c5ada586deb4643212356e7738ad55aeebb68c56a",
+      "xinput-receiver.json": "416e4e551d4948f563e3a04a13f2f8465f141da7f51b547ca339d84add73cfa4",
+      "xinput-reception.csv": "bc96fa8007ed92a93b52adf41242eda9cbd4bedc93152311cfb7130646f79815",
+      "xinput-run.json": "aaf5d822078d1083ec1aaab521c846a08e412bd91e6de3ed83e14498724db667",
+      "xinput-submission.csv": "8d6a08993e403063f123952a2398e4608d40bec9a071b6fab7059a10356abad5"
+    }
   },
   {
     "run_id": "36751732b9824096847251e9f82b04f7-1-vdevice",
@@ -125,7 +181,21 @@
     "profile": "xbox-one-gip",
     "receiver_api": "XInput",
     "executable_hashes_recorded": true,
-    "reason": "Capture count differs from generated-state count; background/protocol reports not individually correlated"
+    "reason": "Capture count differs from generated-state count; background/protocol reports not individually correlated",
+    "hashes": {
+      "adapter-done.json": "d4b224787774312c63fd9fb120bf20096aef659f6b2f92975bddf98f60f726cf",
+      "adapter-init.json": "3434c39f0195f383290cad43993bfc7cfe103649a4ecde345b51ed022dcb8740",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "adapter.csv": "14387e3fd1c7f2e8d00e9c991f51cf72eef8be1bd050d390e3d3bb5c5686e586",
+      "first-gip.json": "b0e18c7a591a1b41a86d797d3ca4af5ba2d5d93c62253efbce39216ffe420118",
+      "pnp-stack.txt": "083d9a4317b754b7a787c0296b9eb0f236de10699783885e325db84f10d506b5",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "b4421b6f2a00131c87cb432e86797caf12fd5166b9c16983593596fe6c19c62e",
+      "xinput-receiver.json": "49b65ad6acf7601fca242ff02914a6b1b822c9785f83e1b7f6530532edfa2199",
+      "xinput-reception.csv": "374c8e2d0ae08940d5e59151dd775bca494d2342e2b12a57ce12524c895d076c",
+      "xinput-run.json": "8518408fb84dd5542c40c0d3aba5af7f16b1716a3a30ef4eb33f9b1537d77e85",
+      "xinput-submission.csv": "32a2e408d989fc9bb007fccb5067e93b9e1cb7ba5c359d43ce440f12bdf2c3c1"
+    }
   },
   {
     "run_id": "36751732b9824096847251e9f82b04f7-2-vdevice",
@@ -139,7 +209,21 @@
     "profile": "xbox-one-gip",
     "receiver_api": "XInput",
     "executable_hashes_recorded": true,
-    "reason": "Malformed or interrupted CSV: xinput-submission.csv"
+    "reason": "Malformed or interrupted CSV: xinput-submission.csv",
+    "hashes": {
+      "adapter-done.json": "f9b9f5b667cdba54191c38c3c4adc41f0a412743421131f72e2ffe94075a8618",
+      "adapter-init.json": "3434c39f0195f383290cad43993bfc7cfe103649a4ecde345b51ed022dcb8740",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "adapter.csv": "6350b7da67742ef59c9c33b5a5ef0a43a84483cc2ed59e419320b7dd82f460d0",
+      "first-gip.json": "b0e18c7a591a1b41a86d797d3ca4af5ba2d5d93c62253efbce39216ffe420118",
+      "pnp-stack.txt": "083d9a4317b754b7a787c0296b9eb0f236de10699783885e325db84f10d506b5",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "6ab1c6e29606fc1002d2cfcd33bc5afebbeca83b2c61ce1b21c4946c28037ac6",
+      "xinput-receiver.json": "f742cf596430f9d6a4b113b25504aa10c8eb21d42f1df3cb008983bdb958f590",
+      "xinput-reception.csv": "f406bbb0ce1c7daf512a5fb94988a1439efa7d257bea450644b2943fd2cd519b",
+      "xinput-run.json": "a899ef93a628c76a46dee544d67e7b60ee4bfcf41dd9d95d34ce426f474a9f25",
+      "xinput-submission.csv": "f720e96d90585542bbd6dc497fa9f2f10320e20559237584ff24bdcfb5adccb9"
+    }
   },
   {
     "run_id": "3d4f7c3497f446459f9aff6a4a91698c-0-vigem",
@@ -161,10 +245,22 @@
     "mean_us": 11.291,
     "submission_p50_us": 31.9,
     "stack_captured": true,
+    "p90_us": 21.41,
+    "p95_us": 26.90999999999999,
+    "stdev_us": 9.985823735459968,
     "producer_cpu_lifetime_ms": 46.875,
     "producer_peak_working_set_bytes": 6496256,
     "receiver_cpu_lifetime_ms": 15.625,
-    "receiver_peak_working_set_bytes": 5640192
+    "receiver_peak_working_set_bytes": 5640192,
+    "hashes": {
+      "pnp-stack.txt": "d2df6668486e51535124b00d31350b4264ff3d27071b8a0d68955f2cf4b038d1",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "fcae6e35904c4c61a818407528ba08777d11e0c6d0d6358bec7249bd5d1e411f",
+      "xinput-receiver.json": "2a694b9bd05585f4ac15d86d7bec055c5f0b1fc98a4ad73b0a1945cf97933b4c",
+      "xinput-reception.csv": "5efdb14e57945005842d6489de24f784ed1bf0ec1ed723f37aebbd4203508a53",
+      "xinput-run.json": "a8f059319464633b302a511e451a50cea83bf0e84df3f11cb5c708ebdd58282a",
+      "xinput-submission.csv": "d3d040b93a1e56cf5b3c191ab9b5d97e0c826a3a3ea4f153cdce571396c94c0c"
+    }
   },
   {
     "run_id": "3d4f7c3497f446459f9aff6a4a91698c-1-vigem",
@@ -186,10 +282,22 @@
     "mean_us": 29.6824,
     "submission_p50_us": 26.45,
     "stack_captured": true,
+    "p90_us": 12.510000000000002,
+    "p95_us": 20.5,
+    "stdev_us": 406.1423213301163,
     "producer_cpu_lifetime_ms": 46.875,
     "producer_peak_working_set_bytes": 6168576,
     "receiver_cpu_lifetime_ms": 46.875,
-    "receiver_peak_working_set_bytes": 5353472
+    "receiver_peak_working_set_bytes": 5353472,
+    "hashes": {
+      "pnp-stack.txt": "d2df6668486e51535124b00d31350b4264ff3d27071b8a0d68955f2cf4b038d1",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "4d9b66e9d4430090e62884faadfc655349fddb52590c34ef0ef0a0ea79e64ff5",
+      "xinput-receiver.json": "3b129fcdb4e72283803b4878bf8fdd7c1c7778eb19a7e8b9d8e93df73154b040",
+      "xinput-reception.csv": "21685c49c139e94edbc08601a16138b9abcc60dd4c4fae7e476cbc45892dffd9",
+      "xinput-run.json": "30398ff876a9832cd928d35a6235c6d0f488f0410c509474080b300b4e8dc37b",
+      "xinput-submission.csv": "aa25c54d9d14f9b15cdf1226b842f89b61ebd52ddad9e47add52d7676aa489a4"
+    }
   },
   {
     "run_id": "3d4f7c3497f446459f9aff6a4a91698c-2-vigem",
@@ -211,10 +319,22 @@
     "mean_us": 7.7473,
     "submission_p50_us": 22.9,
     "stack_captured": true,
+    "p90_us": 16.0,
+    "p95_us": 16.80999999999999,
+    "stdev_us": 8.295957788322312,
     "producer_cpu_lifetime_ms": 15.625,
     "producer_peak_working_set_bytes": 6172672,
     "receiver_cpu_lifetime_ms": 15.625,
-    "receiver_peak_working_set_bytes": 5332992
+    "receiver_peak_working_set_bytes": 5332992,
+    "hashes": {
+      "pnp-stack.txt": "d2df6668486e51535124b00d31350b4264ff3d27071b8a0d68955f2cf4b038d1",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "3fe9971331b1e1f4e913f93f4135b7100262289895f4f6aecb9c3ad41e0295a7",
+      "xinput-receiver.json": "454345029c502de808e1935dcf3ce65ee7f8701347a130a5c230c282c5dee0e6",
+      "xinput-reception.csv": "3cfa640df97306c1b263e5bb88429fb631057e537c92ad58519b1f63b7fe51e5",
+      "xinput-run.json": "3cdb2dd8b0e1a3cc215bacdfceb7173608a60c9a79097c9df10589ffed325df4",
+      "xinput-submission.csv": "f5d56eb4f7cbb5d6fcde3dadc6847bf0f0d39faec2896dae55502975072a9f1b"
+    }
   },
   {
     "run_id": "42b4fef656a4462b9cb53a4e216c0a95-0-vdevice",
@@ -228,7 +348,17 @@
     "profile": "xbox-one-gip",
     "receiver_api": "XInput",
     "executable_hashes_recorded": true,
-    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\42b4fef656a4462b9cb53a4e216c0a95\\\\42b4fef656a4462b9cb53a4e216c0a95-0-vdevice\\\\xinput-done.json'"
+    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\42b4fef656a4462b9cb53a4e216c0a95\\\\42b4fef656a4462b9cb53a4e216c0a95-0-vdevice\\\\xinput-done.json'",
+    "hashes": {
+      "adapter-error.json": "39e734f4a2798549a2cdc72c1a59f8db4d6142e534fb7d16b377abc3046432fc",
+      "adapter-init.json": "3434c39f0195f383290cad43993bfc7cfe103649a4ecde345b51ed022dcb8740",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "first-gip.json": "b0e18c7a591a1b41a86d797d3ca4af5ba2d5d93c62253efbce39216ffe420118",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-receiver.json": "274249a08100beef040b685329b4ae67fd0effde7ab6ae5fb284ef39522e3a3a",
+      "xinput-reception.csv": "8c20951809753f7e19dec692c33d2196d5ce6a905d54e73a8daaf4e6b99fd4c0",
+      "xinput-run.json": "049ace296b6a635b19c637fa2e2c52f6e9c9492d6f66e856391280bb175c551c"
+    }
   },
   {
     "run_id": "45d0cc37d93244fc9ced0539ca5600e7-0-vdevice",
@@ -242,7 +372,16 @@
     "profile": "xbox-one-gip",
     "receiver_api": "XInput",
     "executable_hashes_recorded": true,
-    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\45d0cc37d93244fc9ced0539ca5600e7\\\\45d0cc37d93244fc9ced0539ca5600e7-0-vdevice\\\\xinput-done.json'"
+    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\45d0cc37d93244fc9ced0539ca5600e7\\\\45d0cc37d93244fc9ced0539ca5600e7-0-vdevice\\\\xinput-done.json'",
+    "hashes": {
+      "adapter-error.json": "39e734f4a2798549a2cdc72c1a59f8db4d6142e534fb7d16b377abc3046432fc",
+      "adapter-init.json": "3434c39f0195f383290cad43993bfc7cfe103649a4ecde345b51ed022dcb8740",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-receiver.json": "8b134fde05067251a5e3d6e26e5e0ef01c6e56557e7a106dce533d5d57954e7e",
+      "xinput-reception.csv": "8c20951809753f7e19dec692c33d2196d5ce6a905d54e73a8daaf4e6b99fd4c0",
+      "xinput-run.json": "bf7e3b9e8b7ab14d51c213b264b209f4f8dd17ff3d5f6334d501c7f033b3e619"
+    }
   },
   {
     "run_id": "485ef73e27cc4aaaba37116073ab740a-0-vdevice",
@@ -256,7 +395,12 @@
     "profile": "xbox360",
     "receiver_api": "XInput",
     "executable_hashes_recorded": true,
-    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\485ef73e27cc4aaaba37116073ab740a\\\\485ef73e27cc4aaaba37116073ab740a-0-vdevice\\\\xinput-done.json'"
+    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\485ef73e27cc4aaaba37116073ab740a\\\\485ef73e27cc4aaaba37116073ab740a-0-vdevice\\\\xinput-done.json'",
+    "hashes": {
+      "adapter-error.json": "5b3e4d940c0e21b1ec3830ecbd794935a2018c2e4d516df5e1564bffd93d0cce",
+      "adapter-init.json": "d5ddf13d826d42657af60a8b92d6cd49afe302916757ac6e4ec01831127ea1b1",
+      "xinput-run.json": "c4e0e719da61c4e093ca085ecfc5fbf8896f4bc49204746871971e34b7d9ccc2"
+    }
   },
   {
     "run_id": "4da8a699845c497c8d6e9b02c4f9c573-0-vdevice",
@@ -270,7 +414,12 @@
     "profile": "xbox-one-gip",
     "receiver_api": "XInput",
     "executable_hashes_recorded": true,
-    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\4da8a699845c497c8d6e9b02c4f9c573\\\\4da8a699845c497c8d6e9b02c4f9c573-0-vdevice\\\\xinput-done.json'"
+    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\4da8a699845c497c8d6e9b02c4f9c573\\\\4da8a699845c497c8d6e9b02c4f9c573-0-vdevice\\\\xinput-done.json'",
+    "hashes": {
+      "adapter-error.json": "5b3e4d940c0e21b1ec3830ecbd794935a2018c2e4d516df5e1564bffd93d0cce",
+      "adapter-init.json": "6ec3ca475cac93a5ba8a21cba8ac834c90693910116764f1fddb5513b4be5c76",
+      "xinput-run.json": "d708317b9cc449b2b46c2216336d9035e375a3ce6fdd0ee04033306855e4e93d"
+    }
   },
   {
     "run_id": "5c54ae6baf7a45b981c999d630e116e0-0-vdevice",
@@ -284,7 +433,12 @@
     "profile": "xbox360",
     "receiver_api": "XInput",
     "executable_hashes_recorded": true,
-    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\5c54ae6baf7a45b981c999d630e116e0\\\\5c54ae6baf7a45b981c999d630e116e0-0-vdevice\\\\xinput-done.json'"
+    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\5c54ae6baf7a45b981c999d630e116e0\\\\5c54ae6baf7a45b981c999d630e116e0-0-vdevice\\\\xinput-done.json'",
+    "hashes": {
+      "adapter-error.json": "5b3e4d940c0e21b1ec3830ecbd794935a2018c2e4d516df5e1564bffd93d0cce",
+      "adapter-init.json": "d5ddf13d826d42657af60a8b92d6cd49afe302916757ac6e4ec01831127ea1b1",
+      "xinput-run.json": "7c3b791fd4c63098550214d3dc6a1343b2c0fded323a170bc73754bd583f6ada"
+    }
   },
   {
     "run_id": "5ffb0be85d594d409a1e7bd9a25007cf-0-vdevice",
@@ -298,7 +452,11 @@
     "profile": "xbox360",
     "receiver_api": "XInput",
     "executable_hashes_recorded": true,
-    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\5ffb0be85d594d409a1e7bd9a25007cf\\\\5ffb0be85d594d409a1e7bd9a25007cf-0-vdevice\\\\xinput-done.json'"
+    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\5ffb0be85d594d409a1e7bd9a25007cf\\\\5ffb0be85d594d409a1e7bd9a25007cf-0-vdevice\\\\xinput-done.json'",
+    "hashes": {
+      "adapter-error.json": "5b3e4d940c0e21b1ec3830ecbd794935a2018c2e4d516df5e1564bffd93d0cce",
+      "xinput-run.json": "d68a74df488bfdfd7560735b8b9d8b29f2e7d3b6d87011c10de7f6f169fc6cd5"
+    }
   },
   {
     "run_id": "80286ba6093342e8bfb8317a4cdd21db-0-vdevice",
@@ -320,10 +478,26 @@
     "mean_us": 70.5658,
     "submission_p50_us": 10.3,
     "stack_captured": true,
+    "p90_us": 123.4,
+    "p95_us": 174.42,
+    "stdev_us": 52.30669364967127,
     "producer_cpu_lifetime_ms": 109.375,
     "producer_peak_working_set_bytes": 5197824,
     "receiver_cpu_lifetime_ms": 46.875,
-    "receiver_peak_working_set_bytes": 7958528
+    "receiver_peak_working_set_bytes": 7958528,
+    "hashes": {
+      "adapter-done.json": "b803097b237c2dd33085b96c2d432132f24b8111f468c831aff0cc31bde556bf",
+      "adapter-init.json": "c8e1647102df73250cd2d59f0a40ac983880dfb63e10d2030106f31cf237c20e",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "adapter.csv": "51654add4b3156a22012d48b5118848dc5336a2b1a49f4ab5d3fbf36d75c4798",
+      "pnp-stack.txt": "d7d626f3c510d82dc4d175f41814bb4602f1ee6b65c711d760cff0b77c49d740",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "08c7f704b0868ae6ef501cde49bc2f6595f73ed48421d3deea1e0a4063bb512b",
+      "xinput-receiver.json": "d45c4373a7aa674ad9470cf4d59314e73fadc0b624f3333182136bba0fe70cba",
+      "xinput-reception.csv": "795031eb9690a434784c7b34a0a5a56f7f36e0d10f9d6395bb96b20847d46f00",
+      "xinput-run.json": "b023356fdc5a671c9788c9b1b54630e8655533859e6b17ca33ae6b7aa2840fa2",
+      "xinput-submission.csv": "bfc836b29b99fcb065585601a524e00d9b6ade3f1e810b5bcc7a30e530bc2cab"
+    }
   },
   {
     "run_id": "80286ba6093342e8bfb8317a4cdd21db-1-vdevice",
@@ -345,10 +519,26 @@
     "mean_us": 66.911,
     "submission_p50_us": 9.0,
     "stack_captured": true,
+    "p90_us": 107.3,
+    "p95_us": 132.15999999999994,
+    "stdev_us": 256.89873553468357,
     "producer_cpu_lifetime_ms": 31.25,
     "producer_peak_working_set_bytes": 5160960,
     "receiver_cpu_lifetime_ms": 46.875,
-    "receiver_peak_working_set_bytes": 7974912
+    "receiver_peak_working_set_bytes": 7974912,
+    "hashes": {
+      "adapter-done.json": "f6e6ad921324c150c77f48e26a70edd6307acebbfa964e8d8e8aaf0fefa8abd1",
+      "adapter-init.json": "c8e1647102df73250cd2d59f0a40ac983880dfb63e10d2030106f31cf237c20e",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "adapter.csv": "4746b72df782cb4d46d347dd24ba8378c82533aa50b187ecfa60740a51983898",
+      "pnp-stack.txt": "d7d626f3c510d82dc4d175f41814bb4602f1ee6b65c711d760cff0b77c49d740",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "7ccf27f5da6e0094dc7e71dd1869ce0089e33d9543cd8fd095ef86d881c5ae51",
+      "xinput-receiver.json": "c1f42bd5d96ff85a95f98f50758016ce22dc31b0c80910c8093325cf02a9f6d9",
+      "xinput-reception.csv": "ad098fbfccf4e97e0367cfc6b80072b7543eb69b4c2de6a5082c5d45621cf611",
+      "xinput-run.json": "784ed4a77f2fa487bb40f38abcb60d01320fb5ab0021f8e5346e24e2599bc263",
+      "xinput-submission.csv": "1cf1281015220ab6953be5bbb8edc36a365f5b4fec1bf2f0c9c482edc6b1395e"
+    }
   },
   {
     "run_id": "80286ba6093342e8bfb8317a4cdd21db-2-vdevice",
@@ -370,10 +560,26 @@
     "mean_us": 141.6892,
     "submission_p50_us": 11.6,
     "stack_captured": true,
+    "p90_us": 149.92000000000002,
+    "p95_us": 235.56499999999986,
+    "stdev_us": 604.5597865711042,
     "producer_cpu_lifetime_ms": 15.625,
     "producer_peak_working_set_bytes": 5169152,
     "receiver_cpu_lifetime_ms": 78.125,
-    "receiver_peak_working_set_bytes": 8028160
+    "receiver_peak_working_set_bytes": 8028160,
+    "hashes": {
+      "adapter-done.json": "6e7a632181772985f8f2667605ae87f0bdf8c920c9ecdc652dcc79c53d6a9bbb",
+      "adapter-init.json": "c8e1647102df73250cd2d59f0a40ac983880dfb63e10d2030106f31cf237c20e",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "adapter.csv": "64ca3989644b07c6dd8e75910cb382904e8e42bc7d09edab82f27025fea75f70",
+      "pnp-stack.txt": "d7d626f3c510d82dc4d175f41814bb4602f1ee6b65c711d760cff0b77c49d740",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "e281b65bc6cd881ba569377208d1c29761d43d5845689617c76caa57075f9775",
+      "xinput-receiver.json": "ec59ff3962449613e0fe63b402756b41c99ad6d5c110e467d0ede283b9cd4537",
+      "xinput-reception.csv": "422afc97d707c122f332b8cdcc54f19e2b01e14aa21c016bf44afda447e44719",
+      "xinput-run.json": "03306ec767ad11ff0b1da8cf570985e8b50ea75a06c7db4c0e00f076302bcbfc",
+      "xinput-submission.csv": "99d08aaa9a973b01ef0fe05c92cd0d2266137f9346b308f3b5fc7b330ff117af"
+    }
   },
   {
     "run_id": "8769fd4230e4443eae29c4bf7c51b6d2-0-vdevice",
@@ -387,7 +593,11 @@
     "profile": "xbox360",
     "receiver_api": "XInput",
     "executable_hashes_recorded": true,
-    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\8769fd4230e4443eae29c4bf7c51b6d2\\\\8769fd4230e4443eae29c4bf7c51b6d2-0-vdevice\\\\xinput-done.json'"
+    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\8769fd4230e4443eae29c4bf7c51b6d2\\\\8769fd4230e4443eae29c4bf7c51b6d2-0-vdevice\\\\xinput-done.json'",
+    "hashes": {
+      "adapter-error.json": "5b3e4d940c0e21b1ec3830ecbd794935a2018c2e4d516df5e1564bffd93d0cce",
+      "xinput-run.json": "60721a94b21be346663ac4e1f5806d8e6d3d820717e567112e237a4bca1d2861"
+    }
   },
   {
     "run_id": "8f77db3a5a4a43ceb7b9c26c71cabf91-0-vdevice",
@@ -409,10 +619,22 @@
     "mean_us": 30.849799999999995,
     "submission_p50_us": 26.7,
     "stack_captured": true,
+    "p90_us": 37.31,
+    "p95_us": 43.2,
+    "stdev_us": 153.75980683572078,
     "producer_cpu_lifetime_ms": 62.5,
     "producer_peak_working_set_bytes": 5541888,
     "receiver_cpu_lifetime_ms": 46.875,
-    "receiver_peak_working_set_bytes": 5808128
+    "receiver_peak_working_set_bytes": 5808128,
+    "hashes": {
+      "pnp-stack.txt": "200eaeb1aae6dbd5325197ef59abf2ac9c146a3337072ab94483c8c0a9caa3d6",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "4edc6c7fec2c4d128f8c95cec35ac479e1e3773014d67a3b86b0d1684622f508",
+      "xinput-receiver.json": "65ae2ef4b3d8b09f80d263f67d0e53c9a0d2a997b9d2dba56f03ebcd5d9b986d",
+      "xinput-reception.csv": "f2b07f6daa6d1429d428e228071afc13c6a8d09ec45cef94783eb87a64c9e55a",
+      "xinput-run.json": "037aa42277f5ece208310c3f9a67707cc8928e46ad0bde6b3b00f0879e6b3878",
+      "xinput-submission.csv": "d1302f429387c607392952d298970738e30c81bd92cd1de059d8f4af95a4e149"
+    }
   },
   {
     "run_id": "8f77db3a5a4a43ceb7b9c26c71cabf91-1-vdevice",
@@ -434,10 +656,22 @@
     "mean_us": 38.3322,
     "submission_p50_us": 51.7,
     "stack_captured": true,
+    "p90_us": 57.03000000000001,
+    "p95_us": 62.904999999999994,
+    "stdev_us": 22.149554983022707,
     "producer_cpu_lifetime_ms": 62.5,
     "producer_peak_working_set_bytes": 5206016,
     "receiver_cpu_lifetime_ms": 0.0,
-    "receiver_peak_working_set_bytes": 5459968
+    "receiver_peak_working_set_bytes": 5459968,
+    "hashes": {
+      "pnp-stack.txt": "200eaeb1aae6dbd5325197ef59abf2ac9c146a3337072ab94483c8c0a9caa3d6",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "1f0e5b557168c58f7a615d15863e65c90f5b69a5208606d925af71d4f862e18e",
+      "xinput-receiver.json": "b9c18076044ce3608babbcc3407b2347eb7974fe7e4d9bb9a445d2fbe6746245",
+      "xinput-reception.csv": "0799871c58d9f3256df4a831d0031dcc631ef588a24a88781383732ec2050394",
+      "xinput-run.json": "68a2fe24b55f7c957ed1909a40214853163be1a16ad9d0b6b2e13f38f3ce919f",
+      "xinput-submission.csv": "f34f801ef971c61deda305d3b3bec892d06f351d9e77cc241ad3706de27d25ee"
+    }
   },
   {
     "run_id": "8f77db3a5a4a43ceb7b9c26c71cabf91-2-vdevice",
@@ -459,10 +693,22 @@
     "mean_us": 10.094100000000003,
     "submission_p50_us": 21.8,
     "stack_captured": true,
+    "p90_us": 11.3,
+    "p95_us": 13.5,
+    "stdev_us": 2.055086024615166,
     "producer_cpu_lifetime_ms": 15.625,
     "producer_peak_working_set_bytes": 5206016,
     "receiver_cpu_lifetime_ms": 15.625,
-    "receiver_peak_working_set_bytes": 5484544
+    "receiver_peak_working_set_bytes": 5484544,
+    "hashes": {
+      "pnp-stack.txt": "200eaeb1aae6dbd5325197ef59abf2ac9c146a3337072ab94483c8c0a9caa3d6",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "d3a1314178fe420bf0a864508ba99b13d9c6cf2c814bd85d0a229ff19f615175",
+      "xinput-receiver.json": "d20dfba07130f169bf9e04894502a04549bee4cc2f0470bae8c9bf254a269c4c",
+      "xinput-reception.csv": "35b05bf3b7cc0ef9f644f2d1475359e5509716c9985b45ff703b64e589979d8c",
+      "xinput-run.json": "b2f3150d48d5f4436aabe9eafbd9988703d9bbe8b7f60885d61284db8a61c01a",
+      "xinput-submission.csv": "fe2e48e81eaa048ba753865c544fd0d19a023ccdd9ef40b7d77f901c01bee058"
+    }
   },
   {
     "run_id": "90d31d46162542838cb8ab76ba96f2cc-0-vdevice",
@@ -484,10 +730,22 @@
     "mean_us": 45.455,
     "submission_p50_us": 54.8,
     "stack_captured": true,
+    "p90_us": 75.53,
+    "p95_us": 93.61499999999998,
+    "stdev_us": 50.20096146023034,
     "producer_cpu_lifetime_ms": 0.0,
     "producer_peak_working_set_bytes": 5238784,
     "receiver_cpu_lifetime_ms": 31.25,
-    "receiver_peak_working_set_bytes": 7991296
+    "receiver_peak_working_set_bytes": 7991296,
+    "hashes": {
+      "pnp-stack.txt": "2c37a2a77e361da884e16e9f941b532ce9141b3ddea26ce745f9f67a4fac3ad8",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "e071f6368dca478e5b4f0a93d976e479a4ece7225aff817680a3113818b64eca",
+      "xinput-receiver.json": "c13f6469dca065a0d8bc1a62330b499901711006c20b5a93384bd92599d06da8",
+      "xinput-reception.csv": "9cf01547781198e914360f4743aeff36b29b7656ab1fc76bb793a60e61465eee",
+      "xinput-run.json": "a4439dfe4bf986660f8b10462216f6807e0737e84be4798d240c8901ded61232",
+      "xinput-submission.csv": "343ba8d8efbc1a75115a9ffb13462eff8f78a1067ece0c3cb29d3364c895a46e"
+    }
   },
   {
     "run_id": "90d31d46162542838cb8ab76ba96f2cc-1-vdevice",
@@ -509,10 +767,22 @@
     "mean_us": 38.3025,
     "submission_p50_us": 52.4,
     "stack_captured": true,
+    "p90_us": 64.22000000000001,
+    "p95_us": 72.905,
+    "stdev_us": 28.05836444922557,
     "producer_cpu_lifetime_ms": 46.875,
     "producer_peak_working_set_bytes": 5177344,
     "receiver_cpu_lifetime_ms": 78.125,
-    "receiver_peak_working_set_bytes": 7983104
+    "receiver_peak_working_set_bytes": 7983104,
+    "hashes": {
+      "pnp-stack.txt": "7dd732cbb398de350fcf4b854eb640ea80dcc97b64972b11f9c1de957bb66df0",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "dff7e2fe73e45982d1efb75caaf7b471b3347a4626faab842a1d0512f7686011",
+      "xinput-receiver.json": "bb58a5ba47505fc3e71ecd20a84bfad538881f1295e0eb91e8ba1bf0df919809",
+      "xinput-reception.csv": "2c120e1acbb5d558a6afb5e813710080e6b25c6d374d5b0c9d3392178921f819",
+      "xinput-run.json": "abc9aa0d9168187ef19ca1be11a9761095164d58edc812b3ccdcfac8571ea44f",
+      "xinput-submission.csv": "8b2b055094035beefdc7fd59506cac1e2a4cc6751345df600fd529d6a90e2c10"
+    }
   },
   {
     "run_id": "90d31d46162542838cb8ab76ba96f2cc-2-vdevice",
@@ -534,10 +804,22 @@
     "mean_us": 40.9967,
     "submission_p50_us": 52.4,
     "stack_captured": true,
+    "p90_us": 68.6,
+    "p95_us": 81.71999999999998,
+    "stdev_us": 28.461427440695275,
     "producer_cpu_lifetime_ms": 15.625,
     "producer_peak_working_set_bytes": 5173248,
     "receiver_cpu_lifetime_ms": 15.625,
-    "receiver_peak_working_set_bytes": 7995392
+    "receiver_peak_working_set_bytes": 7995392,
+    "hashes": {
+      "pnp-stack.txt": "c51f360bc4304cb9815a42324734af54e2045cdf90f2a8113b9ee8a67fbc34a9",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "99fb3d88005065538cd82280eeec45d23152fa1ee47b2380a7ad8dc9a1272f0d",
+      "xinput-receiver.json": "290dfb1eaca028cb4d509f91f7ceee680931cc0251f0797fe20d033a2d0bde21",
+      "xinput-reception.csv": "2c64e22eebfcf8dd691a45bbb2ec9f16821bc2ec7e69d548f7395a5b95db02b2",
+      "xinput-run.json": "e54083b5d0efbb197f5f985ba4639474776927f7b0d1e4315fba6a8ce5131038",
+      "xinput-submission.csv": "a21df76c8ff6360268acbe236515a4444c9bcf57222ee83566679f1d1c22d32a"
+    }
   },
   {
     "run_id": "93594513f8d3433cb81dc9b9e6e47784-0-vdevice",
@@ -559,10 +841,26 @@
     "mean_us": 107.0891,
     "submission_p50_us": 14.1,
     "stack_captured": true,
+    "p90_us": 152.07000000000005,
+    "p95_us": 215.84999999999997,
+    "stdev_us": 113.27712778345357,
     "producer_cpu_lifetime_ms": 140.625,
     "producer_peak_working_set_bytes": 5517312,
     "receiver_cpu_lifetime_ms": 15.625,
-    "receiver_peak_working_set_bytes": 5787648
+    "receiver_peak_working_set_bytes": 5787648,
+    "hashes": {
+      "adapter-done.json": "45a5abb92751da3ed9829da65a358a150f16ec1f71a8a918b186d08454780bc2",
+      "adapter-init.json": "13b539d44662b8f1206f32bbd9067b3112219bf9b58431eed058063a2d04ad85",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "adapter.csv": "4691b61c50e0ae8c4e559b9562d75d7ef85e5846bbd93055406ebd7c6c9ed965",
+      "pnp-stack.txt": "9615ca730b05d0a72f98c30526c5b517806f6d33d17d7b5c5e8e48618a449f95",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "837d5bbbf4c24dee2bc40ea237469284bfa2ddb3658ae805e4bbcad661593885",
+      "xinput-receiver.json": "0931ff1430b32d1d18481b49c2236bf0c4f77ab5bfb9c2803df8bce821afae3c",
+      "xinput-reception.csv": "e8e630be8f9477d9179a4cfa726947ae5710fef4dd94d07b7e106a5b01b6b094",
+      "xinput-run.json": "4830e1ba31dad5889f6c8387eb094cbf6f0d2c2dd3bca1d59460eacb72a6c8f5",
+      "xinput-submission.csv": "cf2dba33c0d5660a3aad71eeda06ac5e3f9309e703563bd14d133fb656c73062"
+    }
   },
   {
     "run_id": "93594513f8d3433cb81dc9b9e6e47784-1-vdevice",
@@ -584,10 +882,26 @@
     "mean_us": 133.01420000000002,
     "submission_p50_us": 18.85,
     "stack_captured": true,
+    "p90_us": 204.24000000000007,
+    "p95_us": 330.53,
+    "stdev_us": 193.71011271001348,
     "producer_cpu_lifetime_ms": 31.25,
     "producer_peak_working_set_bytes": 5193728,
     "receiver_cpu_lifetime_ms": 31.25,
-    "receiver_peak_working_set_bytes": 5308416
+    "receiver_peak_working_set_bytes": 5308416,
+    "hashes": {
+      "adapter-done.json": "ca1d19f697e30811cfabb396597d4c2b4e58f865e9ddf71b4c99bb3f8cd37ba5",
+      "adapter-init.json": "13b539d44662b8f1206f32bbd9067b3112219bf9b58431eed058063a2d04ad85",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "adapter.csv": "517eeb73f73c0352532b044d37500cf1781bea21b77ae0806256bce4edd05945",
+      "pnp-stack.txt": "9615ca730b05d0a72f98c30526c5b517806f6d33d17d7b5c5e8e48618a449f95",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "b4aa23293189ef6d3f65536adbd48f88532cf92bab894c1ad153e4d63de760f5",
+      "xinput-receiver.json": "1aed230c5e3ee529b24856d14bfba24d7f699f4d55c59e3f57ca9111a332f586",
+      "xinput-reception.csv": "40eb1c4d65bd1bd9eec3c0e7442a3f3dbdb7c61d72cff23eeae537aa48bd6692",
+      "xinput-run.json": "b154557fb0eac6cd665026f9d45e046c6ba8972ca1e11bbcb7651007aaa79027",
+      "xinput-submission.csv": "120e0047c35ba879c4fc38e7ed047969f272b23151c6de4bd891691075806c2a"
+    }
   },
   {
     "run_id": "93594513f8d3433cb81dc9b9e6e47784-2-vdevice",
@@ -621,10 +935,26 @@
     "mean_us": 52.406099999999995,
     "submission_p50_us": 8.5,
     "stack_captured": true,
+    "p90_us": 85.24000000000001,
+    "p95_us": 109.50999999999999,
+    "stdev_us": 34.12583956059859,
     "producer_cpu_lifetime_ms": 0.0,
     "producer_peak_working_set_bytes": 5201920,
     "receiver_cpu_lifetime_ms": 31.25,
-    "receiver_peak_working_set_bytes": 7962624
+    "receiver_peak_working_set_bytes": 7962624,
+    "hashes": {
+      "adapter-done.json": "62122cab699330a9756e65d46fb3ff6668ec65b47b5ca5cba15be729e1628a8c",
+      "adapter-init.json": "b77ad533a50a3ce19a8277f8eb55d98d1b500ef561ae7b48983ab8fa4f494793",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "adapter.csv": "da1f14ca6702a87ce92213305664494c5f0c928b148a726221df09c707efe520",
+      "pnp-stack.txt": "aa13bb8233ca310f750c3938e44dbe9d333216f0ff4f5632e354d52ba01385da",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "211abc6a94d537f32b14f00f0638ed35958eb41b877bd86b00634fbdbfc50a35",
+      "xinput-receiver.json": "5a4105c53e87c02804b422c819acbc6849b2370c49b54187037053ceebe4840c",
+      "xinput-reception.csv": "f4847e48a6ffeff6e1b5dcfcebc3bbaf991491187425344e5834c92bfdfa1bc9",
+      "xinput-run.json": "de382aa814212dbf49e49f016812b6821a62f4a2a5c158e49fd17b083e5d0c25",
+      "xinput-submission.csv": "ba403ba2cc19fffc7401b1a42c11655bd69a7243e0601e42a48d050032d3e89d"
+    }
   },
   {
     "run_id": "a002d455a0fa4702999c612b200f993a-1-vdevice",
@@ -646,10 +976,26 @@
     "mean_us": 55.4148,
     "submission_p50_us": 8.6,
     "stack_captured": true,
+    "p90_us": 96.52000000000001,
+    "p95_us": 119.25999999999995,
+    "stdev_us": 37.918460287709344,
     "producer_cpu_lifetime_ms": 0.0,
     "producer_peak_working_set_bytes": 5160960,
     "receiver_cpu_lifetime_ms": 46.875,
-    "receiver_peak_working_set_bytes": 7979008
+    "receiver_peak_working_set_bytes": 7979008,
+    "hashes": {
+      "adapter-done.json": "b5dd0fcbdc887013d8df5c02d50516929e2c62fdcd67c89e70037cf515d0470e",
+      "adapter-init.json": "b77ad533a50a3ce19a8277f8eb55d98d1b500ef561ae7b48983ab8fa4f494793",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "adapter.csv": "8409488738959e2f2fe1239ee61d3ca6d89968aab92f3afc34e3b09ba02b2c68",
+      "pnp-stack.txt": "aa13bb8233ca310f750c3938e44dbe9d333216f0ff4f5632e354d52ba01385da",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "1c4753715503e2897499679a877f2d1c73ab3a885f93595c7019a666ae11c799",
+      "xinput-receiver.json": "89750bca55575b5849c313d3d6afbaeb547baedda1a04b4ae1cfadeba4f04341",
+      "xinput-reception.csv": "e1ba23e33ab19aa69c9c2559bb19a3004d4e5ef6420b1d0746300dfc148150f2",
+      "xinput-run.json": "4b961a83b461148367ba39c5dacb19f7ccbc3f537492b9d064195e1eed48046f",
+      "xinput-submission.csv": "6eda10e585512a13cc64e38a5cde676ea7c7da827477a1240283f4c314f3903d"
+    }
   },
   {
     "run_id": "a002d455a0fa4702999c612b200f993a-2-vdevice",
@@ -671,10 +1017,26 @@
     "mean_us": 60.383199999999995,
     "submission_p50_us": 9.0,
     "stack_captured": true,
+    "p90_us": 111.41000000000001,
+    "p95_us": 131.20999999999998,
+    "stdev_us": 39.01708716512358,
     "producer_cpu_lifetime_ms": 31.25,
     "producer_peak_working_set_bytes": 5165056,
     "receiver_cpu_lifetime_ms": 93.75,
-    "receiver_peak_working_set_bytes": 7954432
+    "receiver_peak_working_set_bytes": 7954432,
+    "hashes": {
+      "adapter-done.json": "51337cb8eb6e9326306e3f92a6ec78d16a29a49ee0e6b999ffeb13aeb68b10b6",
+      "adapter-init.json": "b77ad533a50a3ce19a8277f8eb55d98d1b500ef561ae7b48983ab8fa4f494793",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "adapter.csv": "7f4a39621e14f9428add0161a76ab922328f7a59e73c448297d1d9cc0d0f71d5",
+      "pnp-stack.txt": "aa13bb8233ca310f750c3938e44dbe9d333216f0ff4f5632e354d52ba01385da",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "8448f2022f98df950c60b1811d2ad03b3577b3f7524008adee1430356832cb9b",
+      "xinput-receiver.json": "64d570767da89c0e4da0d7ceba1a187fbce40c52d56aa2e8bd767038c9c5f739",
+      "xinput-reception.csv": "37433c265cfa79b5905368039cb6071bad62ff69ce93e1abe4b40aa58c5d9c87",
+      "xinput-run.json": "6e46564c5ccf0cd8c10019d71a784762098505e89fa2c6972582dd9f73deaa55",
+      "xinput-submission.csv": "c85b25bd7095ba2da8d0975de891fda5ece378a60c35e759fdd5e3f448547cef"
+    }
   },
   {
     "run_id": "a98101a5295c4101a834bff1b6f78b70-0-vdevice",
@@ -688,7 +1050,12 @@
     "profile": "xbox360",
     "receiver_api": "XInput",
     "executable_hashes_recorded": true,
-    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\a98101a5295c4101a834bff1b6f78b70\\\\a98101a5295c4101a834bff1b6f78b70-0-vdevice\\\\xinput-done.json'"
+    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\a98101a5295c4101a834bff1b6f78b70\\\\a98101a5295c4101a834bff1b6f78b70-0-vdevice\\\\xinput-done.json'",
+    "hashes": {
+      "adapter-error.json": "5b3e4d940c0e21b1ec3830ecbd794935a2018c2e4d516df5e1564bffd93d0cce",
+      "adapter-init.json": "d5ddf13d826d42657af60a8b92d6cd49afe302916757ac6e4ec01831127ea1b1",
+      "xinput-run.json": "e3c3c452f8379010bd8db6e4f61a8515ddbaadc046689fc7e87dc65fef8f8a95"
+    }
   },
   {
     "run_id": "ad319776b8ee48cb873abc16a5068f8c-0-vigem",
@@ -710,10 +1077,22 @@
     "mean_us": 400.647,
     "submission_p50_us": 14.95,
     "stack_captured": true,
+    "p90_us": 189.18,
+    "p95_us": 928.379999999999,
+    "stdev_us": 2401.5696725481657,
     "producer_cpu_lifetime_ms": 62.5,
     "producer_peak_working_set_bytes": 6545408,
     "receiver_cpu_lifetime_ms": 31.25,
-    "receiver_peak_working_set_bytes": 8519680
+    "receiver_peak_working_set_bytes": 8519680,
+    "hashes": {
+      "pnp-stack.txt": "761d087b3cab5b072b92a79ef6bf6c1363fccbc33317cf0bd6acdfa8aa524df6",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "a177a65904a31f8ba8ea8c211dc27ccb925477d73a1b0572266a4bd8fb566bec",
+      "xinput-receiver.json": "b15e3d7f8d10946e152e506d24fabdab38efe56e20c0793a6120e24c5be3207b",
+      "xinput-reception.csv": "c5a2afb83c7e11773acd04d0431cda0efa4a933e1107271c8c69c7e20e45860e",
+      "xinput-run.json": "a30d8f7fc7f16b4c7b03d5b14f029899d62375e1437f207b606474dcbf206e62",
+      "xinput-submission.csv": "b09ecffe18373eaa1155ad1a0b798920e225dd1dd0900b80a4a0016eeebcf9fb"
+    }
   },
   {
     "run_id": "ad319776b8ee48cb873abc16a5068f8c-1-vigem",
@@ -735,10 +1114,22 @@
     "mean_us": 83.5465,
     "submission_p50_us": 58.4,
     "stack_captured": true,
+    "p90_us": 89.11,
+    "p95_us": 123.25499999999995,
+    "stdev_us": 286.95200361755644,
     "producer_cpu_lifetime_ms": 31.25,
     "producer_peak_working_set_bytes": 6131712,
     "receiver_cpu_lifetime_ms": 15.625,
-    "receiver_peak_working_set_bytes": 7954432
+    "receiver_peak_working_set_bytes": 7954432,
+    "hashes": {
+      "pnp-stack.txt": "761d087b3cab5b072b92a79ef6bf6c1363fccbc33317cf0bd6acdfa8aa524df6",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "894e6e7ac84810148d433f16a03672363888b3730326416e0a2eeb7f8b7ca7a7",
+      "xinput-receiver.json": "93f63d8fa55aa4e13873cd97d1909cb173bb526780f8e0fd57a7a1e9863fd043",
+      "xinput-reception.csv": "75a6028e138c04972fb690bfa86be2f73edd95fbd8dcd7a0f7a633bb222c967c",
+      "xinput-run.json": "b53dbdda28f9ca9b34532a720c54c2e04e84a68255bef0492a74ccd7260d11e3",
+      "xinput-submission.csv": "400cc8cd33a84980ac69183f4569d6f3d1cf851e8f99292da4186d648ba2e69a"
+    }
   },
   {
     "run_id": "ad319776b8ee48cb873abc16a5068f8c-2-vigem",
@@ -760,10 +1151,22 @@
     "mean_us": 254.70230000000004,
     "submission_p50_us": 61.9,
     "stack_captured": true,
+    "p90_us": 178.56000000000006,
+    "p95_us": 334.40499999999855,
+    "stdev_us": 1183.814265161182,
     "producer_cpu_lifetime_ms": 46.875,
     "producer_peak_working_set_bytes": 6123520,
     "receiver_cpu_lifetime_ms": 31.25,
-    "receiver_peak_working_set_bytes": 7950336
+    "receiver_peak_working_set_bytes": 7950336,
+    "hashes": {
+      "pnp-stack.txt": "761d087b3cab5b072b92a79ef6bf6c1363fccbc33317cf0bd6acdfa8aa524df6",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "6d579786080e61377f9a0d316b16f370c6f939dae4dd6ecc06c90c46228d0845",
+      "xinput-receiver.json": "5ff52efab6ea345262176bce4b0a50ea60b9c10a7c68083447eeb7db4e490ed6",
+      "xinput-reception.csv": "df780a2b5a360fc5cb598f98b2a32455b151081e675d9050619e67e7d80c05a9",
+      "xinput-run.json": "f0127c70b5590d4f2fce53476ea08691a93c9aadedd9eb81abbea879b9c64b5e",
+      "xinput-submission.csv": "7cb13a5ae43767cf783dbd0ba7e7b3bb9f34d14b40080e89bc5b372e0858d2ce"
+    }
   },
   {
     "run_id": "b812f479476f4d4481421fa39f1e81e6-0-vdevice",
@@ -777,7 +1180,12 @@
     "profile": "ds4",
     "receiver_api": "HID ReadFile",
     "executable_hashes_recorded": true,
-    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\b812f479476f4d4481421fa39f1e81e6\\\\b812f479476f4d4481421fa39f1e81e6-0-vdevice\\\\xinput-done.json'"
+    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\b812f479476f4d4481421fa39f1e81e6\\\\b812f479476f4d4481421fa39f1e81e6-0-vdevice\\\\xinput-done.json'",
+    "hashes": {
+      "adapter-error.json": "5b3e4d940c0e21b1ec3830ecbd794935a2018c2e4d516df5e1564bffd93d0cce",
+      "adapter-init.json": "455a5b6710bb1aa792ab885809475549b549722343522ea9fec084de0162eccb",
+      "xinput-run.json": "f2ff12060faa65abdf178b991bf15ded6c4c6fe28f330b6112d4fee438a7eb80"
+    }
   },
   {
     "run_id": "bf708f43a0ad449884092d2d47b9a85d-0-vdevice",
@@ -791,7 +1199,12 @@
     "profile": "xbox360",
     "receiver_api": "XInput",
     "executable_hashes_recorded": true,
-    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\bf708f43a0ad449884092d2d47b9a85d\\\\bf708f43a0ad449884092d2d47b9a85d-0-vdevice\\\\xinput-done.json'"
+    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\bf708f43a0ad449884092d2d47b9a85d\\\\bf708f43a0ad449884092d2d47b9a85d-0-vdevice\\\\xinput-done.json'",
+    "hashes": {
+      "adapter-error.json": "5b3e4d940c0e21b1ec3830ecbd794935a2018c2e4d516df5e1564bffd93d0cce",
+      "adapter-init.json": "a6922fd31c286238d2c34a526432da797e62915cda93e149229e37b4cc5d6686",
+      "xinput-run.json": "3ec315528de740739c9ac3e265b05d56bb9c8ef7ef2e1354e0505f4ef435ba38"
+    }
   },
   {
     "run_id": "c34358e8978d491a9b334272c5145cf0-0-vdevice",
@@ -813,10 +1226,21 @@
     "mean_us": 8343.6065,
     "submission_p50_us": 82.3,
     "stack_captured": false,
+    "p90_us": 61848.78,
+    "p95_us": 62431.435000000005,
+    "stdev_us": 22506.87979855614,
     "producer_cpu_lifetime_ms": 46.875,
     "producer_peak_working_set_bytes": 5259264,
     "receiver_cpu_lifetime_ms": 8875.0,
-    "receiver_peak_working_set_bytes": 8003584
+    "receiver_peak_working_set_bytes": 8003584,
+    "hashes": {
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "04488932b142873a4cbd34fa071f16ae8a822199a46dbfbc9030dd914d7a8cbb",
+      "xinput-receiver.json": "33ad2fb981cf91c2ffa16e9ab23439a83687f167e392aca297d9daa77874a727",
+      "xinput-reception.csv": "e1b2ea8629b9b80ecfe258528a6eac8b1be0a9dcd7b5d44983ef6831b5ad5ccc",
+      "xinput-run.json": "d56fe1a463b07a393c9bd91b0bd54bba69e9da3527ca1c288f9d672b94b41ba9",
+      "xinput-submission.csv": "0e9cd0bf04f97d035406cacb32e056138a778f6cd5f9e3a20c855caf244e4375"
+    }
   },
   {
     "run_id": "c34358e8978d491a9b334272c5145cf0-1-vdevice",
@@ -838,10 +1262,21 @@
     "mean_us": 8401.375900000001,
     "submission_p50_us": 84.5,
     "stack_captured": false,
+    "p90_us": 61777.61,
+    "p95_us": 62409.085,
+    "stdev_us": 22674.535193899534,
     "producer_cpu_lifetime_ms": 31.25,
     "producer_peak_working_set_bytes": 5214208,
     "receiver_cpu_lifetime_ms": 8734.375,
-    "receiver_peak_working_set_bytes": 7999488
+    "receiver_peak_working_set_bytes": 7999488,
+    "hashes": {
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "468d7eba329ec6ef36bdba6e09221cf8c0b05f94d81ff38bf7c7aa01df6e0c57",
+      "xinput-receiver.json": "6186586e8031d0d9dd5cae33d2eb622f5afe029aead5f74b6e0525d0dcd66c9a",
+      "xinput-reception.csv": "12242ae8b758a52e502ae39d541bfa4556c53d2f6ef6eb5b4d9a9320da97a32a",
+      "xinput-run.json": "09ef7b9fbf55f75296f723689a1379deb637fcf68c9ac0a5768287bbbd62f723",
+      "xinput-submission.csv": "93af2ea72af41222eafd400ba2b9369213c4f9658a7e27fa7b5b68711b7e4647"
+    }
   },
   {
     "run_id": "c34358e8978d491a9b334272c5145cf0-2-vdevice",
@@ -863,10 +1298,21 @@
     "mean_us": 8450.4628,
     "submission_p50_us": 81.35,
     "stack_captured": false,
+    "p90_us": 61944.91,
+    "p95_us": 62673.284999999996,
+    "stdev_us": 22795.01059770066,
     "producer_cpu_lifetime_ms": 46.875,
     "producer_peak_working_set_bytes": 5210112,
     "receiver_cpu_lifetime_ms": 8671.875,
-    "receiver_peak_working_set_bytes": 8007680
+    "receiver_peak_working_set_bytes": 8007680,
+    "hashes": {
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "b4421b6f2a00131c87cb432e86797caf12fd5166b9c16983593596fe6c19c62e",
+      "xinput-receiver.json": "9a3adf60f3663067dc3caaca6e590e468484092c4e3fab7b9c09285b266d1098",
+      "xinput-reception.csv": "77c471fb8430c73db429c793fff3b7f380c3627ef9835a3c01214b27c0063648",
+      "xinput-run.json": "e5012675dea73156c5fae6cc9036ab2e8cbf683402f91d525f9aee6b50c96ee5",
+      "xinput-submission.csv": "c6c8ab7b2ca3e0cd8244f9e7bb6ca0ea8b7ee6a309f72adede5c17df24064122"
+    }
   },
   {
     "run_id": "d0472d8ad91744edbd6bdba0d239beea-0-vdevice",
@@ -880,7 +1326,12 @@
     "profile": "xbox-one-gip",
     "receiver_api": "XInput",
     "executable_hashes_recorded": true,
-    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\d0472d8ad91744edbd6bdba0d239beea\\\\d0472d8ad91744edbd6bdba0d239beea-0-vdevice\\\\xinput-done.json'"
+    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\d0472d8ad91744edbd6bdba0d239beea\\\\d0472d8ad91744edbd6bdba0d239beea-0-vdevice\\\\xinput-done.json'",
+    "hashes": {
+      "adapter-error.json": "5b3e4d940c0e21b1ec3830ecbd794935a2018c2e4d516df5e1564bffd93d0cce",
+      "adapter-init.json": "c8332e080d1a4eaba56af2fe2cd7725777dd2182f7358d82033b1d3bde0e9fea",
+      "xinput-run.json": "78d4c5b831b6cab91ad18e6a40af44c4b62e37d496e0e8af2cadc36984e10124"
+    }
   },
   {
     "run_id": "d52ccc214c9348bfae7555f3b56e86ea-0-vigem",
@@ -894,7 +1345,20 @@
     "profile": "ds4",
     "receiver_api": "HID ReadFile",
     "executable_hashes_recorded": true,
-    "reason": "Capture count differs from generated-state count; background/protocol reports not individually correlated"
+    "reason": "Capture count differs from generated-state count; background/protocol reports not individually correlated",
+    "hashes": {
+      "adapter-done.json": "1516ded78077cfe86bb3ff51b4e668d4040858241f7a8962b08a0a8d18dc0d3f",
+      "adapter-init.json": "fe8681d453a46ed59c0013ff1c8c6f56b43346e7deba0a8aead6bd487ddec1cb",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "adapter.csv": "6af6674838602f1a394bc7321bb0790ece38efaefa94cb7935c2a9b894362d88",
+      "pnp-stack.txt": "fc8f0fcdac817d244f8536e07a3ae78d849ea2cadac7816ce2d417aba076ebac",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "eaaafae2218dc1a246aa1fe5b5412ed31044c2e53a86fe588b122c4988340653",
+      "xinput-receiver.json": "0956d7af3b83bb0be2bb60670496c5d1b984f97a851c80488dcd32d53ef12d8d",
+      "xinput-reception.csv": "5d0807acd27c6f4840a6f9dcebd8304f76eb706a502186d5607747bc948eac82",
+      "xinput-run.json": "2926aa0dc2af662fa81cee2386b1c67e837dc2a33493195d6b20b446ab952c79",
+      "xinput-submission.csv": "e2a34188c8073457989d6c3f76907b9615b149396882e4d76881a2ec21b18bf9"
+    }
   },
   {
     "run_id": "d52ccc214c9348bfae7555f3b56e86ea-1-vigem",
@@ -908,7 +1372,20 @@
     "profile": "ds4",
     "receiver_api": "HID ReadFile",
     "executable_hashes_recorded": true,
-    "reason": "Capture count differs from generated-state count; background/protocol reports not individually correlated"
+    "reason": "Capture count differs from generated-state count; background/protocol reports not individually correlated",
+    "hashes": {
+      "adapter-done.json": "854145ff09d7bada64943924352e964ea43d74fadb896b050f64d03d082433ce",
+      "adapter-init.json": "fe8681d453a46ed59c0013ff1c8c6f56b43346e7deba0a8aead6bd487ddec1cb",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "adapter.csv": "3f8d6849d367e4e8aa94dd9702d9b50f18b7d95558c3f885202d47599418a2ad",
+      "pnp-stack.txt": "fc8f0fcdac817d244f8536e07a3ae78d849ea2cadac7816ce2d417aba076ebac",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "cea0a5aaf82b4e7c7153dadd034dede398e6a936ae3f7dae355f6de0c3b1cc08",
+      "xinput-receiver.json": "05e51ae1aed086c2bbcdc39b82538c7cf69e438571dc52fa9504ffca33b989e6",
+      "xinput-reception.csv": "95329c573201598c1c520fb90e1798ad2668730b0d50e0eaa53113181897271d",
+      "xinput-run.json": "5e0ca3f5e5e2be3bec88cc6d03e49b21afc9d357727318049e551c9b1f9200d7",
+      "xinput-submission.csv": "2d1634483e3e7dbd43bf804a60fd8b78148223ff468a2c6bf92645e9edbdd2f5"
+    }
   },
   {
     "run_id": "d52ccc214c9348bfae7555f3b56e86ea-2-vigem",
@@ -922,7 +1399,20 @@
     "profile": "ds4",
     "receiver_api": "HID ReadFile",
     "executable_hashes_recorded": true,
-    "reason": "Capture count differs from generated-state count; background/protocol reports not individually correlated"
+    "reason": "Capture count differs from generated-state count; background/protocol reports not individually correlated",
+    "hashes": {
+      "adapter-done.json": "dfb4554198771e6092ebfea3faff5fb29e0c3f0a01f8f96cff841bf1827147cd",
+      "adapter-init.json": "fe8681d453a46ed59c0013ff1c8c6f56b43346e7deba0a8aead6bd487ddec1cb",
+      "adapter-ready.json": "e7e9b9cc69ce4eb499f27bb66b1a2d44933fc0c228f9ca75e4c39d2ff2adf782",
+      "adapter.csv": "298b18d374c997636a2a945923f0ecd4a3df3ec38b031b94ad2873d16c6961ba",
+      "pnp-stack.txt": "fc8f0fcdac817d244f8536e07a3ae78d849ea2cadac7816ce2d417aba076ebac",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "8b3b89f9d9a5cf9fbb14b2c80185c96e12326513270e77cf2008da2b75e3d9a5",
+      "xinput-receiver.json": "1e2f111cfe21b2d572cab1faa3112982ad53b81df54783c20ff2329188ca0a10",
+      "xinput-reception.csv": "8acdf02ab2517dfe7ede91f60bfaf3c3222c8210fed3a0562eb1c6e894706e99",
+      "xinput-run.json": "7fc9bef25af83d9f2b2b850621a5792e212e9b19c54ade7f61731137ea70758e",
+      "xinput-submission.csv": "ad17b56d1acb84af4d4b88fd7ab4d250f494893828c82dd0b8a881a8c64dc0f8"
+    }
   },
   {
     "run_id": "d681741aa2d24da1a77fea24223c9fca-0-vigem",
@@ -936,7 +1426,12 @@
     "profile": "ds4",
     "receiver_api": "HID ReadFile",
     "executable_hashes_recorded": true,
-    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\d681741aa2d24da1a77fea24223c9fca\\\\d681741aa2d24da1a77fea24223c9fca-0-vigem\\\\xinput-done.json'"
+    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\d681741aa2d24da1a77fea24223c9fca\\\\d681741aa2d24da1a77fea24223c9fca-0-vigem\\\\xinput-done.json'",
+    "hashes": {
+      "adapter-error.json": "5b3e4d940c0e21b1ec3830ecbd794935a2018c2e4d516df5e1564bffd93d0cce",
+      "adapter-init.json": "4d56f3c071ecbbd5184220a81741ff0131aa3f699059e06833c4a574ce72bca1",
+      "xinput-run.json": "dc395159de93ffe8d99a1d23ed190b7312c228e714db2edbaae2803d1fa1a7d4"
+    }
   },
   {
     "run_id": "ddfa13107c2640a1bc9e04726f14102d-0-vdevice",
@@ -950,7 +1445,11 @@
     "profile": "xbox360",
     "receiver_api": "XInput",
     "executable_hashes_recorded": true,
-    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\ddfa13107c2640a1bc9e04726f14102d\\\\ddfa13107c2640a1bc9e04726f14102d-0-vdevice\\\\xinput-done.json'"
+    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\ddfa13107c2640a1bc9e04726f14102d\\\\ddfa13107c2640a1bc9e04726f14102d-0-vdevice\\\\xinput-done.json'",
+    "hashes": {
+      "adapter-error.json": "5b3e4d940c0e21b1ec3830ecbd794935a2018c2e4d516df5e1564bffd93d0cce",
+      "xinput-run.json": "1d1c8080be0268af0d3dfb7c61eb50c46059510ab6517dfd44db2c177d6a2e48"
+    }
   },
   {
     "run_id": "ea0b6d52ab3045aa99994f9f24dfdd07-0-vigem",
@@ -972,10 +1471,22 @@
     "mean_us": 39.1734,
     "submission_p50_us": 52.75,
     "stack_captured": true,
+    "p90_us": 66.21000000000001,
+    "p95_us": 76.91499999999999,
+    "stdev_us": 36.908233093851976,
     "producer_cpu_lifetime_ms": 31.25,
     "producer_peak_working_set_bytes": 6193152,
     "receiver_cpu_lifetime_ms": 46.875,
-    "receiver_peak_working_set_bytes": 8007680
+    "receiver_peak_working_set_bytes": 8007680,
+    "hashes": {
+      "pnp-stack.txt": "761d087b3cab5b072b92a79ef6bf6c1363fccbc33317cf0bd6acdfa8aa524df6",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "06e437c97e4f3112a6abf47c819c0e0444bad043162f6e606ec857216b813ccb",
+      "xinput-receiver.json": "34e0c13d2587e26e1673c94539a71a3f784153ad7b10f9be5a4ff3c2aef9e849",
+      "xinput-reception.csv": "ce67e9ff89ac267de0e458d326b5b74b0e14fa923c323da014d519cb28680a88",
+      "xinput-run.json": "9b04f7a3712426272eefee7fb9c1bdaea145979277e3820f20f7a60ce259a220",
+      "xinput-submission.csv": "c57cb8f05f7f2a55eaf0430cfa0184274ca6bb99228ba956e6146ab4914dbb3f"
+    }
   },
   {
     "run_id": "ea0b6d52ab3045aa99994f9f24dfdd07-1-vigem",
@@ -997,10 +1508,22 @@
     "mean_us": 71.35210000000001,
     "submission_p50_us": 56.9,
     "stack_captured": true,
+    "p90_us": 78.94000000000001,
+    "p95_us": 107.97499999999994,
+    "stdev_us": 316.11497255185725,
     "producer_cpu_lifetime_ms": 62.5,
     "producer_peak_working_set_bytes": 6184960,
     "receiver_cpu_lifetime_ms": 93.75,
-    "receiver_peak_working_set_bytes": 7999488
+    "receiver_peak_working_set_bytes": 7999488,
+    "hashes": {
+      "pnp-stack.txt": "761d087b3cab5b072b92a79ef6bf6c1363fccbc33317cf0bd6acdfa8aa524df6",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "625a6b71e2eb61b1000ebd3c22f540a99925061e3991bce50be27aa625b33186",
+      "xinput-receiver.json": "d7f10048195718e07dedab0acc97049d594748799d34eca4a38085493eb943a2",
+      "xinput-reception.csv": "4582dce1f7263d5cc417b40ce54c0c887d47fe217cd22740233786b87db14c33",
+      "xinput-run.json": "6e4f64eb52e2f570bcebd33041941912826a1976aafc4e6dc3aea1570c45d24c",
+      "xinput-submission.csv": "10854e0c466825966568fa6ef58edb332b60ffd8ac4524ed8cb515bc0272f4d3"
+    }
   },
   {
     "run_id": "ea0b6d52ab3045aa99994f9f24dfdd07-2-vigem",
@@ -1022,9 +1545,21 @@
     "mean_us": 55.243300000000005,
     "submission_p50_us": 53.7,
     "stack_captured": true,
+    "p90_us": 66.0,
+    "p95_us": 82.5,
+    "stdev_us": 246.9888914255003,
     "producer_cpu_lifetime_ms": 15.625,
     "producer_peak_working_set_bytes": 6168576,
     "receiver_cpu_lifetime_ms": 15.625,
-    "receiver_peak_working_set_bytes": 8011776
+    "receiver_peak_working_set_bytes": 8011776,
+    "hashes": {
+      "pnp-stack.txt": "761d087b3cab5b072b92a79ef6bf6c1363fccbc33317cf0bd6acdfa8aa524df6",
+      "stack-captured.json": "1b07ab11d4964606bf3f706cef062f2cd330cc941925a9c9ddf76b37913d4567",
+      "xinput-done.json": "f6d6492017f36e0649068519b7684b5fe3cb527beb43bd7e3bba4bf978619bbf",
+      "xinput-receiver.json": "852260d1e9dce0360c1014ae81f088ae4407f2bdd23240aa3609738025cdb3c8",
+      "xinput-reception.csv": "e6462d5eb6c4ea7d882088fd84123ccdaab65cf3581e12cb28efe6df47e2ea6e",
+      "xinput-run.json": "f1751f5b30013d18bc187218e152ad2a4d9a2420874cd54c24ad5c09e0d180c0",
+      "xinput-submission.csv": "7a4290580d4585b05b530722390772ba350817690b9d4f4137cbcb440e90f77e"
+    }
   }
 ]

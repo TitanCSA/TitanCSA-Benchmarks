@@ -2,6 +2,7 @@
 from pathlib import Path
 import csv,hashlib,json,statistics
 import numpy as np
+import jsonschema
 ROOT=Path(__file__).resolve().parents[1]
 def rows(path):
     try:
@@ -10,8 +11,11 @@ def rows(path):
     except (csv.Error,TypeError) as e:
         raise ValueError('Malformed or interrupted CSV: '+path.name) from e
 def analyze(path):
-    try:cfg=json.loads((path/'run.json').read_text(encoding='utf-8-sig'))
-    except ValueError:return {'run_id':path.name,'status':'invalid','source':path.relative_to(ROOT).as_posix(),'reason':'Malformed or interrupted run metadata','profile':'unknown','filter':'unknown','operation':'unknown'}
+    try:
+        cfg=json.loads((path/'run.json').read_text(encoding='utf-8-sig'))
+        schema=json.loads((Path(__file__).resolve().parents[1]/'data/run.schema.json').read_text())
+        jsonschema.validate(cfg,schema)
+    except (ValueError,jsonschema.ValidationError):return {'run_id':path.name,'status':'invalid','source':path.relative_to(ROOT).as_posix(),'reason':'Malformed or interrupted run metadata','profile':'unknown','filter':'unknown','operation':'unknown'}
     profile=cfg.get('profile','vendor-hid');operation=cfg.get('operation','forward');filter_name=cfg.get('filter','baseline')
     result={'run_id':cfg['run_id'],'requested_hz':cfg['requested_hz'],'samples_requested':cfg['samples'],'status':'invalid','source':str(path.relative_to(ROOT)).replace('\\','/'),'version':cfg['version'],'utc':cfg['utc'],'profile':profile,'filter':filter_name,'operation':operation,'executable_hashes_recorded':bool(cfg.get('build_identity'))}
     result['purpose']=cfg.get('purpose','latency')

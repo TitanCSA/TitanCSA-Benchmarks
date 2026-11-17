@@ -55,6 +55,7 @@ nav:
       - Protocol-specific gamepad results: gamepad/results.md
   - Source audit:
       - Projects and competitors: comparisons/index.md
+      - Main project audit: comparisons/main-projects.md
       - Compatibility matrix: compatibility/index.md
       - ViGEmBus alternatives: comparisons/vigem-alternatives.md
       - Interception ABI comparison: interceptor/comparisons.md

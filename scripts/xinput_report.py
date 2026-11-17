@@ -1,5 +1,5 @@
 from pathlib import Path
-import json
+import json,hashlib
 import numpy as np
 from analyze import ROOT,rows
 def main():
@@ -30,11 +30,13 @@ def main():
                 assert ('InterceptorGamepadController' if r['filter']=='Gamepad-Controller' else 'Interceptor') in stack,'Controller filter attachment missing'
             lat=np.array([(b['receive_qpc']-b['submit_qpc'])*1e6/freq for b in rx[warm:]])
             r.update(status='measured',samples=count,p50_us=float(np.percentile(lat,50)),p99_us=float(np.percentile(lat,99)),min_us=float(min(lat)),max_us=float(max(lat)),mean_us=float(np.mean(lat)),submission_p50_us=float(np.median([(x['return_qpc']-x['submit_qpc'])*1e6/freq for x in sent[warm:]])),stack_captured=(p.parent/'pnp-stack.txt').exists())
+            r.update(p90_us=float(np.percentile(lat,90)),p95_us=float(np.percentile(lat,95)),stdev_us=float(np.std(lat,ddof=1)) if len(lat)>1 else 0)
             for label,filename in [('producer','xinput-done.json'),('receiver','xinput-receiver.json')]:
                 counters=json.loads((p.parent/filename).read_text()).get('resources',{})
                 r[label+'_cpu_lifetime_ms']=(counters.get('user_100ns',0)+counters.get('kernel_100ns',0))/10000
                 r[label+'_peak_working_set_bytes']=counters.get('peak_working_set_bytes')
         except (AssertionError,FileNotFoundError,KeyError,ValueError) as e:r['reason']=str(e)
+        r['hashes']={f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in sorted(p.parent.iterdir()) if f.is_file()}
         results.append(r)
     (ROOT/'data/processed/xinput-results.json').write_text(json.dumps(results,indent=2)+'\n')
     valid=[r for r in results if r['status']=='measured'];lines=['| Backend | Release | Runs | States observed | Median run P50 (µs) | Median run P99 (µs) |','|---|---|---:|---:|---:|---:|']
