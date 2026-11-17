@@ -1,0 +1,10 @@
+.local/
+.venv/
+build/
+site/
+__pycache__/
+*.etl
+*.dmp
+*.pdb
+*.key
+*.pem

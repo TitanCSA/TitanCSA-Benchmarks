@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Measured native HID/Raw Input run metadata",
+  "type": "object",
+  "required": ["run_id", "samples", "warmup", "requested_hz", "seed", "qpc_frequency", "version", "utc"],
+  "properties": {
+    "run_id": {"type": "string", "minLength": 1},
+    "samples": {"type": "integer", "minimum": 1, "maximum": 1000000},
+    "warmup": {"type": "integer", "minimum": 0, "maximum": 10000},
+    "requested_hz": {"type": "integer", "minimum": 1, "maximum": 100000},
+    "qpc_frequency": {"type": "integer", "minimum": 1},
+    "seed": {"type": "integer", "minimum": 0},
+    "version": {"type": "string"},
+    "utc": {"type": "string"},
+    "profile": {"enum": ["vendor-hid", "keyboard", "mouse"]},
+    "device_origin": {"const": "virtual"},
+    "build_identity": {"type": "object"}
+  },
+  "additionalProperties": true
+}

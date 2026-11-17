@@ -1,0 +1,78 @@
+[
+  {
+    "repository": "TitanCSA/Vdevice",
+    "release": "v1.0.5.0-demo",
+    "name": "VdeviceSetupConsole.exe",
+    "url": "https://github.com/TitanCSA/Vdevice/releases/download/v1.0.5.0-demo/VdeviceSetupConsole.exe",
+    "sha256": "2d1eab91f3a13ac1f27130ef7745e1d833ba0b5bf35ac4f5035b04630ba4525a",
+    "upstream_digest_verified": true,
+    "size": 242176
+  },
+  {
+    "repository": "TitanCSA/Vdevice",
+    "release": "v1.0.5.0-demo",
+    "name": "Vdevice-Driver-1.0.5.0.zip",
+    "url": "https://github.com/TitanCSA/Vdevice/releases/download/v1.0.5.0-demo/Vdevice-Driver-1.0.5.0.zip",
+    "sha256": "9f9a12108f79db56e161fd9f9f2a28f1ba515587db6abb78b08b51c9dc27d1cf",
+    "upstream_digest_verified": true,
+    "size": 58184
+  },
+  {
+    "repository": "nefarius/ViGEmBus",
+    "release": "v1.22.0",
+    "name": "ViGEmBus_1.22.0_x64_x86_arm64.exe",
+    "url": "https://github.com/nefarius/ViGEmBus/releases/download/v1.22.0/ViGEmBus_1.22.0_x64_x86_arm64.exe",
+    "sha256": "89220a7865076b342892f98865f3499fb7c4cfd673159e89d352c360fd014c6a",
+    "upstream_digest_verified": false,
+    "size": 6278576
+  },
+  {
+    "repository": "oblitum/Interception",
+    "release": "v1.0.1",
+    "name": "Interception.zip",
+    "url": "https://github.com/oblitum/Interception/releases/download/v1.0.1/Interception.zip",
+    "sha256": "ad038963d6413055765128b0b931f6e765147c9916dba79e65d872b261f9af10",
+    "upstream_digest_verified": false,
+    "size": 389119
+  },
+  {
+    "repository": "TitanCSA/Interceptor-Keyboard-Mouse",
+    "name": "Interceptor-Keyboard-Mouse-SetupConsole.exe",
+    "release": "v1.0.5.0-demo",
+    "url": "https://github.com/TitanCSA/Interceptor-Keyboard-Mouse/releases/download/v1.0.5.0-demo/InterceptorSetupConsole.exe",
+    "sha256": "b2ab9c5f3793f0da90f940c091a0e650152657b5dad7197364c6e002a043cd6f",
+    "upstream_digest_verified": true
+  },
+  {
+    "repository": "TitanCSA/Interceptor",
+    "name": "Interceptor-SetupConsole.exe",
+    "release": "v1.4.22.0-demo",
+    "url": "https://github.com/TitanCSA/Interceptor/releases/download/v1.4.22.0-demo/InterceptorSetupConsole.exe",
+    "sha256": "adfd6fde565aee57a1c7d669b92c4cf9ea6be0789f37553bad32ee0a5eb8fbe2",
+    "upstream_digest_verified": true
+  },
+  {
+    "repository": "TitanCSA/Interceptor-Gamepad-Controller",
+    "name": "Interceptor-Gamepad-Controller-SetupConsole.exe",
+    "release": "v1.0.13.0-demo",
+    "url": "https://github.com/TitanCSA/Interceptor-Gamepad-Controller/releases/download/v1.0.13.0-demo/InterceptorSetupConsole.exe",
+    "sha256": "3a2d2ff6c011c506f2f4e1162769ad854a0bb9840c8d351b204794da8d85d047",
+    "upstream_digest_verified": true
+  },
+  {
+    "repository": "BrunnerInnovation/vJoy",
+    "name": "vJoy-SDK.zip",
+    "url": "https://github.com/BrunnerInnovation/vJoy/releases/download/v2.2.2.0/SDK.zip",
+    "release": "v2.2.2.0",
+    "sha256": "0e796b185b66819d5fbeae645f3f038ecbfbbde837d3d3f06cba82ae1db07c67",
+    "upstream_digest_verified": false
+  },
+  {
+    "repository": "BrunnerInnovation/vJoy",
+    "name": "vJoySetup_v2.2.2.0_Win10_Win11.exe",
+    "url": "https://github.com/BrunnerInnovation/vJoy/releases/download/v2.2.2.0/vJoySetup_v2.2.2.0_Win10_Win11.exe",
+    "release": "v2.2.2.0",
+    "sha256": "ef569a3105cd301b89580f18f60c66b339e95296acf2c0dfcaf4b4bbf8ab68fe",
+    "upstream_digest_verified": false
+  }
+]

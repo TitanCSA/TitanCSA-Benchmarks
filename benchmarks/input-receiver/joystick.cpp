@@ -1,0 +1,14 @@
+#include "../common/XInputChannel.h"
+#include <mmsystem.h>
+#include <iostream>
+using namespace bench;
+int wmain(int argc,wchar_t** argv){try{if(argc!=3)return 2;guard();fs::path out=argv[1];std::wstring name=argv[2];auto cfg=load(out/"joystick-run.json");
+ Handle mapping(OpenFileMappingW(FILE_MAP_ALL_ACCESS,FALSE,name.c_str()));require(mapping.value!=nullptr,"Open joystick channel");auto* c=static_cast<XInputChannel*>(MapViewOfFile(mapping.value,FILE_MAP_ALL_ACCESS,0,0,sizeof(XInputChannel)));require(c!=nullptr,"Map joystick channel");Handle event(OpenEventW(EVENT_MODIFY_STATE,FALSE,(name+L"-ack").c_str()));require(event.value!=nullptr,"Joystick ack event");
+ UINT slot=0,found=0;JOYCAPSW caps{};auto deadline=GetTickCount64()+25000;
+ do{found=0;for(UINT i=0;i<joyGetNumDevs();++i){JOYINFOEX p{};p.dwSize=sizeof(p);p.dwFlags=JOY_RETURNALL;if(joyGetPosEx(i,&p)==JOYERR_NOERROR){slot=i;++found;}}if(found==1)break;require(found<2,"Unrelated joystick present");Sleep(50);}while(GetTickCount64()<deadline);require(found==1,"Exactly one joystick required");require(joyGetDevCapsW(slot,&caps,sizeof(caps))==JOYERR_NOERROR,"Joystick capabilities");
+ save(out/"joystick-caps.json",{{"x_min",caps.wXmin},{"x_max",caps.wXmax},{"y_min",caps.wYmin},{"y_max",caps.wYmax},{"buttons",caps.wNumButtons}});InterlockedExchange(&c->ready,1);std::vector<std::array<int64_t,6>> rows;rows.reserve(30000);deadline=GetTickCount64()+120000;uint64_t polls=0;auto minimum=cfg.at("axis_min").get<LONG>(),maximum=cfg.at("axis_max").get<LONG>();
+ while(!InterlockedCompareExchange(&c->stop,0,0)&&GetTickCount64()<deadline){JOYINFOEX p{};p.dwSize=sizeof(p);p.dwFlags=JOY_RETURNALL;auto status=joyGetPosEx(slot,&p);auto now=qpc();++polls;LONG wanted=InterlockedCompareExchange(&c->expected,0,0);auto value=minimum+LONG((wanted%200+1)*(maximum-minimum)/256);auto y=maximum-(value-minimum);auto scale=[](LONG v,LONG a,LONG b,UINT lo,UINT hi){return int64_t(lo)+int64_t(v-a)*(hi-lo)/(b-a);};
+  if(status==JOYERR_NOERROR&&wanted>0&&std::llabs(int64_t(p.dwXpos)-scale(value,minimum,maximum,caps.wXmin,caps.wXmax))<=3&&std::llabs(int64_t(p.dwYpos)-scale(y,minimum,maximum,caps.wYmin,caps.wYmax))<=3&&p.dwButtons==(1u<<(wanted%8))&&InterlockedCompareExchange(&c->ack,0,0)!=wanted){rows.push_back({wanted,c->sent,now,p.dwXpos,p.dwYpos,p.dwButtons});InterlockedExchange(&c->ack,wanted);SetEvent(event.value);}else Sleep(0);
+ }
+ std::ofstream f(out/"joystick-reception.csv");f<<"sequence,submit_qpc,receive_qpc,observed_x,observed_y,observed_buttons\n";for(auto r:rows)f<<r[0]<<','<<r[1]<<','<<r[2]<<','<<r[3]<<','<<r[4]<<','<<r[5]<<'\n';f.close();save(out/"joystick-receiver.json",{{"received",rows.size()},{"poll_calls",polls},{"resources",resources()}});UnmapViewOfFile(c);return 0;
+ }catch(const std::exception& e){std::cerr<<e.what()<<'\n';return 1;}}

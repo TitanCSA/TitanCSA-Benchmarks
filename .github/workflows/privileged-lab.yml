@@ -1,0 +1,26 @@
+name: Dedicated Hyper-V lab campaign
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: dedicated-hyperv-lab
+  cancel-in-progress: false
+jobs:
+  measure:
+    if: github.ref == 'refs/heads/main' && github.repository == 'TitanCSA/TitanCSA-Benchmarks'
+    runs-on: [self-hosted, Windows, X64, titancsa-benchmark-lab]
+    environment: benchmark-lab
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Run reviewed local VM campaign
+        shell: powershell
+        run: .\automation\run-all-benchmarks.ps1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: unreviewed-lab-results
+          path: data/raw/
+# No pull_request trigger, no automatic publication and no runner registered by this project.
