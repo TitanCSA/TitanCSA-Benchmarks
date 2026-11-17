@@ -1,0 +1,53 @@
+Created vd-14b4-df96f788-1-7. Waiting for Windows enumeration; no input is sent before configuration.
+USB configured. Protocol initialization started.
+Ready: input reports can now be sent.
+Keyboard LEDs (Num/Caps/Scroll): 0
+Disconnected. Virtual keys and buttons are released with device removal.
+PASS USB stack consumed Virtual USB keyboard reports (desktop typing not asserted).
+Created vd-14b4-dfc0bb16-2-8. Waiting for Windows enumeration; no input is sent before configuration.
+USB configured. Protocol initialization started.
+Ready: input reports can now be sent.
+Disconnected. Virtual keys and buttons are released with device removal.
+PASS USB stack consumed Virtual USB mouse reports (desktop typing not asserted).
+Created vd-14b4-e01957d6-3-9. Waiting for Windows enumeration; no input is sent before configuration.
+Stalled unsupported control: C1 20 00 00 05 00 0A 00
+USB configured. Protocol initialization started.
+Ready: input reports can now be sent.
+Host OUT 1: 01 03 02
+Stalled unsupported control: C1 01 00 01 00 00 14 00
+Stalled unsupported control: C1 01 00 00 00 00 08 00
+Host OUT 1: 02 08 03
+Host OUT 1: 01 03 02
+Replied to control: C0 01 00 00 00 00 04 00
+Host OUT 1: 01 03 06
+Xbox 360 rumble: large=128, small=64
+Xbox 360 rumble: large=0, small=0
+Disconnected. Virtual keys and buttons are released with device removal.
+PASS Xbox 360 / XInput: real XInput state, rumble, 2000 updates and release.
+Created vd-14b4-e05b32ed-4-10. Waiting for Windows enumeration; no input is sent before configuration.
+USB configured. Protocol initialization started.
+Ready: input reports can now be sent.
+DS4 output: small=0, large=0, RGB=0,0,0
+DS4 output: small=0, large=0, RGB=0,0,0
+DS4 output: small=77, large=123, RGB=20,40,60
+DS4 output: small=0, large=0, RGB=0,0,0
+DS4 output: small=0, large=0, RGB=0,0,0
+Disconnected. Virtual keys and buttons are released with device removal.
+PASS DS4: real HID state/touch/motion, feature and host output; 2000 updates.
+Created vd-14b4-e088b694-5-11. Waiting for Windows enumeration; no input is sent before configuration.
+Stalled unsupported control: C1 20 00 00 05 00 0A 00
+USB configured. Protocol initialization started.
+GIP metadata requested; sending USB-only metadata with acknowledgements.
+Host OUT 1: 01 20 03 09 00 04 20 3A 00 00 00 8C 00
+GIP metadata acknowledged.
+Host OUT 1: 05 20 02 0F 06 00 00 00 00 00 00 55 53 00 00 00 00 00 00
+GIP active: Windows sent START.
+Host OUT 1: 0A 20 04 03 00 01 14
+Windows accepted the documented USB security opt-out; GIP input enabled.
+Ready: input reports can now be sent.
+GIP motor command: 00 0F 00 00 00 00 FF 00 EB
+GIP motor command: 00 0F 00 00 00 00 FF 00 EB
+GIP motor command: 00 0F 00 00 32 19 FF 00 EB
+Disconnected. Virtual keys and buttons are released with device removal.
+PASS Xbox One / native GIP: real XInput state, rumble, 2000 updates and release.
+PASS all five virtual-device examples.

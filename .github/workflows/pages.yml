@@ -25,7 +25,10 @@ jobs:
       - run: python scripts/xinput_report.py
       - run: python scripts/input_report.py
       - run: python scripts/joystick_report.py
+      - run: python scripts/stability_report.py
       - run: python scripts/final_report.py
+      - run: python scripts/etw_report.py
+      - run: python scripts/archive_results.py
       - run: python -m mkdocs build --strict
       - run: python scripts/validate_site.py
       - uses: actions/configure-pages@v5

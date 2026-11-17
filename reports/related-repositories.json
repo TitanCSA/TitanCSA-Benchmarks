@@ -1,0 +1,298 @@
+[
+  {
+    "full_name": "TitanCSA/AutoHotInterceptor",
+    "html_url": "https://github.com/TitanCSA/AutoHotInterceptor",
+    "description": "AutoHotkey v1/v2 per-device keyboard and mouse automation using the Microsoft-signed Interceptor Keyboard & Mouse Windows kernel filter driver.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-16T00:18:04Z"
+  },
+  {
+    "full_name": "TitanCSA/autohotinterceptor-php",
+    "html_url": "https://github.com/TitanCSA/autohotinterceptor-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T02:38:57Z"
+  },
+  {
+    "full_name": "TitanCSA/Cronus-Interceptor",
+    "html_url": "https://github.com/TitanCSA/Cronus-Interceptor",
+    "description": "Independent native C++ GPC controller script studio for Windows, using the Interceptor Gamepad & Controller kernel filter driver. Editor, script library, IN/OUT monitor and explicit compatibility diagnostics.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-16T00:20:16Z"
+  },
+  {
+    "full_name": "TitanCSA/fyrainput-gamepad-php",
+    "html_url": "https://github.com/TitanCSA/fyrainput-gamepad-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T02:39:06Z"
+  },
+  {
+    "full_name": "TitanCSA/FyraInput-Gamepad-SDK",
+    "html_url": "https://github.com/TitanCSA/FyraInput-Gamepad-SDK",
+    "description": "FyraInput Gamepad user-mode SDK for compatible HID/XInput/GIP controller input on Windows x64. C++ source and language bindings. Requires a matching driver; no driver or installer included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T16:24:10Z"
+  },
+  {
+    "full_name": "TitanCSA/fyrainput-keyboard-mouse-php",
+    "html_url": "https://github.com/TitanCSA/fyrainput-keyboard-mouse-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T02:39:15Z"
+  },
+  {
+    "full_name": "TitanCSA/FyraInput-Keyboard-Mouse-SDK",
+    "html_url": "https://github.com/TitanCSA/FyraInput-Keyboard-Mouse-SDK",
+    "description": "FyraInput Keyboard & Mouse user-mode SDK for Windows x64 keyboard and mouse input. C++ source and language bindings for receive/edit/send. Requires a matching driver; no driver or installer included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T16:24:15Z"
+  },
+  {
+    "full_name": "TitanCSA/fyrainput-php",
+    "html_url": "https://github.com/TitanCSA/fyrainput-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T02:38:48Z"
+  },
+  {
+    "full_name": "TitanCSA/FyraInput-SDK",
+    "html_url": "https://github.com/TitanCSA/FyraInput-SDK",
+    "description": "FyraInput user-mode SDK for Windows x64 keyboard, mouse and compatible controller input. C++ source and language bindings for receive/edit/send. Requires a matching driver; no driver or installer included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T16:24:05Z"
+  },
+  {
+    "full_name": "TitanCSA/GamePad-Remapper",
+    "html_url": "https://github.com/TitanCSA/GamePad-Remapper",
+    "description": "Complete C++ example application for the Interceptor Gamepad & Controller kernel filter driver: controller remapping, IGC scripts and macros, script-defined settings and live IN/OUT monitoring.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-16T00:18:16Z"
+  },
+  {
+    "full_name": "TitanCSA/hid-access-control-php",
+    "html_url": "https://github.com/TitanCSA/hid-access-control-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T07:18:22Z"
+  },
+  {
+    "full_name": "TitanCSA/HID-Fixture-Studio",
+    "html_url": "https://github.com/TitanCSA/HID-Fixture-Studio",
+    "description": "Native C++ Windows virtual USB HID fixture editor powered by Vdevice: raw report descriptors, editable VID/PID and explicit input report testing.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-15T10:10:38Z"
+  },
+  {
+    "full_name": "TitanCSA/Interception-V2",
+    "html_url": "https://github.com/TitanCSA/Interception-V2",
+    "description": "Microsoft-signed Windows keyboard and mouse kernel driver with the original Interception C SDK, legacy application compatibility, and a one-hour demo.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-16T00:18:45Z"
+  },
+  {
+    "full_name": "TitanCSA/interception-v2-php",
+    "html_url": "https://github.com/TitanCSA/interception-v2-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T11:20:04Z"
+  },
+  {
+    "full_name": "TitanCSA/Interceptor",
+    "html_url": "https://github.com/TitanCSA/Interceptor",
+    "description": "Windows Kernel Filter Driver for keyboard, mouse and USB gamepad input interception/remapping. DS4/DualShock 4 (PS4), DualSense (PS5), wired Xbox 360 and Xbox One/Series X|S via compatible HID/XInput/GIP profiles. Microsoft-signed demo, C++17 SDK, GUI/CLI installers.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-16T00:19:32Z"
+  },
+  {
+    "full_name": "TitanCSA/Interceptor-Gamepad-Controller",
+    "html_url": "https://github.com/TitanCSA/Interceptor-Gamepad-Controller",
+    "description": "Windows Kernel Filter Driver for gamepad/controller input interception and remapping. HID, XInput/XUSB, XInputHID and GIP; DS4/PS4, DualSense/PS5, wired Xbox 360 and Xbox One/Series profiles. Microsoft-signed one-hour-per-kernel-boot demo, C++17 SDK, GUI/CLI installers.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-16T00:18:58Z"
+  },
+  {
+    "full_name": "TitanCSA/interceptor-gamepad-controller-php",
+    "html_url": "https://github.com/TitanCSA/interceptor-gamepad-controller-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T02:39:34Z"
+  },
+  {
+    "full_name": "TitanCSA/Interceptor-Keyboard-Mouse",
+    "html_url": "https://github.com/TitanCSA/Interceptor-Keyboard-Mouse",
+    "description": "Windows Kernel Filter Driver for keyboard and mouse input interception, remapping and blocking. Microsoft-signed Windows 10/11 x64 demo, simple C++17 SDK, GUI/CLI installers and console/UI examples.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-16T00:18:51Z"
+  },
+  {
+    "full_name": "TitanCSA/interceptor-keyboard-mouse-php",
+    "html_url": "https://github.com/TitanCSA/interceptor-keyboard-mouse-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T02:39:43Z"
+  },
+  {
+    "full_name": "TitanCSA/Interceptor-MultiLang",
+    "html_url": "https://github.com/TitanCSA/Interceptor-MultiLang",
+    "description": "Simple multi-language SDK for the Interceptor Windows kernel input filter driver: Python, JavaScript/TypeScript, C#, Java, Go, Rust and C/C++. Keyboard, mouse and gamepad.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-16T00:19:37Z"
+  },
+  {
+    "full_name": "TitanCSA/interceptor-multilang-php",
+    "html_url": "https://github.com/TitanCSA/interceptor-multilang-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-12T21:41:44Z"
+  },
+  {
+    "full_name": "TitanCSA/interceptor-php",
+    "html_url": "https://github.com/TitanCSA/interceptor-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T02:39:25Z"
+  },
+  {
+    "full_name": "TitanCSA/node-interceptor",
+    "html_url": "https://github.com/TitanCSA/node-interceptor",
+    "description": "Node.js / TypeScript keyboard and mouse interception, remapping and injection with the Microsoft-signed Interceptor Keyboard & Mouse Windows kernel filter driver.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-16T00:19:42Z"
+  },
+  {
+    "full_name": "TitanCSA/node-interceptor-php",
+    "html_url": "https://github.com/TitanCSA/node-interceptor-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T11:20:14Z"
+  },
+  {
+    "full_name": "TitanCSA/Titan-Input-Tools",
+    "html_url": "https://github.com/TitanCSA/Titan-Input-Tools",
+    "description": "Native Windows C++ driver SDKs for input, virtual devices, networking, storage, cloud files and remote workstations. Signed evaluation bundles, product keys and OEM integration.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-15T03:35:50Z"
+  },
+  {
+    "full_name": "TitanCSA/usb-over-ip-sdk-php",
+    "html_url": "https://github.com/TitanCSA/usb-over-ip-sdk-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T11:19:24Z"
+  },
+  {
+    "full_name": "TitanCSA/usb-trace-sdk-php",
+    "html_url": "https://github.com/TitanCSA/usb-trace-sdk-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T07:17:32Z"
+  },
+  {
+    "full_name": "TitanCSA/user-backed-virtual-disk-sdk-php",
+    "html_url": "https://github.com/TitanCSA/user-backed-virtual-disk-sdk-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T11:19:33Z"
+  },
+  {
+    "full_name": "TitanCSA/Vdevice",
+    "html_url": "https://github.com/TitanCSA/Vdevice",
+    "description": "Windows kernel driver for virtual USB keyboard, mouse and gamepad devices. Raw C++ SDK; Xbox 360/XInput, DS4 and Xbox One/GIP examples. Microsoft-signed one-hour-per-kernel-boot demo.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-16T00:20:51Z"
+  },
+  {
+    "full_name": "TitanCSA/vdevice-php",
+    "html_url": "https://github.com/TitanCSA/vdevice-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T04:31:56Z"
+  },
+  {
+    "full_name": "TitanCSA/virtual-camera-sdk-php",
+    "html_url": "https://github.com/TitanCSA/virtual-camera-sdk-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T07:17:51Z"
+  },
+  {
+    "full_name": "TitanCSA/Virtual-mouse-input",
+    "html_url": "https://github.com/TitanCSA/Virtual-mouse-input",
+    "description": "C++ virtual USB HID mouse example using the Microsoft-signed Vdevice kernel driver: buttons, relative X/Y movement and scrolling. Windows 10/11 x64.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-16T00:20:57Z"
+  },
+  {
+    "full_name": "TitanCSA/virtual-network-adapter-sdk-php",
+    "html_url": "https://github.com/TitanCSA/virtual-network-adapter-sdk-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T07:17:41Z"
+  },
+  {
+    "full_name": "TitanCSA/virtual-storage-fault-lab-php",
+    "html_url": "https://github.com/TitanCSA/virtual-storage-fault-lab-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T04:54:52Z"
+  },
+  {
+    "full_name": "TitanCSA/windows-gamepad-filter-php",
+    "html_url": "https://github.com/TitanCSA/windows-gamepad-filter-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T02:39:52Z"
+  },
+  {
+    "full_name": "TitanCSA/windows-input-filter-php",
+    "html_url": "https://github.com/TitanCSA/windows-input-filter-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T02:40:02Z"
+  },
+  {
+    "full_name": "TitanCSA/windows-virtual-devices-php",
+    "html_url": "https://github.com/TitanCSA/windows-virtual-devices-php",
+    "description": "Public user-mode SDK source packages. Kernel drivers and installers are not included.",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-11-13T04:32:05Z"
+  }
+]

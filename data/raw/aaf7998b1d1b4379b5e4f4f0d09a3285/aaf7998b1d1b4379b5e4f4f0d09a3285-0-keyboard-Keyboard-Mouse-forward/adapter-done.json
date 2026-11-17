@@ -1,0 +1,11 @@
+{
+  "blocked": 0,
+  "captured": 1100,
+  "modified": 0,
+  "resources": {
+    "kernel_100ns": 937500,
+    "peak_working_set_bytes": 8167424,
+    "user_100ns": 156250,
+    "working_set_bytes": 7794688
+  }
+}

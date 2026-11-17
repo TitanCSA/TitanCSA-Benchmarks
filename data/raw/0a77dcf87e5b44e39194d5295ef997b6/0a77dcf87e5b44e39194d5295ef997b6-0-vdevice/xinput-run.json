@@ -1,0 +1,16 @@
+{
+  "backend": "vdevice",
+  "category": "virtual-xbox360",
+  "creation_to_sdk_ready_ticks": 6130937,
+  "device_origin": "virtual",
+  "measurement": "SDK state update entry to separate process XInput state visibility; closed loop",
+  "mode": "closed-loop",
+  "qpc_frequency": 10000000,
+  "repetition": 0,
+  "run_id": "0a77dcf87e5b44e39194d5295ef997b6-0-vdevice",
+  "samples": 1000,
+  "seed": 42137,
+  "utc": "2026-11-17T11:13:20.3561469Z",
+  "version": "1.0.5.0",
+  "warmup": 100
+}

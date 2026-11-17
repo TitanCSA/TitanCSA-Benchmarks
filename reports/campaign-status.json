@@ -1,0 +1,114 @@
+{
+  "updated_utc": "2026-11-17T13:04:20.216368+00:00",
+  "mission_status": "partial_campaign_executed_open_driver_incident",
+  "measured_series": 89,
+  "invalid_annotated_series": 31,
+  "native_error_records": [
+    {
+      "file": "data/raw/0e9d1d8289484801b9bb1d0b9699c845/0e9d1d8289484801b9bb1d0b9699c845-0-mouse-baseline-forward/generator-error.json",
+      "error": "HID enumeration deadline Win32=0"
+    },
+    {
+      "file": "data/raw/32a0e7a8fec14c47954e497aaea4af2b/32a0e7a8fec14c47954e497aaea4af2b-0-mouse-Keyboard-Mouse-forward/adapter-error.json",
+      "error": "Capture revoked: The I/O operation has been aborted because of either a thread exit or an application request."
+    },
+    {
+      "file": "data/raw/32a0e7a8fec14c47954e497aaea4af2b/32a0e7a8fec14c47954e497aaea4af2b-0-mouse-Keyboard-Mouse-forward/generator-error.json",
+      "error": "Open JSON Win32=32"
+    },
+    {
+      "file": "data/raw/42b4fef656a4462b9cb53a4e216c0a95/42b4fef656a4462b9cb53a4e216c0a95-0-vdevice/adapter-error.json",
+      "error": "Interceptor DeviceIoControl: The I/O operation has been aborted because of either a thread exit or an application request."
+    },
+    {
+      "file": "data/raw/42d282e7837a4d01829a9cb58ab9315e/42d282e7837a4d01829a9cb58ab9315e-0-mouse-Keyboard-Mouse-forward/adapter-error.json",
+      "error": "Capture revoked: The I/O operation has been aborted because of either a thread exit or an application request."
+    },
+    {
+      "file": "data/raw/42d282e7837a4d01829a9cb58ab9315e/42d282e7837a4d01829a9cb58ab9315e-0-mouse-Keyboard-Mouse-forward/generator-error.json",
+      "error": "Raw Input acknowledgement deadline Win32=0"
+    },
+    {
+      "file": "data/raw/42d282e7837a4d01829a9cb58ab9315e/42d282e7837a4d01829a9cb58ab9315e-0-mouse-Keyboard-Mouse-forward/receiver-error.json",
+      "error": "Commit JSON atomically Win32=5"
+    },
+    {
+      "file": "data/raw/45d0cc37d93244fc9ced0539ca5600e7/45d0cc37d93244fc9ced0539ca5600e7-0-vdevice/adapter-error.json",
+      "error": "Interceptor DeviceIoControl: The I/O operation has been aborted because of either a thread exit or an application request."
+    },
+    {
+      "file": "data/raw/485ef73e27cc4aaaba37116073ab740a/485ef73e27cc4aaaba37116073ab740a-0-vdevice/adapter-error.json",
+      "error": "Initialize supported devices Win32=0"
+    },
+    {
+      "file": "data/raw/4da8a699845c497c8d6e9b02c4f9c573/4da8a699845c497c8d6e9b02c4f9c573-0-vdevice/adapter-error.json",
+      "error": "Initialize supported devices Win32=0"
+    },
+    {
+      "file": "data/raw/5c54ae6baf7a45b981c999d630e116e0/5c54ae6baf7a45b981c999d630e116e0-0-vdevice/adapter-error.json",
+      "error": "Initialize supported devices Win32=0"
+    },
+    {
+      "file": "data/raw/5ffb0be85d594d409a1e7bd9a25007cf/5ffb0be85d594d409a1e7bd9a25007cf-0-vdevice/adapter-error.json",
+      "error": "Initialize supported devices Win32=0"
+    },
+    {
+      "file": "data/raw/8769fd4230e4443eae29c4bf7c51b6d2/8769fd4230e4443eae29c4bf7c51b6d2-0-vdevice/adapter-error.json",
+      "error": "Initialize supported devices Win32=0"
+    },
+    {
+      "file": "data/raw/a98101a5295c4101a834bff1b6f78b70/a98101a5295c4101a834bff1b6f78b70-0-vdevice/adapter-error.json",
+      "error": "Initialize supported devices Win32=0"
+    },
+    {
+      "file": "data/raw/b812f479476f4d4481421fa39f1e81e6/b812f479476f4d4481421fa39f1e81e6-0-vdevice/adapter-error.json",
+      "error": "Initialize supported devices Win32=0"
+    },
+    {
+      "file": "data/raw/bf708f43a0ad449884092d2d47b9a85d/bf708f43a0ad449884092d2d47b9a85d-0-vdevice/adapter-error.json",
+      "error": "Initialize supported devices Win32=0"
+    },
+    {
+      "file": "data/raw/d0472d8ad91744edbd6bdba0d239beea/d0472d8ad91744edbd6bdba0d239beea-0-vdevice/adapter-error.json",
+      "error": "Initialize supported devices Win32=0"
+    },
+    {
+      "file": "data/raw/d681741aa2d24da1a77fea24223c9fca/d681741aa2d24da1a77fea24223c9fca-0-vigem/adapter-error.json",
+      "error": "Initialize supported devices Win32=0"
+    },
+    {
+      "file": "data/raw/ddfa13107c2640a1bc9e04726f14102d/ddfa13107c2640a1bc9e04726f14102d-0-vdevice/adapter-error.json",
+      "error": "Initialize supported devices Win32=0"
+    },
+    {
+      "file": "data/raw/e896770b1f534ff7953949d2dd13a4b9/e896770b1f534ff7953949d2dd13a4b9-0-mouse-Keyboard-Mouse-forward/adapter-error.json",
+      "error": "Capture revoked: The I/O operation has been aborted because of either a thread exit or an application request."
+    },
+    {
+      "file": "data/raw/f6671659333a4166b01cf68ff076fde0/f6671659333a4166b01cf68ff076fde0-2-125/generator-error.json",
+      "error": "Independent receiver did not become ready Win32=2"
+    },
+    {
+      "file": "data/raw/f6671659333a4166b01cf68ff076fde0/f6671659333a4166b01cf68ff076fde0-2-125/receiver-error.json",
+      "error": "[json.exception.parse_error.101] parse error at line 1, column 1: attempting to parse an empty input; check that your input string or stream contains the expected JSON"
+    }
+  ],
+  "dataset_sha256": {
+    "data/processed/aggregates.json": "a08f29c20cc039b8ff16ab028cfe7423f3bb73f423344d104ab8befe82d8b0ae",
+    "data/processed/joystick-results.json": "6c8960e2a057e38ee68c0c01cc710b07edc5b2f1e82da1c70150abae5a744e58",
+    "data/processed/results.json": "1ddb76b1dfbbd2b2fccb66f452761eda0d7a7a3f931308c6e056a7dc7176e633",
+    "data/processed/stability-results.json": "1d0ee4888db4a0aeee9d05f594b219a24e9d14324c3e48beefed5b08be7f707e",
+    "data/processed/xinput-results.json": "d41cf0fe091cb873a2917a2e59102df8f25a553a1ac8a155a9225fa7cbd4d971"
+  },
+  "not_executed": {
+    "physical_hardware": "No dedicated physical agent, USB assignment or external timing apparatus",
+    "oblitum_Interception": "User confirmed no commercial-use license; excluded from commercial performance measurements",
+    "libvirtualhid_Windows": "User confirmed no appropriate Windows license; no driver-backed performance score",
+    "Microsoft_VHF_UdeCx_samples": "Reference architecture/source reviewed; existing Vdevice and ViGEm generators covered selected paths, no new sample driver qualification claimed",
+    "long_duration_soak": "Multi-hour soak and fault injection not executed; any shorter monitored run is reported separately",
+    "full_protocol_matrix": "No exhaustive DualSense/Bluetooth/physical/XInputHID matrix; see actual DS4, XUSB and GIP per-run results",
+    "driver_stability": "Open WDF-001: Vdevice queue purge at STATUS_DELETE_PENDING caused a guest bugcheck during the controller campaign; initiating lifetime race not resolved",
+    "self_hosted_CI": "Workflow prepared; no dedicated runner registered or dispatched",
+    "search_console": "No verification token or account connection available"
+  }
+}

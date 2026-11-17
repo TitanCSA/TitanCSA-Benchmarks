@@ -1,0 +1,5 @@
+{
+  "api": "Windows HID ReadFile",
+  "input_report_bytes": 32,
+  "qpc_frequency": 10000000
+}

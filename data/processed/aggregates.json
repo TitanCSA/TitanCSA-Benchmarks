@@ -1,0 +1,29 @@
+[
+  {
+    "requested_hz": 125,
+    "runs": 10,
+    "median_run_p50_us": 62.075,
+    "median_run_p50_bootstrap_95ci_us": [
+      55.099999999999994,
+      64.6
+    ]
+  },
+  {
+    "requested_hz": 1000,
+    "runs": 14,
+    "median_run_p50_us": 26.125,
+    "median_run_p50_bootstrap_95ci_us": [
+      23.718125000000008,
+      29.15
+    ]
+  },
+  {
+    "requested_hz": 10000,
+    "runs": 10,
+    "median_run_p50_us": 17.924999999999997,
+    "median_run_p50_bootstrap_95ci_us": [
+      17.4,
+      18.575
+    ]
+  }
+]

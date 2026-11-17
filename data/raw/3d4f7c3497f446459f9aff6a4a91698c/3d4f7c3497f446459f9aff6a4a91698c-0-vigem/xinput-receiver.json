@@ -1,0 +1,10 @@
+{
+  "api": "Windows HID ReadFile",
+  "received": 1100,
+  "resources": {
+    "kernel_100ns": 0,
+    "peak_working_set_bytes": 5640192,
+    "user_100ns": 156250,
+    "working_set_bytes": 5599232
+  }
+}

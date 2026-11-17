@@ -1,0 +1,36 @@
+{
+  "id": "WDF-001",
+  "status": "observed_root_cause_under_investigation",
+  "bugcheck": "0x10D",
+  "argument1": "0xA",
+  "stack": [
+    "nt!KeBugCheckEx",
+    "Wdf01000!FxVerifierBugCheckWorker",
+    "Wdf01000!FxIoQueue::FatalError",
+    "Wdf01000!imp_WdfIoQueuePurge",
+    "Vdevice+0x651e"
+  ],
+  "source_candidate": "Vdevice driver/Driver/Driver.c: VdEndpointPurge, asynchronous read/control queue purge versus DeleteVirtual teardown",
+  "driver_version": "Vdevice 1.0.5.0",
+  "driver_sha256": "3977be4dd7811eb4e0f0bc0ad9e2e2df3f63facc514d5484a08c78fd9b1bc5c8",
+  "context": "Gamepad-Controller 1.0.13.0 with virtual DS4; two measured series succeeded before guest bugcheck interrupted the campaign",
+  "driver_verifier_flags": "0x00000000",
+  "host_affected": false,
+  "dumps_public": false,
+  "minidump_sha256": "9ae22740aec6fbb6199c7707e5597b22e5d00fec62271d37daaf73ad9479a4d9",
+  "kernel_dump_sha256": "140059915c8644fd3c1d6bade5cd633b65ff5e7c505e0956c3bc4d2a1d7886ba",
+  "limitations": [
+    "Private driver symbols not loaded; exact source line and initiating race not established",
+    "Stack involvement is not proof that the other driver or Windows scheduling is irrelevant",
+    "No driver behavior was patched for the benchmark"
+  ],
+  "queue_status": "0xC0000056 STATUS_DELETE_PENDING",
+  "wdf_log_observation": "FxIoQueue::QueuePurge: queue is already deleted",
+  "reproduced_contexts": [
+    "Virtual DS4 with Gamepad-Controller",
+    "Virtual Xbox One/GIP with Gamepad-Controller"
+  ],
+  "reproduction_signature": "Both guest crashes: WDF_VIOLATION 0x10D, arg1 0xA, Vdevice+0x651e at WdfIoQueuePurge",
+  "second_minidump_sha256": "c8c1a5a46f23e38aff64cba86ccc86ee84304c187cd053781e9a3f74be743ba5",
+  "gip_series_qualification": "Producer/receiver completed two sequences, but extra captured protocol reports fail one-to-one filter-count validation; no GIP-filter latency score"
+}

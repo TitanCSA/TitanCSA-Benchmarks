@@ -1,0 +1,29 @@
+﻿Microsoft PnP Utility
+
+Instance ID:                USB\VID_FFFF&PID_0004\TitanCSABenchmarkX360StableV1
+Device Description:         Xbox Gaming Device
+Class Name:                 XboxComposite
+Class GUID:                 {05f5cfe2-4733-4950-a6bb-07aad01a3a84}
+Manufacturer Name:          Microsoft
+Status:                     Started
+Driver Name:                dc1-controller.inf
+Parent:                     USB\ROOT_HUB30\1&2b53a856&1&0
+Children:                   USB\VID_045E&PID_02FF&IG_00\00&00&000004042B59402E
+Service:                    dc1-controller
+Upper Filters:              xboxgip
+Lower Filters:              InterceptorGamepadController
+Stack:                      xboxgip
+                            dc1-controller
+                            InterceptorGamepadController
+                            USBHUB3
+Matching Drivers:
+    Driver Name:            dc1-controller.inf
+    Provider Name:          Microsoft
+    Class Name:             XboxComposite
+    Class GUID:             {05f5cfe2-4733-4950-a6bb-07aad01a3a84}
+    Driver Version:         07/02/2024 10.0.26100.1150
+    Signer Name:            Microsoft Windows
+    Matching Device ID:     USB\MS_COMP_XGIP10
+    Driver Rank:            00FF2000
+    Driver Status:          Best Ranked / Installed
+

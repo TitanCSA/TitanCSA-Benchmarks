@@ -1,0 +1,17 @@
+{
+  "backend": "vigem",
+  "category": "virtual-xbox360",
+  "collect_stack": true,
+  "creation_to_sdk_ready_ticks": 3291708,
+  "device_origin": "virtual",
+  "measurement": "SDK state update entry to separate process XInput state visibility; closed loop",
+  "mode": "closed-loop",
+  "qpc_frequency": 10000000,
+  "repetition": 0,
+  "run_id": "ad319776b8ee48cb873abc16a5068f8c-0-vigem",
+  "samples": 1000,
+  "seed": 42137,
+  "utc": "2026-11-17T11:15:36.6817364Z",
+  "version": "1.22.0",
+  "warmup": 100
+}

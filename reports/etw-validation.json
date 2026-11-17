@@ -1,0 +1,16 @@
+{
+  "profile": "WPR GeneralProfile filemode",
+  "etl_sha256": "7946d0ad8c70c1751c2171e53043e54c1e0769bded583173bc0375b69a876bdc",
+  "etl_bytes": 111149056,
+  "private_trace": true,
+  "scenario": "Vendor HID; purpose=instrumented; 1000 measured and 100 warm-up reports; requested 1000/s",
+  "lost_events": 0,
+  "lost_buffers": 0,
+  "trace_duration_us": 28206191,
+  "vdevice_dpc_duration_us_by_cpu": [
+    20476,
+    25757
+  ],
+  "vdevice_dpc_count": 2221,
+  "limitations": "Whole instrumented trace includes setup, warm-up, report generation and teardown; DPC attribution by module is not total driver CPU, ISR proof, per-report cost or an uninstrumented latency measurement."
+}

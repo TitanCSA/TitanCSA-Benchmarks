@@ -1,0 +1,9 @@
+{
+  "received": 10100,
+  "resources": {
+    "kernel_100ns": 625000,
+    "peak_working_set_bytes": 4034560,
+    "user_100ns": 468750,
+    "working_set_bytes": 4034560
+  }
+}

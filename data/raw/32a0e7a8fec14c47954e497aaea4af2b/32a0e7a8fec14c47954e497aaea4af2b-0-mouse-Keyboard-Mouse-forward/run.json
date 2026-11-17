@@ -1,0 +1,21 @@
+{
+  "category": "raw-input",
+  "closed_loop": true,
+  "create_ticks": 1136,
+  "device_origin": "virtual",
+  "enumeration_ticks": 1967511,
+  "filter": "Keyboard-Mouse",
+  "measurement": "Vdevice Send_Input entry to independent Windows HID ReadFile completion",
+  "operation": "forward",
+  "path": "\\\\?\\hid#vid_ffff&pid_b752#3&2a5ec9ea&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+  "profile": "mouse",
+  "qpc_frequency": 10000000,
+  "repetition": 0,
+  "requested_hz": 125,
+  "run_id": "32a0e7a8fec14c47954e497aaea4af2b-0-mouse-Keyboard-Mouse-forward",
+  "samples": 1000,
+  "seed": 42137,
+  "utc": "2026-11-17T11:28:45.9672328Z",
+  "version": "Vdevice 1.0.5.0",
+  "warmup": 100
+}

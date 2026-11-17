@@ -1,0 +1,9 @@
+{
+  "resources": {
+    "kernel_100ns": 468750,
+    "peak_working_set_bytes": 6123520,
+    "user_100ns": 0,
+    "working_set_bytes": 6123520
+  },
+  "status": "completed"
+}

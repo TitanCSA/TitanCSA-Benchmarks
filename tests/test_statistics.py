@@ -27,4 +27,6 @@ class ValidationTests(unittest.TestCase):
   (self.run/'run.json').write_text('');self.assertEqual(analyze.analyze(self.run)['status'],'invalid')
  def test_explicit_invalidation_is_retained(self):
   (self.run/'invalidated.json').write_text('{"reason":"confounded unit fixture"}');self.assertEqual(analyze.analyze(self.run)['reason'],'confounded unit fixture')
+ def test_crash_corrupted_csv_is_invalid(self):
+  (self.run/'reception.csv').write_bytes(b'\x00'*256);self.assertEqual(analyze.analyze(self.run)['status'],'invalid')
 if __name__=='__main__':unittest.main()

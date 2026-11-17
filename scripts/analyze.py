@@ -4,7 +4,11 @@ import csv,hashlib,json,statistics
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
 def rows(path):
-    with path.open(newline='',encoding='utf-8-sig') as f:return [{k:int(v) for k,v in row.items()} for row in csv.DictReader(f)]
+    try:
+        with path.open(newline='',encoding='utf-8-sig') as f:
+            return [{k:int(v) for k,v in row.items()} for row in csv.DictReader(f)]
+    except (csv.Error,TypeError) as e:
+        raise ValueError('Malformed or interrupted CSV: '+path.name) from e
 def analyze(path):
     try:cfg=json.loads((path/'run.json').read_text(encoding='utf-8-sig'))
     except ValueError:return {'run_id':path.name,'status':'invalid','source':path.relative_to(ROOT).as_posix(),'reason':'Malformed or interrupted run metadata','profile':'unknown','filter':'unknown','operation':'unknown'}

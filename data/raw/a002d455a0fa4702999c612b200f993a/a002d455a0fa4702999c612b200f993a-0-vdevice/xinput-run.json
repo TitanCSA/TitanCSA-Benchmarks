@@ -1,0 +1,95 @@
+{
+  "backend": "vdevice",
+  "build_identity": {
+    "baseline": "See per-run PnP evidence and clean-baseline-v2.txt",
+    "executables": {
+      "TitanCSA-Benchmark-HidReceiver.exe": "9e28253fc3bc4e3e61528648bbe70f92e952667caf1896f6d998b151b1ed24b9",
+      "TitanCSA-Benchmark-InputGenerator.exe": "a0528312e348828d4b6be925ca73a7ff32c149a0de6fd561f6f6cb24ccd78443",
+      "TitanCSA-Benchmark-Intercept-Combined.exe": "417683ca2614d64eb1df63dd6e7608a9e2a27346e12c9396dd1f1600d1ca27a6",
+      "TitanCSA-Benchmark-Intercept-Gamepad-Controller.exe": "a9297e2a037be40e8c5d2ae3dbc2e6ebe3bfa3e55af8975ce4b4319cc1d1bf50",
+      "TitanCSA-Benchmark-Intercept-Keyboard-Mouse.exe": "8983afb0361aaa33f6b6cb467d5bf3c4ebadea943513a2443cf206d1c29052f1",
+      "TitanCSA-Benchmark-RawReceiver.exe": "63e3907c8be5e4f24a93ab88589a254ecbda627a4035e1a4417276220ca241f5",
+      "TitanCSA-Benchmark-XInput.exe": "5c8fb03ba1eff6cd51ba792f90b7787934228e7862c90aff7f70542fbef0bb90",
+      "TitanCSA-Benchmark-XInputReceiver.exe": "6388a1a58e05ed5ba61f7219aa67bd64f0c8281d6d250b8deb9da3e7aaba20d3"
+    },
+    "host_cpu_load_percent": 97,
+    "host_free_ram_kib": 4643400,
+    "source_commits": [
+      {
+        "commit": "fc8742edfdc8ca12872ea2eb2dcbe8e84a278859",
+        "requested": "TitanCSA/Interceptor"
+      },
+      {
+        "commit": "a189e6ed3a399bea80b887ab44f0de001097449e",
+        "requested": "TitanCSA/Interceptor-Keyboard-Mouse"
+      },
+      {
+        "commit": "1146b8541683985345c28c4ecf2fc8000c908ae2",
+        "requested": "TitanCSA/Interceptor-Gamepad-Controller"
+      },
+      {
+        "commit": "ff8a74d0136012b04b76a0e86b7a5abf89e64294",
+        "requested": "TitanCSA/Vdevice"
+      },
+      {
+        "commit": "04ad866313c6ded542c10ee3e640f78ccee2ebb9",
+        "requested": "TitanCSA/Interception-V2"
+      },
+      {
+        "commit": "39eecbbc46a52e0402f783b872ef62b0254a896a",
+        "requested": "oblitum/Interception"
+      },
+      {
+        "commit": "d986e1d93708ec9b11049542fa6027272cce716c",
+        "requested": "nefarius/ViGEmBus"
+      },
+      {
+        "commit": "b66d02d57e32cc8595369c53418b843e958649b4",
+        "requested": "nefarius/ViGEmClient"
+      },
+      {
+        "commit": "5aba4b1bfda159f87f5e37bd48f72201616bf87a",
+        "requested": "nefarius/HidHide"
+      },
+      {
+        "commit": "2234c0079a6a7b0e2f25990d3c705be85bcd37fd",
+        "requested": "LizardByte/libvirtualhid"
+      },
+      {
+        "commit": "911a2a53a972f73ea8b4a021c390c953012b7fb9",
+        "requested": "jshafer817/vJoy"
+      },
+      {
+        "commit": "d49bb7d72f3651952b2b6e4ad28d14fe2247eb69",
+        "requested": "microsoft/Windows-driver-samples"
+      }
+    ],
+    "source_files": {
+      "benchmarks/common/Common.h": "32bb46a8fb120dfb3e6c703cd5295893e92e93344b91053a6ed0981705f2dbc3",
+      "benchmarks/common/XInputChannel.h": "ed04299bc1fa9c7b67225874878548b8efc365a0b0341169abe9466f217301be",
+      "benchmarks/common/intercept.cpp": "35eb67c1bc489cb957c5a6b9675259478a3d0d25c4e5a1dbdf60528ae95990ef",
+      "benchmarks/input-generator/main.cpp": "b509d1eda16dd53fdb2b3d65d8a0edb555ae38ff9b6d2fa18b8adbdfec716cf1",
+      "benchmarks/input-receiver/hid.cpp": "27c343b093dc5049d368e9a556da5f657f8fbf081c505e31c41b99392402aec7",
+      "benchmarks/input-receiver/rawinput.cpp": "15bfe97327a6028fb2c91090ca3989ad23de665bd799d7abbfca6fc2e0712acd",
+      "benchmarks/input-receiver/xinput.cpp": "0d9a9e0c7542d814a3428fcacbe219b04d89213c7502fb5c7b81f525e8ac06e3",
+      "benchmarks/virtual-devices/xinput.cpp": "11158bdaa49926c32d559131051dc88466e26699ea722181c98f5fe2d7847984"
+    }
+  },
+  "category": "virtual-xbox360",
+  "collect_stack": true,
+  "creation_to_sdk_ready_ticks": 1707842,
+  "device_origin": "virtual",
+  "filter": "Gamepad-Controller",
+  "fixture_revision": "stable-usb-instance-v1",
+  "measurement": "SDK state update entry to separate process XInput state visibility; closed loop",
+  "mode": "closed-loop",
+  "operation": "modify",
+  "qpc_frequency": 10000000,
+  "repetition": 0,
+  "run_id": "a002d455a0fa4702999c612b200f993a-0-vdevice",
+  "samples": 1000,
+  "seed": 42137,
+  "utc": "2026-11-17T11:51:53.4092859Z",
+  "version": "1.0.5.0",
+  "warmup": 100
+}

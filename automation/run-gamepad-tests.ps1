@@ -27,7 +27,7 @@ $cfg.build_identity=Get-BenchmarkBuildIdentity
      $end=(Get-Date).AddSeconds(30);while(!(Test-Path (Join-Path $out 'adapter-ready.json')) -and !$adapter.HasExited -and (Get-Date) -lt $end){Start-Sleep -Milliseconds 50}
      if(!(Test-Path (Join-Path $out 'adapter-ready.json'))){throw 'Controller filter adapter startup failed'}
     }
-    $devices=Get-PnpDevice -PresentOnly|Where-Object InstanceId -match '(VID_045E&PID_028E|VID_045E&PID_02D1|VID_054C&PID_05C4|VIGEM)'
+    $devices=Get-PnpDevice -PresentOnly|Where-Object InstanceId -match '(VID_045E&PID_028E|VID_045E&PID_02D1|VID_FFFF&PID_0004|VID_054C&PID_05C4|VIGEM)'
     foreach($d in $devices){pnputil /enum-devices /instanceid $d.InstanceId /stack /services /relations /drivers | Out-File (Join-Path $out 'pnp-stack.txt') -Append -Encoding UTF8}
     '{"captured":true}'|Set-Content (Join-Path $out 'stack-captured.json') -Encoding ASCII
     if(!$p.WaitForExit(120000)){throw 'XInput test timeout'}

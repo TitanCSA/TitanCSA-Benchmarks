@@ -1,0 +1,10 @@
+{
+    "powershell":  "5.1.19041.6456",
+    "hyperv_tools":  true,
+    "vm_names_changed":  false,
+    "free_ram_kib":  4785716,
+    "host_drivers_changed":  false,
+    "administrator":  false,
+    "existing_vm_count":  19,
+    "captured_utc":  "2026-11-17T11:55:56.2482901Z"
+}

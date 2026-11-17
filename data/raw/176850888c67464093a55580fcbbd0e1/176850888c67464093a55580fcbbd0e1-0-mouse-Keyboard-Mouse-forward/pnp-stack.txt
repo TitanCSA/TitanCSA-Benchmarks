@@ -1,0 +1,82 @@
+﻿Microsoft PnP Utility
+
+Instance ID:                HID\VID_FFFF&PID_B752\3&2a5ec9ea&0&0000
+Device Description:         FILTER HID Mouse Mapper
+Class Name:                 Mouse
+Class GUID:                 {4d36e96f-e325-11ce-bfc1-08002be10318}
+Manufacturer Name:          Filter
+Status:                     Started
+Driver Name:                oem2.inf
+Parent:                     USB\VID_FFFF&PID_B752\2&3b7c36a2&0&1
+Service:                    Filter
+Stack:                      mouclass
+                            Filter
+                            HidUsb
+Matching Drivers:
+    Driver Name:            oem11.inf
+    Original Name:          interceptorkeyboardmousemouse.inf
+    Provider Name:          TitanCSA Keyboard Mouse
+    Class Name:             Mouse
+    Class GUID:             {4d36e96f-e325-11ce-bfc1-08002be10318}
+    Driver Version:         10/24/2026 1.0.5.0
+    Signer Name:            Microsoft Windows Hardware Compatibility Publisher
+    Matching Device ID:     HID_DEVICE_SYSTEM_MOUSE
+    Driver Rank:            00FF0003
+    Driver Status:          Best Ranked
+                            
+    Driver Name:            msmouse.inf
+    Provider Name:          Microsoft
+    Class Name:             Mouse
+    Class GUID:             {4d36e96f-e325-11ce-bfc1-08002be10318}
+    Driver Version:         06/21/2006 10.0.26100.1150
+    Signer Name:            Microsoft Windows
+    Matching Device ID:     HID_DEVICE_SYSTEM_MOUSE
+    Driver Rank:            00FF1003
+    Driver Status:          Outranked
+                            
+    Driver Name:            oem2.inf
+    Original Name:          filtermouse.inf
+    Provider Name:          Filter
+    Class Name:             Mouse
+    Class GUID:             {4d36e96f-e325-11ce-bfc1-08002be10318}
+    Driver Version:         10/23/2026 3.0.0.32
+    Signer Name:            Microsoft Windows Hardware Compatibility Publisher
+    Matching Device ID:     HID_DEVICE_SYSTEM_MOUSE
+    Driver Rank:            00FF0003
+    Driver Status:          Outranked / Installed
+                            
+    Driver Name:            input.inf
+    Provider Name:          Microsoft
+    Class Name:             HIDClass
+    Class GUID:             {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+    Driver Version:         06/21/2006 10.0.26100.1150
+    Signer Name:            Microsoft Windows
+    Matching Device ID:     HID_DEVICE
+    Driver Rank:            00FF1005
+    Driver Status:          Outranked
+
+Microsoft PnP Utility
+
+Instance ID:                USB\VID_FFFF&PID_B752\2&3b7c36a2&0&1
+Device Description:         USB Input Device
+Class Name:                 HIDClass
+Class GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Manufacturer Name:          (Standard system devices)
+Status:                     Started
+Driver Name:                input.inf
+Parent:                     USB\ROOT_HUB30\1&2b53a856&0&0
+Children:                   HID\VID_FFFF&PID_B752\3&2a5ec9ea&0&0000
+Service:                    HidUsb
+Stack:                      HidUsb
+                            USBHUB3
+Matching Drivers:
+    Driver Name:            input.inf
+    Provider Name:          Microsoft
+    Class Name:             HIDClass
+    Class GUID:             {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+    Driver Version:         06/21/2006 10.0.26100.1150
+    Signer Name:            Microsoft Windows
+    Matching Device ID:     USB\Class_03
+    Driver Rank:            00FF3205
+    Driver Status:          Best Ranked / Installed
+

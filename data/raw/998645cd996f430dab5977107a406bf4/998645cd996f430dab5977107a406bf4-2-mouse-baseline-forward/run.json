@@ -1,0 +1,85 @@
+{
+  "build_identity": {
+    "baseline": "Historical Filter packages removed from owned guest before this campaign",
+    "executables": {
+      "TitanCSA-Benchmark-HidReceiver.exe": "9e28253fc3bc4e3e61528648bbe70f92e952667caf1896f6d998b151b1ed24b9",
+      "TitanCSA-Benchmark-InputGenerator.exe": "a0528312e348828d4b6be925ca73a7ff32c149a0de6fd561f6f6cb24ccd78443",
+      "TitanCSA-Benchmark-Intercept-Combined.exe": "417683ca2614d64eb1df63dd6e7608a9e2a27346e12c9396dd1f1600d1ca27a6",
+      "TitanCSA-Benchmark-Intercept-Gamepad-Controller.exe": "814d1343064d93a47825e2f0d765eaf04834958aa55260b3c4ac7920eb865fea",
+      "TitanCSA-Benchmark-Intercept-Keyboard-Mouse.exe": "8983afb0361aaa33f6b6cb467d5bf3c4ebadea943513a2443cf206d1c29052f1",
+      "TitanCSA-Benchmark-RawReceiver.exe": "63e3907c8be5e4f24a93ab88589a254ecbda627a4035e1a4417276220ca241f5",
+      "TitanCSA-Benchmark-XInput.exe": "0393eecd045f343e2ba5c2ab80b82a13db2cd5ddc8173690d9f17f30f70b4f5a",
+      "TitanCSA-Benchmark-XInputReceiver.exe": "6388a1a58e05ed5ba61f7219aa67bd64f0c8281d6d250b8deb9da3e7aaba20d3"
+    },
+    "source_commits": [
+      {
+        "commit": "fc8742edfdc8ca12872ea2eb2dcbe8e84a278859",
+        "requested": "TitanCSA/Interceptor"
+      },
+      {
+        "commit": "a189e6ed3a399bea80b887ab44f0de001097449e",
+        "requested": "TitanCSA/Interceptor-Keyboard-Mouse"
+      },
+      {
+        "commit": "1146b8541683985345c28c4ecf2fc8000c908ae2",
+        "requested": "TitanCSA/Interceptor-Gamepad-Controller"
+      },
+      {
+        "commit": "ff8a74d0136012b04b76a0e86b7a5abf89e64294",
+        "requested": "TitanCSA/Vdevice"
+      },
+      {
+        "commit": "04ad866313c6ded542c10ee3e640f78ccee2ebb9",
+        "requested": "TitanCSA/Interception-V2"
+      },
+      {
+        "commit": "39eecbbc46a52e0402f783b872ef62b0254a896a",
+        "requested": "oblitum/Interception"
+      },
+      {
+        "commit": "d986e1d93708ec9b11049542fa6027272cce716c",
+        "requested": "nefarius/ViGEmBus"
+      },
+      {
+        "commit": "b66d02d57e32cc8595369c53418b843e958649b4",
+        "requested": "nefarius/ViGEmClient"
+      },
+      {
+        "commit": "5aba4b1bfda159f87f5e37bd48f72201616bf87a",
+        "requested": "nefarius/HidHide"
+      },
+      {
+        "commit": "2234c0079a6a7b0e2f25990d3c705be85bcd37fd",
+        "requested": "LizardByte/libvirtualhid"
+      },
+      {
+        "commit": "911a2a53a972f73ea8b4a021c390c953012b7fb9",
+        "requested": "jshafer817/vJoy"
+      },
+      {
+        "commit": "d49bb7d72f3651952b2b6e4ad28d14fe2247eb69",
+        "requested": "microsoft/Windows-driver-samples"
+      }
+    ]
+  },
+  "category": "raw-input",
+  "closed_loop": true,
+  "create_ticks": 1440,
+  "device_origin": "virtual",
+  "enumeration_ticks": 1994466,
+  "filter": "baseline",
+  "measurement": "Vdevice Send_Input entry to independent Windows HID ReadFile completion",
+  "operation": "forward",
+  "path": "\\\\?\\hid#vid_ffff&pid_b752#3&7edfd40&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+  "profile": "mouse",
+  "qpc_frequency": 10000000,
+  "raw_channel": "Global\\TitanCSABenchmarkRaw-6736-165875",
+  "repetition": 2,
+  "requested_hz": 125,
+  "run_id": "998645cd996f430dab5977107a406bf4-2-mouse-baseline-forward",
+  "samples": 1000,
+  "seed": 42137,
+  "utc": "2026-11-17T11:42:01.4356710Z",
+  "version": "Vdevice 1.0.5.0",
+  "warmup": 100
+}

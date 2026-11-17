@@ -24,7 +24,7 @@ def main():
                     assert (row['lx'],row['ly'],row['rx'],row['ry'],row['buttons'],row['lt'],row['rt'],row['report_bytes'])==(n%256,255-n%256,(3*n)%256,255-(3*n)%256,buttons,n%256,255-n%256,64),'DS4 observed bytes mismatch'
             if r['filter']!='baseline':
                 adapter=json.loads((p.parent/'adapter-done.json').read_text())
-                assert adapter['captured']==count+warm,'Controller filter did not capture every generated state'
+                assert adapter['captured']==count+warm,'Capture count differs from generated-state count; background/protocol reports not individually correlated'
                 if r['operation']=='modify':assert adapter['modified']==count+warm,'Controller modification not demonstrated'
                 stack=(p.parent/'pnp-stack.txt').read_text(encoding='utf-8-sig')
                 assert ('InterceptorGamepadController' if r['filter']=='Gamepad-Controller' else 'Interceptor') in stack,'Controller filter attachment missing'

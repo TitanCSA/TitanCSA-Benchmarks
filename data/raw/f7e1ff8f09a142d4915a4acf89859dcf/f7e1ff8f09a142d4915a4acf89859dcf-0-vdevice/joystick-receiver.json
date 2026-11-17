@@ -1,0 +1,10 @@
+{
+  "poll_calls": 17596,
+  "received": 1100,
+  "resources": {
+    "kernel_100ns": 468750,
+    "peak_working_set_bytes": 10055680,
+    "user_100ns": 468750,
+    "working_set_bytes": 10055680
+  }
+}

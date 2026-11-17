@@ -1,0 +1,20 @@
+{
+  "category": "raw-input",
+  "create_ticks": 3012,
+  "device_origin": "virtual",
+  "enumeration_ticks": 1889011,
+  "filter": "baseline",
+  "measurement": "Vdevice Send_Input entry to independent Windows HID ReadFile completion",
+  "operation": "forward",
+  "path": "\\\\?\\hid#vid_ffff&pid_b752#3&2a5ec9ea&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+  "profile": "mouse",
+  "qpc_frequency": 10000000,
+  "repetition": 0,
+  "requested_hz": 125,
+  "run_id": "6f788f7423814590a2002d261f32aa6f-0-mouse-baseline-forward",
+  "samples": 1000,
+  "seed": 42137,
+  "utc": "2026-11-17T11:21:37.2755182Z",
+  "version": "Vdevice 1.0.5.0",
+  "warmup": 100
+}

@@ -1,0 +1,47 @@
+﻿Microsoft PnP Utility
+
+Published Name:     oem7.inf
+Original Name:      battbus.inf
+Provider Name:      Microsoft
+Class Name:         System
+Class GUID:         {4d36e97d-e325-11ce-bfc1-08002be10318}
+Driver Version:     06/21/2006 10.0.26100.8328
+Signer Name:        Microsoft Windows Hardware Compatibility Publisher
+
+Published Name:     oem6.inf
+Original Name:      button.inf
+Provider Name:      Microsoft
+Class Name:         System
+Class GUID:         {4d36e97d-e325-11ce-bfc1-08002be10318}
+Driver Version:     06/21/2006 10.0.26100.8328
+Signer Name:        Microsoft Windows Hardware Compatibility Publisher
+
+Published Name:     oem4.inf
+Original Name:      iospy.inf
+Provider Name:      Microsoft Corporation
+Class Name:         System
+Class GUID:         {4d36e97d-e325-11ce-bfc1-08002be10318}
+Driver Version:     04/09/2021 6.1.0.0
+Signer Name:        Microsoft Windows Hardware Compatibility Publisher
+
+Published Name:     oem5.inf
+Original Name:      msdmfilt.inf
+Provider Name:      Microsoft Corporation
+Class Name:         System
+Class GUID:         {4d36e97d-e325-11ce-bfc1-08002be10318}
+Driver Version:     09/11/2023 6.3.0.0
+Signer Name:        Microsoft Windows Hardware Compatibility Publisher
+
+Published Name:     oem8.inf
+Original Name:      simbatt.inf
+Provider Name:      TODO-Set-Provider
+Class Name:         Battery
+Class GUID:         {72631e54-78a4-11d0-bcf7-00aa00b7b32a}
+Driver Version:     06/21/2006 10.0.26100.8328
+Signer Name:        Microsoft Windows Hardware Compatibility Publisher
+
+{
+    "Caption":  "Microsoft Windows 11 Enterprise LTSC Evaluation",
+    "Version":  "10.0.26100",
+    "LastBootUpTime":  "\/Date(1794915555588)\/"
+}

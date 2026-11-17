@@ -1,0 +1,18 @@
+{
+  "category": "virtual-vendor-hid",
+  "create_ticks": 3242,
+  "device_origin": "virtual",
+  "enumeration_ticks": 1833863,
+  "measurement": "Vdevice Send_Input entry to independent Windows HID ReadFile completion",
+  "path": "\\\\?\\hid#vid_ffff&pid_b751#3&365adbce&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+  "project": "TitanCSA/Vdevice",
+  "qpc_frequency": 10000000,
+  "repetition": 1,
+  "requested_hz": 10000,
+  "run_id": "f6671659333a4166b01cf68ff076fde0-1-10000",
+  "samples": 1000,
+  "seed": 42137,
+  "utc": "2026-11-17T11:07:42.4536824Z",
+  "version": "1.0.5.0",
+  "warmup": 100
+}

@@ -13,7 +13,8 @@ int wmain(int argc,wchar_t** argv){fs::path out;try{if(argc!=2)return 2;guard();
    if(auto* pad=input.Get<Interceptor::Controller_Xinput_Input>()){if(input.device_info&&input.device_info->vid==0x045e&&input.device_info->pid==0x028e&&pad->state.left_x>0){++captured;++count;if(mode=="modify"){pad->state.buttons=pad->state.buttons==0x1000?0x4000:0x8000;++modified;}}}
    if(input.device_info&&input.device_info->vid==0x054c&&input.device_info->pid==0x05c4){if(auto* hid=input.Get<Interceptor::Controller_Hid_Input>()){if(hid->length>=10&&hid->report[0]==1&&unsigned(hid->report[1])+hid->report[2]==255&&unsigned(hid->report[3])+hid->report[4]==255&&hid->report[8]==hid->report[1]&&hid->report[9]==hid->report[2]){++captured;++count;if(mode=="modify"){hid->report[5]^=0xf0;++modified;}}}}
    Interceptor::Controller_GIP_Input* gip=input.Get<Interceptor::Controller_GIP_Input>();if(auto* raw=input.Get<Interceptor::Controller_GIP_Raw_Input>())gip=&raw->input;
-   if(gip&&input.device_info&&input.device_info->vid==0x045e&&gip->state.left_x>0){++captured;++count;if(mode=="modify"){gip->state.buttons=gip->state.buttons==0x10?0x40:0x80;++modified;}}
+   if(gip&&gip->state.left_x>0&&!fs::exists(out/"first-gip.json"))save(out/"first-gip.json",{{"vid",input.device_info?input.device_info->vid:0},{"pid",input.device_info?input.device_info->pid:0},{"buttons",gip->state.buttons},{"lx",gip->state.left_x},{"ly",gip->state.left_y},{"lt",gip->state.left_trigger},{"rt",gip->state.right_trigger}});
+   if(gip&&input.device_info&&(input.device_info->vid==0x045e||(input.device_info->vid==0xffff&&input.device_info->pid==4))&&gip->state.left_x>0){++captured;++count;if(mode=="modify"){gip->state.buttons=gip->state.buttons==0x10?0x40:0x80;++modified;}}
 #endif
   }
   auto sent=Interceptor::Send_Input(inputs);require(bool(sent),"Forward captured batch");if(count)timing.push_back({count,start,qpc()});

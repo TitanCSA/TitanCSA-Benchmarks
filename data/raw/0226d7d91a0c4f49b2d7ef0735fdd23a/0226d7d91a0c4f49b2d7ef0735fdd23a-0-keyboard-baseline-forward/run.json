@@ -1,0 +1,20 @@
+{
+  "category": "raw-input",
+  "create_ticks": 1066,
+  "device_origin": "virtual",
+  "enumeration_ticks": 3703538,
+  "filter": "baseline",
+  "measurement": "Vdevice Send_Input entry to independent Windows HID ReadFile completion",
+  "operation": "forward",
+  "path": "\\\\?\\hid#vid_ffff&pid_b753#3&394cc657&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}\\kbd",
+  "profile": "keyboard",
+  "qpc_frequency": 10000000,
+  "repetition": 0,
+  "requested_hz": 125,
+  "run_id": "0226d7d91a0c4f49b2d7ef0735fdd23a-0-keyboard-baseline-forward",
+  "samples": 1000,
+  "seed": 42137,
+  "utc": "2026-11-17T11:24:48.3638343Z",
+  "version": "Vdevice 1.0.5.0",
+  "warmup": 100
+}

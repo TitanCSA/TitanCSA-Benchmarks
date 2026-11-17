@@ -1,0 +1,57 @@
+﻿Microsoft PnP Utility
+
+Instance ID:                USB\VID_054C&PID_05C4&REV_0100\1&1a590e2c&0&01
+Device Description:         USB Input Device
+Class Name:                 HIDClass
+Class GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Manufacturer Name:          (Standard system devices)
+Status:                     Started
+Driver Name:                input.inf
+Parent:                     ROOT\SYSTEM\0002
+Children:                   HID\VID_054C&PID_05C4&REV_0100\2&306dbbd&0&0000
+Service:                    HidUsb
+Stack:                      HidUsb
+                            ViGEmBus
+Matching Drivers:
+    Driver Name:            input.inf
+    Provider Name:          Microsoft
+    Class Name:             HIDClass
+    Class GUID:             {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+    Driver Version:         06/21/2006 10.0.26100.1150
+    Signer Name:            Microsoft Windows
+    Matching Device ID:     USB\Class_03
+    Driver Rank:            00FF3202
+    Driver Status:          Best Ranked / Installed
+
+Microsoft PnP Utility
+
+Instance ID:                HID\VID_054C&PID_05C4&REV_0100\2&306dbbd&0&0000
+Device Description:         HID-compliant game controller
+Class Name:                 HIDClass
+Class GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Manufacturer Name:          (Standard system devices)
+Status:                     Started
+Driver Name:                input.inf
+Parent:                     USB\VID_054C&PID_05C4&REV_0100\1&1a590e2c&0&01
+Stack:                      HidUsb
+Matching Drivers:
+    Driver Name:            input.inf
+    Provider Name:          Microsoft
+    Class Name:             HIDClass
+    Class GUID:             {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+    Driver Version:         06/21/2006 10.0.26100.1150
+    Signer Name:            Microsoft Windows
+    Matching Device ID:     HID_DEVICE_SYSTEM_GAME
+    Driver Rank:            00FF1003
+    Driver Status:          Best Ranked / Installed
+                            
+    Driver Name:            input.inf
+    Provider Name:          Microsoft
+    Class Name:             HIDClass
+    Class GUID:             {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+    Driver Version:         06/21/2006 10.0.26100.1150
+    Signer Name:            Microsoft Windows
+    Matching Device ID:     HID_DEVICE
+    Driver Rank:            00FF1005
+    Driver Status:          Outranked
+

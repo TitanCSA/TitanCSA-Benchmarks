@@ -1,0 +1,73 @@
+site_name: TitanCSA Benchmarks
+site_url: https://titancsa.github.io/TitanCSA-Benchmarks/
+site_description: Reproducible Windows input driver benchmarks with raw measurements, independent receivers, source audits and explicit limitations.
+repo_url: https://github.com/TitanCSA/TitanCSA-Benchmarks
+repo_name: TitanCSA / Benchmarks
+copyright: Copyright © 2026 TitanCSA. Publisher-operated laboratory; no independent certification implied.
+theme:
+  name: material
+  custom_dir: overrides
+  font: false
+  icon:
+    logo: material/chart-timeline-variant-shimmer
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+plugins:
+  - search
+markdown_extensions:
+  - meta
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.superfences
+extra_css:
+  - assets/benchmarks.css
+nav:
+  - Home: index.md
+  - Measurements:
+      - Virtual HID latency: vdevice/latency.md
+      - Xbox 360 comparison: vdevice/comparisons.md
+      - vJoy joystick comparison: vdevice/joystick.md
+      - Submission throughput: vdevice/throughput.md
+      - Keyboard and mouse: interceptor/overview.md
+      - Raw Input filter results: interceptor/results.md
+      - Gamepad interception: gamepad/overview.md
+      - Protocol-specific gamepad results: gamepad/results.md
+  - Source audit:
+      - Projects and competitors: comparisons/index.md
+      - Compatibility matrix: compatibility/index.md
+      - ViGEmBus alternatives: comparisons/vigem-alternatives.md
+      - Interception ABI comparison: interceptor/comparisons.md
+      - Vdevice architecture: vdevice/overview.md
+      - KMDF, UMDF and VHF: comparisons/kmdf-umdf.md
+  - Methodology:
+      - Measurement boundaries: methodology/measurement.md
+      - Instrumented WPR trial: methodology/etw.md
+      - Environment: methodology/environment.md
+      - Hyper-V isolation: methodology/hyperv.md
+      - Reproduce a campaign: methodology/reproducibility.md
+      - Limitations and failures: methodology/limitations.md
+      - Open stability incident: methodology/incident-wdf-001.md
+      - Monitored stability trial: methodology/stability.md
+      - Search and indexing: methodology/search.md
+  - Data: data.md

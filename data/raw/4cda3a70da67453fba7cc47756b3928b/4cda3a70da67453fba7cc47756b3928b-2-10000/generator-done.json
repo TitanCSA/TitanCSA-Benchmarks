@@ -1,0 +1,9 @@
+{
+  "errors": 0,
+  "resources": {
+    "kernel_100ns": 156250,
+    "peak_working_set_bytes": 5218304,
+    "user_100ns": 0,
+    "working_set_bytes": 5218304
+  }
+}

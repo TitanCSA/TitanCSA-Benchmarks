@@ -1,8 +1,8 @@
-param([ValidateSet('Combined','Gamepad-Controller')][string]$Filter,[int]$Repetitions=3,[ValidateSet('forward','modify')][string]$Operation='modify',[ValidateSet('xbox360','ds4','xbox-one-gip')][string]$Profile='xbox360')
+param([ValidateSet('Combined','Gamepad-Controller')][string]$Filter,[int]$Repetitions=3,[ValidateSet('forward','modify')][string]$Operation='modify',[ValidateSet('xbox360','ds4','xbox-one-gip')][string]$Profile='xbox360',[ValidateSet('vdevice','vigem')][string]$Backend='vdevice')
 . (Join-Path $PSScriptRoot 'Lab.ps1')
 for($attempt=0;$attempt -lt 3;$attempt++){
  $started=[DateTime]::UtcNow
- try{& (Join-Path $PSScriptRoot 'run-gamepad-tests.ps1') -Backend vdevice -Filter $Filter -Operation $Operation -Repetitions $Repetitions -Profile $Profile;return}
+ try{& (Join-Path $PSScriptRoot 'run-gamepad-tests.ps1') -Backend $Backend -Filter $Filter -Operation $Operation -Repetitions $Repetitions -Profile $Profile;return}
  catch{
   $candidates=@(Get-ChildItem (Join-Path $script:BenchmarkRoot 'data/raw') -Recurse -Filter 'xinput-run.json'|ForEach-Object{
    try{$cfg=Get-Content $_.FullName -Raw|ConvertFrom-Json}catch{return}

@@ -1,0 +1,144 @@
+{
+  "backend": "vigem",
+  "build_identity": {
+    "baseline": "See per-run PnP evidence and clean-baseline-v2.txt",
+    "build_record": {
+      "built_utc": "2026-11-17T12:46:18.2565431Z",
+      "configuration": "Release",
+      "executables": {
+        "TitanCSA-Benchmark-Ds4Receiver.exe": "49e3e4e935b179aff1aab9872194cc50731e131fe38862337f741295691f3448",
+        "TitanCSA-Benchmark-HidReceiver.exe": "34c4732e6163ec0a368d54235e4a8c9b12511bd057a4711e0c119877d02a2f0c",
+        "TitanCSA-Benchmark-InputGenerator.exe": "ca1aa9e80370934a882364adab3207fd65b9d2b8f2bd04e641889beda7d7e342",
+        "TitanCSA-Benchmark-Intercept-Combined.exe": "c616b1167a5747c810c1b955afd6f664a9bf502995553292360364c60f484ce3",
+        "TitanCSA-Benchmark-Intercept-Gamepad-Controller.exe": "65792e4031005f68c611c45468e3d0ffb6e26731c805393bee4081d51bb26dc7",
+        "TitanCSA-Benchmark-Intercept-Keyboard-Mouse.exe": "d4a214258483ee87d65684a9f5d32ac2112fa1707a8fe6f0908cfec74f727113",
+        "TitanCSA-Benchmark-Joystick.exe": "8a453e711737262b690d2e32718637681357eec18d474b6faa92bab2e8e44f20",
+        "TitanCSA-Benchmark-JoystickReceiver.exe": "1bd254127f0b42a2c120a6781ef9a69e4eb08a4956d0e2797c0178baedaa07eb",
+        "TitanCSA-Benchmark-RawReceiver.exe": "34818d71581b13a4dfbefbc7d52e10be1a1746eb26ba1d025f81054695de6a29",
+        "TitanCSA-Benchmark-XInput.exe": "461e8629d8b6dbba8d34e95e4a067be71c38ac2a6abcd914da8dc826847a22b0",
+        "TitanCSA-Benchmark-XInputReceiver.exe": "fb2e1a56678680bbb0bc21dfa5b42d97511ba088bf140e2fed33902d36b3920d",
+        "Vdevice-Upstream-LiveTests.exe": "73f22418f28bf708d223036ddbcd3a978fb59d3be7971d5229b1a609b28a0dac"
+      },
+      "fixture_adaptation": "Only Xbox360 example serial is fixed for persistent per-instance association; see CMakeLists.txt",
+      "source_files": {
+        "CMakeLists.txt": "9cbc1d6d43faef15b95bc0d7b16debc88a9bd64d24875cd902e4d7d925c4daec",
+        "benchmarks/common/Common.h": "8e98a272e59b27c273ac9c3b293246104fd0c65d5de138ee2860752f032f7c33",
+        "benchmarks/common/XInputChannel.h": "ed04299bc1fa9c7b67225874878548b8efc365a0b0341169abe9466f217301be",
+        "benchmarks/common/intercept.cpp": "3618da1e007fc440aca50ca41ce55cc0b5442fec7d4b47c1c130f84c60f25c0b",
+        "benchmarks/input-generator/main.cpp": "b509d1eda16dd53fdb2b3d65d8a0edb555ae38ff9b6d2fa18b8adbdfec716cf1",
+        "benchmarks/input-receiver/ds4.cpp": "8515fd6c3ae6fde3c2ae9e1f2d98a5bd6a0a59ce4fe5401a02ddfd6d27c61e11",
+        "benchmarks/input-receiver/hid.cpp": "27c343b093dc5049d368e9a556da5f657f8fbf081c505e31c41b99392402aec7",
+        "benchmarks/input-receiver/joystick.cpp": "05cc4dadc18cf6cc605d95f79b6a5b013c5d1bf99942bbdc927da3f95abc5d26",
+        "benchmarks/input-receiver/rawinput.cpp": "15bfe97327a6028fb2c91090ca3989ad23de665bd799d7abbfca6fc2e0712acd",
+        "benchmarks/input-receiver/xinput.cpp": "0d9a9e0c7542d814a3428fcacbe219b04d89213c7502fb5c7b81f525e8ac06e3",
+        "benchmarks/virtual-devices/joystick.cpp": "c5a8b4f319da016f06cafecf21c757b4a66627dc58ae8d02700734e459141a5e",
+        "benchmarks/virtual-devices/xinput.cpp": "6140a77c7c7546a368e85456d84351f2d2315924835217a8f798d62b869ea38c"
+      }
+    },
+    "executables": {
+      "TitanCSA-Benchmark-Ds4Receiver.exe": "49e3e4e935b179aff1aab9872194cc50731e131fe38862337f741295691f3448",
+      "TitanCSA-Benchmark-HidReceiver.exe": "34c4732e6163ec0a368d54235e4a8c9b12511bd057a4711e0c119877d02a2f0c",
+      "TitanCSA-Benchmark-InputGenerator.exe": "ca1aa9e80370934a882364adab3207fd65b9d2b8f2bd04e641889beda7d7e342",
+      "TitanCSA-Benchmark-Intercept-Combined.exe": "c616b1167a5747c810c1b955afd6f664a9bf502995553292360364c60f484ce3",
+      "TitanCSA-Benchmark-Intercept-Gamepad-Controller.exe": "65792e4031005f68c611c45468e3d0ffb6e26731c805393bee4081d51bb26dc7",
+      "TitanCSA-Benchmark-Intercept-Keyboard-Mouse.exe": "d4a214258483ee87d65684a9f5d32ac2112fa1707a8fe6f0908cfec74f727113",
+      "TitanCSA-Benchmark-Joystick.exe": "8a453e711737262b690d2e32718637681357eec18d474b6faa92bab2e8e44f20",
+      "TitanCSA-Benchmark-JoystickReceiver.exe": "1bd254127f0b42a2c120a6781ef9a69e4eb08a4956d0e2797c0178baedaa07eb",
+      "TitanCSA-Benchmark-RawReceiver.exe": "34818d71581b13a4dfbefbc7d52e10be1a1746eb26ba1d025f81054695de6a29",
+      "TitanCSA-Benchmark-XInput.exe": "461e8629d8b6dbba8d34e95e4a067be71c38ac2a6abcd914da8dc826847a22b0",
+      "TitanCSA-Benchmark-XInputReceiver.exe": "fb2e1a56678680bbb0bc21dfa5b42d97511ba088bf140e2fed33902d36b3920d"
+    },
+    "host_cpu_load_percent": 87,
+    "host_free_ram_kib": 6225980,
+    "source_commits": [
+      {
+        "commit": "fc8742edfdc8ca12872ea2eb2dcbe8e84a278859",
+        "requested": "TitanCSA/Interceptor"
+      },
+      {
+        "commit": "a189e6ed3a399bea80b887ab44f0de001097449e",
+        "requested": "TitanCSA/Interceptor-Keyboard-Mouse"
+      },
+      {
+        "commit": "1146b8541683985345c28c4ecf2fc8000c908ae2",
+        "requested": "TitanCSA/Interceptor-Gamepad-Controller"
+      },
+      {
+        "commit": "ff8a74d0136012b04b76a0e86b7a5abf89e64294",
+        "requested": "TitanCSA/Vdevice"
+      },
+      {
+        "commit": "04ad866313c6ded542c10ee3e640f78ccee2ebb9",
+        "requested": "TitanCSA/Interception-V2"
+      },
+      {
+        "commit": "39eecbbc46a52e0402f783b872ef62b0254a896a",
+        "requested": "oblitum/Interception"
+      },
+      {
+        "commit": "d986e1d93708ec9b11049542fa6027272cce716c",
+        "requested": "nefarius/ViGEmBus"
+      },
+      {
+        "commit": "b66d02d57e32cc8595369c53418b843e958649b4",
+        "requested": "nefarius/ViGEmClient"
+      },
+      {
+        "commit": "5aba4b1bfda159f87f5e37bd48f72201616bf87a",
+        "requested": "nefarius/HidHide"
+      },
+      {
+        "commit": "2234c0079a6a7b0e2f25990d3c705be85bcd37fd",
+        "requested": "LizardByte/libvirtualhid"
+      },
+      {
+        "commit": "911a2a53a972f73ea8b4a021c390c953012b7fb9",
+        "requested": "jshafer817/vJoy"
+      },
+      {
+        "commit": "d49bb7d72f3651952b2b6e4ad28d14fe2247eb69",
+        "requested": "microsoft/Windows-driver-samples"
+      },
+      {
+        "commit": "5c3a6528ce5e192ee425dc024407238f02c87e83",
+        "requested": "BrunnerInnovation/vJoy"
+      },
+      {
+        "commit": "02a337bfaf0de44a80f7de5fb70979d05351e276",
+        "requested": "njz3/vJoy"
+      }
+    ],
+    "source_files": {
+      "benchmarks/common/Common.h": "8e98a272e59b27c273ac9c3b293246104fd0c65d5de138ee2860752f032f7c33",
+      "benchmarks/common/XInputChannel.h": "ed04299bc1fa9c7b67225874878548b8efc365a0b0341169abe9466f217301be",
+      "benchmarks/common/intercept.cpp": "3618da1e007fc440aca50ca41ce55cc0b5442fec7d4b47c1c130f84c60f25c0b",
+      "benchmarks/input-generator/main.cpp": "b509d1eda16dd53fdb2b3d65d8a0edb555ae38ff9b6d2fa18b8adbdfec716cf1",
+      "benchmarks/input-receiver/ds4.cpp": "8515fd6c3ae6fde3c2ae9e1f2d98a5bd6a0a59ce4fe5401a02ddfd6d27c61e11",
+      "benchmarks/input-receiver/hid.cpp": "27c343b093dc5049d368e9a556da5f657f8fbf081c505e31c41b99392402aec7",
+      "benchmarks/input-receiver/joystick.cpp": "05cc4dadc18cf6cc605d95f79b6a5b013c5d1bf99942bbdc927da3f95abc5d26",
+      "benchmarks/input-receiver/rawinput.cpp": "15bfe97327a6028fb2c91090ca3989ad23de665bd799d7abbfca6fc2e0712acd",
+      "benchmarks/input-receiver/xinput.cpp": "0d9a9e0c7542d814a3428fcacbe219b04d89213c7502fb5c7b81f525e8ac06e3",
+      "benchmarks/virtual-devices/joystick.cpp": "c5a8b4f319da016f06cafecf21c757b4a66627dc58ae8d02700734e459141a5e",
+      "benchmarks/virtual-devices/xinput.cpp": "6140a77c7c7546a368e85456d84351f2d2315924835217a8f798d62b869ea38c"
+    },
+    "source_snapshot_kind": "Files observed at run start; build attestation separate when available"
+  },
+  "category": "virtual-xbox360",
+  "collect_stack": true,
+  "creation_to_sdk_ready_ticks": 153726,
+  "device_origin": "virtual",
+  "filter": "Combined",
+  "fixture_revision": "stable-usb-instance-v1",
+  "measurement": "SDK DS4 update entry to independent Windows HID ReadFile completion; closed loop",
+  "mode": "closed-loop",
+  "operation": "modify",
+  "profile": "ds4",
+  "qpc_frequency": 10000000,
+  "repetition": 0,
+  "run_id": "d52ccc214c9348bfae7555f3b56e86ea-0-vigem",
+  "samples": 1000,
+  "seed": 42137,
+  "utc": "2026-11-17T12:52:45.5685657Z",
+  "version": "1.22.0",
+  "warmup": 100
+}

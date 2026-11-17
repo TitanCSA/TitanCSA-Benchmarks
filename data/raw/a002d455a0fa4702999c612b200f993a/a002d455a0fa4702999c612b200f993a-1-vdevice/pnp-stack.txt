@@ -1,0 +1,94 @@
+﻿Microsoft PnP Utility
+
+Instance ID:                USB\VID_045E&PID_028E\TitanCSABenchmarkX360StableV1
+Device Description:         Xbox 360 Controller for Windows
+Class Name:                 XnaComposite
+Class GUID:                 {d61ca365-5af4-4486-998b-9db4734c6ca3}
+Manufacturer Name:          Microsoft
+Status:                     Started
+Driver Name:                xusb22.inf
+Parent:                     USB\ROOT_HUB30\1&2b53a856&1&0
+Children:                   USB\VID_045E&PID_028E&IG_00\3&2a26db4d&0&00
+Service:                    xusb22
+Lower Filters:              InterceptorGamepadController
+Stack:                      xusb22
+                            InterceptorGamepadController
+                            USBHUB3
+Matching Drivers:
+    Driver Name:            xusb22.inf
+    Provider Name:          Microsoft
+    Class Name:             XnaComposite
+    Class GUID:             {d61ca365-5af4-4486-998b-9db4734c6ca3}
+    Driver Version:         07/02/2024 10.0.26100.1150
+    Signer Name:            Microsoft Windows
+    Matching Device ID:     USB\VID_045E&PID_028E
+    Driver Rank:            00FF0001
+    Driver Status:          Best Ranked / Installed
+                            
+    Driver Name:            xusb22.inf
+    Provider Name:          Microsoft
+    Class Name:             XnaComposite
+    Class GUID:             {d61ca365-5af4-4486-998b-9db4734c6ca3}
+    Driver Version:         07/02/2024 10.0.26100.1150
+    Signer Name:            Microsoft Windows
+    Matching Device ID:     USB\MS_COMP_XUSB10
+    Driver Rank:            00FF2000
+    Driver Status:          Outranked
+
+Microsoft PnP Utility
+
+Instance ID:                USB\VID_045E&PID_028E&IG_00\3&2a26db4d&0&00
+Device Description:         USB Input Device
+Class Name:                 HIDClass
+Class GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Manufacturer Name:          (Standard system devices)
+Status:                     Started
+Driver Name:                input.inf
+Parent:                     USB\VID_045E&PID_028E\TitanCSABenchmarkX360StableV1
+Children:                   HID\VID_045E&PID_028E&IG_00\4&30d521aa&0&0000
+Service:                    HidUsb
+Stack:                      HidUsb
+                            xusb22
+Matching Drivers:
+    Driver Name:            input.inf
+    Provider Name:          Microsoft
+    Class Name:             HIDClass
+    Class GUID:             {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+    Driver Version:         06/21/2006 10.0.26100.1150
+    Signer Name:            Microsoft Windows
+    Matching Device ID:     USB\Class_03
+    Driver Rank:            00FF3202
+    Driver Status:          Best Ranked / Installed
+
+Microsoft PnP Utility
+
+Instance ID:                HID\VID_045E&PID_028E&IG_00\4&30d521aa&0&0000
+Device Description:         HID-compliant game controller
+Class Name:                 HIDClass
+Class GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Manufacturer Name:          (Standard system devices)
+Status:                     Started
+Driver Name:                input.inf
+Parent:                     USB\VID_045E&PID_028E&IG_00\3&2a26db4d&0&00
+Stack:                      HidUsb
+Matching Drivers:
+    Driver Name:            input.inf
+    Provider Name:          Microsoft
+    Class Name:             HIDClass
+    Class GUID:             {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+    Driver Version:         06/21/2006 10.0.26100.1150
+    Signer Name:            Microsoft Windows
+    Matching Device ID:     HID_DEVICE_SYSTEM_GAME
+    Driver Rank:            00FF1002
+    Driver Status:          Best Ranked / Installed
+                            
+    Driver Name:            input.inf
+    Provider Name:          Microsoft
+    Class Name:             HIDClass
+    Class GUID:             {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+    Driver Version:         06/21/2006 10.0.26100.1150
+    Signer Name:            Microsoft Windows
+    Matching Device ID:     HID_DEVICE
+    Driver Rank:            00FF1004
+    Driver Status:          Outranked
+
