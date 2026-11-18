@@ -1,6 +1,6 @@
 # Executed campaign report
 
-Updated: 2026-11-17T13:23:05.876653+00:00
+Updated: 2026-11-18T14:22:04.575580+00:00
 
 This is a partial, genuinely executed campaign, not completion of the full requested hardware/protocol/endurance matrix.
 
@@ -23,7 +23,7 @@ This is a partial, genuinely executed campaign, not completion of the full reque
 | full_protocol_matrix | No exhaustive DualSense/Bluetooth/physical/XInputHID matrix; see actual DS4, XUSB and GIP per-run results |
 | driver_stability | Open WDF-001: Vdevice queue purge at STATUS_DELETE_PENDING caused a guest bugcheck during the controller campaign; initiating lifetime race not resolved |
 | self_hosted_CI | Workflow prepared; no dedicated runner registered or dispatched |
-| search_console | No verification token or account connection available |
+| search_indexing | Root Search Console property verified and both sitemaps submitted on 2026-11-18; initial sitemap fetch error remains. Root homepage live test passed and one indexing request was accepted, but actual search indexing is not confirmed; see docs/methodology/search.md |
 
 ## Inspect evidence
 
