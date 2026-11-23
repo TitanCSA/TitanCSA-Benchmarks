@@ -4,6 +4,8 @@ description: An evidence record of a Windows WDF bugcheck observed in the dedica
 ---
 # WDF-001: stability qualification is incomplete
 
+**23 November 2026 update.** The [Microsoft-signed Vdevice 1.0.6.0 demo](https://github.com/TitanCSA/Vdevice/releases/tag/v1.0.6.0-demo) includes a queue-lifetime fix. Separate Windows 11 Hyper-V tests with Secure Boot enabled passed 100 create/delete cycles, 100 early owner-close cycles, and ten rounds of the five device examples. The controller filter service was running, the guest stayed on the same boot and no bugcheck was recorded. The commercial package update is pending. See the [qualification scope and delivery status](https://github.com/TitanCSA/Vdevice/issues/1). The original 1.0.5.0 benchmark results below remain historical evidence.
+
 **Two real guest bugchecks interrupted separate controller campaigns.** Two DS4 series passed the per-run validation before the next repetition crashed. In a later Xbox One/GIP campaign, two producer/receiver sequences completed before another crash; those filter series remain excluded from latency comparisons because the adapter captured extra protocol reports without one-to-one generated-state correlation. Both minidumps have the same WDF queue-purge signature at `Vdevice+0x651e`. Successful latency rows do not erase this incident and do not establish safe repeated teardown.
 
 | Evidence | Observation |
@@ -25,4 +27,4 @@ Windows recorded the bugcheck and saved a minidump and kernel dump. Microsoft CD
 
 Preserve the dump and exact signed binary; correlate WDF queue state with endpoint purge and device deletion. Build an isolated teardown reproducer, review callback/queue lifetime ordering, and test the eventual fix under cancellation, repeated removal, restart and concurrent requests. Any changed kernel image needs its normal signing and qualification process before distribution.
 
-The dumps remain local because a kernel dump contains broad system state. Their SHA-256 fingerprints and a sanitized incident record are published in `reports/incident-wdf-001.json`. Raw completed and interrupted runs remain in the dataset. This is an open stability limitation, not a resolved bug or a production certification.
+The dumps remain local because a kernel dump contains broad system state. Their SHA-256 fingerprints and a sanitized incident record are published in `reports/incident-wdf-001.json`. Raw completed and interrupted runs remain in the dataset. The incident record describes the affected 1.0.5.0 campaign. See the update above for the separate 1.0.6.0 demo validation.
