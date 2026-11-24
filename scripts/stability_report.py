@@ -34,7 +34,7 @@ This is one five-minute exposure, not a multi-hour soak, fault-injection qualifi
 
 The wall-clock-derived WMI boot timestamp changed between the initial post-checkpoint snapshot and the final observation. That field is therefore not used as a reliable restart detector. The native workload's continuous completed QPC/sequence record is the timing evidence; no latency is computed from host/guest or unsynchronized wall clocks.
 
-**This standalone vendor-HID run does not close [WDF-001](incident-wdf-001.md).** The controller teardown incident remains visible and unresolved. More isolated pool-tag attribution, repeated teardown, cancellation and long-duration tests are needed.
+The standalone vendor-HID run and the [WDF-001 teardown tests](incident-wdf-001.md) cover different scenarios. The signed 1.0.6.0 demo passed separate controller teardown tests. Commercial qualification and longer-duration testing remain pending.
 
 [Raw CSV/JSON](../assets/raw-results.zip) · [Per-run qualification](../assets/results.json) · [Environment](environment.md)
 '''

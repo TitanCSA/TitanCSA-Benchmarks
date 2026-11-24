@@ -19,7 +19,7 @@ with sync_playwright() as p:
             checked.append({'route':route,'width':width,'status':response.status,'title':page.title()})
         page.goto(base,wait_until='networkidle')
         page.screenshot(path=str(out/f'home-{width}.png'),full_page=True)
-        assert page.get_by_text('Open stability incident',exact=True).count()>0
+        assert page.get_by_text('WDF-001 incident and fix status',exact=True).count()>0
         if width==1440:
             page.locator('label[for="__palette_1"]').click()
             assert page.locator('body').get_attribute('data-md-color-scheme')=='slate'

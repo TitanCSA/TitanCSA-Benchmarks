@@ -30,7 +30,7 @@ for name,filter_name in [('Interceptor','Combined'),('Interceptor-Keyboard-Mouse
 | Tested scope | Verified result |
 |---|---|
 {table}
-**Stability limitation:** the Vdevice-backed controller campaign reproduced an unresolved guest WDF queue-purge bugcheck. Successful timings do not establish safe repeated teardown. See the [incident and test limits]({base}methodology/incident-wdf-001/).
+**Vdevice benchmark status.** The original campaign recorded a controller teardown crash with demo 1.0.5.0. The signed 1.0.6.0 demo passed separate teardown tests. Commercial Vdevice qualification remains pending. [Incident and edition status]({base}methodology/incident-wdf-001/).
 '''
     repo='TitanCSA/'+name
     existing=api.call('GET','/repos/'+repo+'/readme')

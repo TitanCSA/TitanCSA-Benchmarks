@@ -23,7 +23,7 @@ for name in names:
       '06 Compatible devices':('Documented/examples: USB HID keyboard, mouse, DS4, X360 and Xbox One/GIP; arbitrary descriptor support remains subject to Windows stacks.' if isv else 'Documented product families: '+(', '.join(x for x,on in [('keyboard/mouse',km),('HID/XUSB/XInputHID/GIP controllers',controller)] if on))+'. Selected virtual fixtures are measured; physical devices remain unqualified.'),
       '07 Verified functionality':('Measured: vendor HID sequences/checksums, independent keyboard/mouse reception, XUSB/DS4/GIP state delivery, generic joystick and upstream five-profile live test.' if isv else ('Measured: keyboard forwarding, mouse forwarding/modification/controlled block.' if name=='Interceptor-Keyboard-Mouse' else 'Measured: '+('keyboard forwarding, mouse modification and ' if km else '')+'XUSB modification'+(' and DS4 modification.' if name=='Interceptor-Gamepad-Controller' else '.'))),
       '08 Mechanism':('Source: virtual USB endpoints and report queuing consumed by Windows class drivers; receiver independently uses HID/Raw Input/XInput/WinMM.' if isv else 'Source: capture through family-specific filter paths, user-mode decision and forwarding. Measured modification must be independently visible; PnP attachment is required.'),
-      '09 Technical limitations':'Virtual fixtures do not prove physical transport compatibility. GIP/ViGEm-filter extra protocol reports lack one-to-one capture correlation. WDF-001 remains open in Vdevice-backed controller teardown.',
+      '09 Technical limitations':'Virtual fixtures do not prove physical transport compatibility. GIP/ViGEm-filter extra protocol reports lack one-to-one capture correlation. The signed Vdevice demo 1.0.6.0 passed separate WDF-001 teardown tests. Commercial Vdevice qualification is pending.',
       '10 Windows compatibility':'Documented: Windows 10/11 x64 (Interceptor combined specifies 1709+). Measured: Windows 11 build 26100 Hyper-V only, Secure Boot on and HVCI off. No HLK/HVCI qualification claimed.',
       '11 Signature':'Measured installation: downloaded release SYS Authenticode verified as Valid, Microsoft Windows Hardware Compatibility Publisher. Source/release identity and hashes are separate evidence; source availability does not certify a rebuilt SYS.',
       '12 License':'Inspected: user-mode source MIT; driver/demo/evaluation-source terms and third-party licenses are separate. One-hour demo behavior was retained. '+link('LICENSE')+'; '+link('driver/README.md'),
@@ -36,7 +36,7 @@ for name in names:
     }
     records.append({'repository':repo,'commit':r['commit'],'points':details})
     lines+=['## '+name,'','| Audit point | Evidence and boundary |','|---|---|']+[f'| {k} | {v} |' for k,v in details.items()]+['']
-lines+=['[Numerical results](../gamepad/results.md) · [Source and competitor inventory](index.md) · [Open stability incident](../methodology/incident-wdf-001.md)']
+lines+=['[Numerical results](../gamepad/results.md) · [Source and competitor inventory](index.md) · [WDF-001 incident and fix status](../methodology/incident-wdf-001.md)']
 (root/'reports/main-project-audit.json').write_text(json.dumps(records,indent=2)+'\n')
 (root/'docs/comparisons/main-projects.md').write_text('\n'.join(lines)+'\n',encoding='utf8')
 print('18-point source/documented/measured audit generated for',len(records),'projects')

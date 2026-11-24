@@ -69,7 +69,7 @@ nav:
       - Hyper-V isolation: methodology/hyperv.md
       - Reproduce a campaign: methodology/reproducibility.md
       - Limitations and failures: methodology/limitations.md
-      - Open stability incident: methodology/incident-wdf-001.md
+      - WDF-001 incident and fix status: methodology/incident-wdf-001.md
       - Monitored stability trial: methodology/stability.md
       - Search and indexing: methodology/search.md
   - Data: data.md
