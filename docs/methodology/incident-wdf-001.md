@@ -2,7 +2,7 @@
 title: Known stability incident ? WDF queue purge during virtual controller testing
 description: An evidence record of a Windows WDF bugcheck observed in the dedicated VM, including driver hash, queue state and unresolved initiating cause.
 ---
-# WDF-001: stability qualification is incomplete
+# WDF-001: signed demo fix and commercial qualification
 
 **23 November 2026 update.** The [Microsoft-signed Vdevice 1.0.6.0 demo](https://github.com/TitanCSA/Vdevice/releases/tag/v1.0.6.0-demo) includes a queue-lifetime fix. Separate Windows 11 Hyper-V tests with Secure Boot enabled passed 100 create/delete cycles, 100 early owner-close cycles, and ten rounds of the five device examples. The controller filter service was running, the guest stayed on the same boot and no bugcheck was recorded. The commercial package update is pending. See the [qualification scope and delivery status](https://github.com/TitanCSA/Vdevice/issues/1). The original 1.0.5.0 benchmark results below remain historical evidence.
 
@@ -17,14 +17,14 @@ description: An evidence record of a Windows WDF bugcheck observed in the dedica
 | Driver Verifier | Flags `0x00000000`; no verified drivers configured |
 | Host impact | None observed; all tested drivers and the crash remained in the dedicated VM |
 
-## What is established
+## What the original campaign established
 
 Windows recorded the bugcheck and saved a minidump and kernel dump. Microsoft CDB analysis reaches Vdevice at an asynchronous WDF queue-purge call. The WDF in-flight log explicitly reports that the queue **is already deleted**, with `0xC0000056 (STATUS_DELETE_PENDING)`. The public source has `WdfIoQueuePurge` calls in `VdEndpointPurge` and queue deletion in `DeleteVirtual`. This establishes the invalid queue state at the failing call; it does not yet establish the complete ordering of the initiating callbacks.
 
 **The exact lifetime race and initiating sequence are still under investigation.** Private matching driver symbols were not loaded in the first analysis. Stack involvement does not prove that every Vdevice configuration fails or that another component is irrelevant. No driver was patched or rebuilt to change the benchmark outcome.
 
-## Required follow-up
+## Follow-up after the demo fix
 
-Preserve the dump and exact signed binary; correlate WDF queue state with endpoint purge and device deletion. Build an isolated teardown reproducer, review callback/queue lifetime ordering, and test the eventual fix under cancellation, repeated removal, restart and concurrent requests. Any changed kernel image needs its normal signing and qualification process before distribution.
+Preserve the original binaries, dump evidence and raw runs. The next delivery milestone is validating the signed commercial kernel. Longer-duration tests and additional hardware coverage remain separate work.
 
 The dumps remain local because a kernel dump contains broad system state. Their SHA-256 fingerprints and a sanitized incident record are published in `reports/incident-wdf-001.json`. Raw completed and interrupted runs remain in the dataset. The incident record describes the affected 1.0.5.0 campaign. See the update above for the separate 1.0.6.0 demo validation.

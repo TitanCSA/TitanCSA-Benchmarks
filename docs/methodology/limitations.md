@@ -15,6 +15,6 @@ description: Explicit boundaries for the TitanCSA benchmark campaign, including 
 - Microsoft VHF/UdeCx samples were identified as reference architectures; no newly compiled unsigned sample driver was treated as a signed, working competitor.
 - DS4 and Xbox One/GIP have selected virtual delivery results, not exhaustive protocol coverage. GIP-filter and ViGEm-filter attempts with extra uncorrelated captured reports remain excluded from the latency table.
 - Multi-hour soak, crash-injection, physical reconnect, DualSense, physical-device protocol coverage and total driver CPU attribution require additional campaigns. A five-minute monitored HID trial and one separately instrumented WPR/DPC trial are available; neither establishes long-term stability.
-- WDF-001 reproduced a Vdevice queue-purge guest bugcheck in DS4 and GIP controller/filter campaigns. It remains unresolved. Successful completed runs do not override that finding.
+- WDF-001 recorded a guest bugcheck in DS4 and GIP runs using Vdevice demo 1.0.5.0. The signed 1.0.6.0 demo includes the fix and passed separate teardown tests. Commercial qualification remains pending. See the [incident and test scope](incident-wdf-001.md).
 
 Failed runs are listed in the processed results and retained with their diagnostics. No simulation enters the measured charts. No superiority claim is made from a feature checklist or from an unverified filter path.

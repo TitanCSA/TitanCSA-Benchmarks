@@ -6,7 +6,7 @@ Measured Windows input paths, independent receivers, and the raw data behind eve
 
 This publisher-operated lab uses a dedicated Windows 11 Hyper-V VM. Results describe the tested virtual-device software paths. They are not physical USB latency, universal hardware compatibility, independent certification or proof that one vendor always wins.
 
-**Open stability finding:** a controller campaign produced a guest WDF bugcheck at Vdevice queue purge. The WDF log reports `STATUS_DELETE_PENDING`. See the [incident](docs/methodology/incident-wdf-001.md); successful timings do not establish teardown stability.
+**Vdevice teardown status.** Signed demo 1.0.6.0 includes the fix and passed separate teardown tests. Commercial qualification remains pending. The [incident record](docs/methodology/incident-wdf-001.md) retains the original crash evidence.
 
 | Component | Implementation |
 |---|---|
@@ -40,6 +40,6 @@ CI compiles native tools, parses PowerShell, validates numerical fixtures, regen
 
 Every completed run retains its raw records. Invalid runs and failed setup attempts remain visible. Repeats get new IDs; data are not silently replaced. Pilots that predate full executable-hash capture remain labelled by their available provenance.
 
-Physical USB/Bluetooth timing, DualSense, exhaustive protocol qualification, multi-hour soak tests, HLK qualification, kernel CPU/DPC attribution and a scored KMDF-versus-UMDF comparison are not implied by the measurements. A five-minute monitored vendor-HID run is reported separately. DS4 and GIP controller/filter campaigns reproduced an open WDF queue-purge bugcheck; completed rows do not close that finding. Driver-backed Windows libvirtualhid profiles require an upstream license; none was bypassed. Read the exact [limitations](docs/methodology/limitations.md).
+Physical USB/Bluetooth timing, DualSense, exhaustive protocol qualification, multi-hour soak tests, HLK qualification, kernel CPU/DPC attribution and a scored KMDF-versus-UMDF comparison are not implied by the measurements. A five-minute monitored vendor-HID run is reported separately. The historical DS4 and GIP controller/filter campaigns recorded a WDF queue-purge bugcheck. Later signed-demo validation is documented separately. Driver-backed Windows libvirtualhid profiles require an upstream license; none was bypassed. Read the exact [limitations](docs/methodology/limitations.md).
 
 Benchmark code: MIT. Numerical datasets: [CC BY 4.0](data/LICENSE). Upstream SDKs, samples and drivers retain their own licenses. No commercial binaries, activation keys, passwords or private signing material are published here.
