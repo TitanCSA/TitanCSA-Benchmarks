@@ -62,7 +62,7 @@ Repository metadata checked: 2026-11-17T11:02:37.443484+00:00. Source is pinned 
 
 ## Runtime status
 
-Executed paths include Vdevice vendor HID, keyboard/mouse, XUSB, DS4 and Xbox One/GIP; both Interceptor keyboard/mouse editions; combined and controller-only controller transformations; ViGEmBus XUSB/DS4; and Brunner vJoy WinMM axes/buttons. See the per-run result pages for valid repetitions, invalid runs and exact receiver APIs. DS4 and GIP filter campaigns reproduced the open WDF-001 guest crash. Source presence and successful latency rows do not certify stability or other device profiles. Windows libvirtualhid driver-backed profiles require a separate license; no runtime score is assigned without it.
+Executed paths include Vdevice vendor HID, keyboard/mouse, XUSB, DS4 and Xbox One/GIP; both Interceptor keyboard/mouse editions; combined and controller-only controller transformations; ViGEmBus XUSB/DS4; and Brunner vJoy WinMM axes/buttons. See the per-run result pages for valid repetitions, invalid runs and exact receiver APIs. The original DS4 and GIP filter campaigns recorded the WDF-001 guest crash. The signed demo 1.0.6.0 passed separate teardown tests. Source presence and successful latency rows do not certify stability or other device profiles. Windows libvirtualhid driver-backed profiles require a separate license; no runtime score is assigned without it.
 
 ## Licenses and build observations
 
