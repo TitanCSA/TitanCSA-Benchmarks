@@ -17,7 +17,7 @@ Measured Windows input paths, independent receivers, and the raw data behind eve
 
 This publisher-operated lab uses a dedicated Windows 11 Hyper-V VM. Results describe the tested virtual-device software paths. They are not physical USB latency, universal hardware compatibility, independent certification or proof that one vendor always wins.
 
-**Vdevice teardown status.** Signed demo 1.0.6.0 includes the fix and passed separate teardown tests. Commercial qualification remains pending. The [incident record](docs/methodology/incident-wdf-001.md) retains the original crash evidence.
+**Vdevice teardown status.** Signed demo 1.0.6.0 includes the fix and passed separate teardown tests. Current signed Demo 1.0.6.1 and Release 1.0.4.1 include the fix. The [dated installation evidence](https://titancsa.github.io/assets/vdevice-signed-versions-2026-11-25.json) records their Windows 10 and 11 upgrades and removal. The [incident record](docs/methodology/incident-wdf-001.md) retains the original crash evidence.
 
 | Component | Implementation |
 |---|---|

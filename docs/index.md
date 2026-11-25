@@ -18,7 +18,7 @@ updated: 2026-11-24
 <div class="metrics"><div><strong>36</strong><span>validated vendor-HID runs</span></div><div><strong>99,500</strong><span>post-warmup vendor-HID reports</span></div><div><strong>2 vCPU</strong><span>Windows 11 · Hyper-V · 3 GiB fixed RAM</span></div></div>
 
 !!! note "Vdevice teardown fix status"
-    Microsoft-signed Vdevice demo 1.0.6.0 passed separate controller teardown tests. Commercial Vdevice qualification remains pending. The [incident record](methodology/incident-wdf-001.md) retains the original 1.0.5.0 crashes and describes the fix validation.
+    Microsoft-signed Vdevice demo 1.0.6.0 passed separate controller teardown tests. Signed Demo 1.0.6.1 and Release 1.0.4.1 include the fix. The [installation evidence](https://titancsa.github.io/assets/vdevice-signed-versions-2026-11-25.json) records the exact archives, signatures and tested paths. The [incident record](methodology/incident-wdf-001.md) retains the original 1.0.5.0 crashes and describes the fix validation.
 
 ## Start with the question you need answered
 
