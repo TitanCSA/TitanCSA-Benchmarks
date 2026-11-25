@@ -3,7 +3,11 @@
 <!-- simple-start:start -->
 See how Windows input tests were measured and download the results.
 
-**Start here.** Open the results page and pick the device or test you care about.
+[First steps](#first-steps) · [Develop](#build-and-measure) · [Maintain](https://github.com/TitanCSA/sdk-packages/blob/main/CONTRIBUTING.md)
+
+## First steps
+
+Open the results page and pick the device or test you care about.
 <!-- simple-start:end -->
 
 > [!IMPORTANT]
