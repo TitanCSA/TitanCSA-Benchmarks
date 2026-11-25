@@ -1,5 +1,11 @@
 # TitanCSA Benchmarks
 
+<!-- simple-start:start -->
+See how Windows input tests were measured and download the results.
+
+**Start here.** Open the results page and pick the device or test you care about.
+<!-- simple-start:end -->
+
 > [!IMPORTANT]
 > **Request the full driver without the one-hour demo limit**
 >
