@@ -2,7 +2,7 @@
 
 Measured Windows input paths, independent receivers, and the raw data behind every chart.
 
-**[Read the benchmark site](https://titancsa.github.io/TitanCSA-Benchmarks/)** · [Methodology](docs/methodology/measurement.md) · [Reproduce](docs/methodology/reproducibility.md) · [Raw data](data/raw/) · [Source audit](reports/repository-audit.json)
+**[Read the benchmark site](https://titancsa.github.io/TitanCSA-Benchmarks/)** · [Methodology](docs/methodology/measurement.md) · [Reproduce](docs/methodology/reproducibility.md) · [Raw data](data/raw/) ? [Citable dataset snapshot](https://github.com/TitanCSA/TitanCSA-Benchmarks/releases/tag/dataset-2026-11-25) · [Source audit](reports/repository-audit.json)
 
 This publisher-operated lab uses a dedicated Windows 11 Hyper-V VM. Results describe the tested virtual-device software paths. They are not physical USB latency, universal hardware compatibility, independent certification or proof that one vendor always wins.
 
