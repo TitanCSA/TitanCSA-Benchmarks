@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please include the release tag or commit and edition you used when citing this repository."
+title: "TitanCSA Windows input benchmarks"
+type: dataset
+authors:
+  - name: TitanCSA
+repository-code: https://github.com/TitanCSA/TitanCSA-Benchmarks
+url: https://titancsa.github.io/TitanCSA-Benchmarks/
+abstract: "Publisher-operated benchmark dataset for virtual USB and selected Windows input filter paths, with raw data and receiver methods."
