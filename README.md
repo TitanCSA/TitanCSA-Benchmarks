@@ -1,5 +1,10 @@
 # TitanCSA Benchmarks
 
+> [!IMPORTANT]
+> **Request the full driver without the one-hour demo limit**
+>
+> On [Discord](https://discord.com/app), choose **Friends → Add Friend**, enter **`titancsa`** and send the project name. Mention the matching driver or edition. TitanCSA shares purchase details privately.
+
 Measured Windows input paths, independent receivers, and the raw data behind every chart.
 
 **[Read the benchmark site](https://titancsa.github.io/TitanCSA-Benchmarks/)** · [Methodology](docs/methodology/measurement.md) · [Reproduce](docs/methodology/reproducibility.md) · [Raw data](data/raw/) ? [Citable dataset snapshot](https://github.com/TitanCSA/TitanCSA-Benchmarks/releases/tag/dataset-2026-11-25) · [Source audit](reports/repository-audit.json)
