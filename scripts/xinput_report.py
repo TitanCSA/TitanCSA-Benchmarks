@@ -1,7 +1,7 @@
 from pathlib import Path
 import json,hashlib
 import numpy as np
-from analyze import ROOT,rows
+from analyze import ROOT, rows, run_failure_reason
 def main():
     results=[]
     for p in sorted((ROOT/'data/raw').rglob('xinput-run.json')):
@@ -35,7 +35,7 @@ def main():
                 counters=json.loads((p.parent/filename).read_text()).get('resources',{})
                 r[label+'_cpu_lifetime_ms']=(counters.get('user_100ns',0)+counters.get('kernel_100ns',0))/10000
                 r[label+'_peak_working_set_bytes']=counters.get('peak_working_set_bytes')
-        except (AssertionError,FileNotFoundError,KeyError,ValueError) as e:r['reason']=str(e)
+        except (AssertionError,FileNotFoundError,KeyError,ValueError) as e:r['reason']=run_failure_reason(e)
         r['hashes']={f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in sorted(p.parent.iterdir()) if f.is_file()}
         results.append(r)
     (ROOT/'data/processed/xinput-results.json').write_text(json.dumps(results,indent=2)+'\n')

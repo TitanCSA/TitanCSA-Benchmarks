@@ -22,7 +22,10 @@ class ValidationTests(unittest.TestCase):
  def test_missing_is_counted_not_hidden(self):
   (self.run/'reception.csv').write_text(self.rx.replace('2,300,330,1\n',''));r=analyze.analyze(self.run);self.assertEqual(r['status'],'measured');self.assertEqual(r['missing'],1)
  def test_incomplete_run_rejected(self):
-  (self.run/'orchestration.json').unlink();self.assertEqual(analyze.analyze(self.run)['status'],'invalid')
+  (self.run/'orchestration.json').unlink()
+  result = analyze.analyze(self.run)
+  self.assertEqual(result['status'], 'invalid')
+  self.assertEqual(result['reason'], 'Missing run file: orchestration.json')
  def test_crash_truncated_metadata_is_invalid(self):
   (self.run/'run.json').write_text('');self.assertEqual(analyze.analyze(self.run)['status'],'invalid')
  def test_explicit_invalidation_is_retained(self):

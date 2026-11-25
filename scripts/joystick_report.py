@@ -1,6 +1,6 @@
 import json,hashlib
 import numpy as np
-from analyze import ROOT,rows
+from analyze import ROOT, rows, run_failure_reason
 def main():
     results=[]
     for p in sorted((ROOT/'data/raw').rglob('joystick-run.json')):
@@ -19,7 +19,7 @@ def main():
                 assert abs(b['observed_x']-x)<=3 and abs(b['observed_y']-y)<=3 and b['observed_buttons']==1<<(n%8),'Observed joystick state mismatch'
             lat=np.array([(b['receive_qpc']-b['submit_qpc'])*1e6/freq for b in rx[warm:]])
             r.update(status='measured',samples=cfg['samples'],p50_us=float(np.percentile(lat,50)),p90_us=float(np.percentile(lat,90)),p95_us=float(np.percentile(lat,95)),p99_us=float(np.percentile(lat,99)),mean_us=float(np.mean(lat)),stdev_us=float(np.std(lat,ddof=1)) if len(lat)>1 else 0,min_us=float(min(lat)),max_us=float(max(lat)),stack_captured=(p.parent/'pnp-stack.txt').exists(),hashes={f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in p.parent.iterdir() if f.is_file()})
-        except (AssertionError,FileNotFoundError,KeyError,ValueError) as e:r['reason']=str(e)
+        except (AssertionError,FileNotFoundError,KeyError,ValueError) as e:r['reason']=run_failure_reason(e)
         results.append(r)
     text=['---','title: Vdevice vs vJoy — virtual joystick state visibility through WinMM','description: Matched X/Y axes and eight buttons measured through an independent WinMM receiver, with raw observed states and per-run PnP evidence.','---','# Vdevice vs vJoy: a joystick comparison','','This compares a shared subset of joystick functionality: two axes and eight selected buttons. Vdevice uses a descriptor-driven USB HID joystick; vJoy 2.2.2.0 (BrunnerInnovation distribution) uses its own virtual HID driver and SDK. A separate executable observes each state through Windows `joyGetPosEx`. This is not an XInput or Xbox-controller benchmark.','','| Backend | Release | Runs | States | Median run P50 (µs) | Median run P99 (µs) |','|---|---|---:|---:|---:|---:|']
     for backend in ['vdevice','vjoy']:

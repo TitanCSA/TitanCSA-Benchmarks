@@ -10,6 +10,12 @@ def rows(path):
             return [{k:int(v) for k,v in row.items()} for row in csv.DictReader(f)]
     except (csv.Error,TypeError) as e:
         raise ValueError('Malformed or interrupted CSV: '+path.name) from e
+def run_failure_reason(error):
+    """Keep missing-artifact diagnostics independent of the checkout path."""
+    if isinstance(error, FileNotFoundError) and error.filename:
+        return f"Missing run file: {Path(error.filename).name}"
+    return str(error)
+
 def analyze(path):
     try:
         cfg=json.loads((path/'run.json').read_text(encoding='utf-8-sig'))
@@ -50,7 +56,7 @@ def analyze(path):
         expected_count=sum((r['sequence']+1)%2==0 for r in submit) if operation=='block' else cfg['samples']
         result.update(status='measured',received=len(measured),missing=expected_count-len(unique),duplicates=len(ids)-len(unique),reordered=sum(a>b for a,b in zip(ids,ids[1:])),submission_errors=sum(r['error']!=0 for r in submit),loss_fraction=(expected_count-len(unique))/expected_count,observed_submission_hz=(len(submit)-1)/delta if delta else 0,p50_us=float(np.percentile(latency,50)),p90_us=float(np.percentile(latency,90)),p95_us=float(np.percentile(latency,95)),p99_us=float(np.percentile(latency,99)),mean_us=float(np.mean(latency)),stdev_us=float(np.std(latency,ddof=1)) if len(latency)>1 else 0,min_us=float(np.min(latency)),max_us=float(np.max(latency)),submission_p50_us=float(np.median([(r['return_qpc']-r['submit_qpc'])*1e6/freq for r in submit])),clock_frequency=freq)
         result['hashes']={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(path.iterdir()) if p.is_file()}
-    except (AssertionError,KeyError,ValueError,FileNotFoundError) as e:result['reason']=str(e)
+    except (AssertionError,KeyError,ValueError,FileNotFoundError) as e:result['reason']=run_failure_reason(e)
     return result
 def main():
     results=[analyze(p.parent) for p in sorted((ROOT/'data/raw').rglob('run.json'))]

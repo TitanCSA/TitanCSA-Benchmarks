@@ -7,7 +7,7 @@
     "source": "data/raw/62af4dd468b14f4cb76fabf3406905ec/62af4dd468b14f4cb76fabf3406905ec-0-vdevice",
     "status": "invalid",
     "utc": "2026-11-17T12:01:33.0880575Z",
-    "reason": "[Errno 2] No such file or directory: 'D:\\\\GithubRepo\\\\TitanCSA-Benchmarks\\\\data\\\\raw\\\\62af4dd468b14f4cb76fabf3406905ec\\\\62af4dd468b14f4cb76fabf3406905ec-0-vdevice\\\\joystick-done.json'"
+    "reason": "Missing run file: joystick-done.json"
   },
   {
     "run_id": "b6d244e7ba444ab1a1f3fa8aa3f97c2c-0-vjoy",
