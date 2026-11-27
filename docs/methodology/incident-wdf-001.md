@@ -1,12 +1,16 @@
 ---
-title: Known stability incident ? WDF queue purge during virtual controller testing
-description: An evidence record of a Windows WDF bugcheck observed in the dedicated VM, including driver hash, queue state and unresolved initiating cause.
+title: Vdevice WDF-001 — signed fix and validation scope
+description: Follow the original Vdevice 1.0.5.0 controller crash, the signed demo teardown tests and the signed Release 1.0.4.1 setup checks.
 ---
 # WDF-001: signed demo fix and commercial qualification
 
-**23 November 2026 update.** The [Microsoft-signed Vdevice 1.0.6.0 demo](https://github.com/TitanCSA/Vdevice/releases/tag/v1.0.6.0-demo) includes a queue-lifetime fix. Separate Windows 11 Hyper-V tests with Secure Boot enabled passed 100 create/delete cycles, 100 early owner-close cycles, and ten rounds of the five device examples. The controller filter service was running, the guest stayed on the same boot and no bugcheck was recorded. The commercial signature was pending at that time. See the [qualification scope and delivery status](https://github.com/TitanCSA/Vdevice/issues/1). The original 1.0.5.0 benchmark results below remain historical evidence.
+The original 1.0.5.0 controller campaigns recorded the bugchecks described below. The queue-lifetime fix is available in the signed demo and the signed commercial Release. [Vdevice issue #1](https://github.com/TitanCSA/Vdevice/issues/1).
 
-**25 November 2026 update.** Signed demo 1.0.6.1 and signed commercial Release 1.0.4.1 include the fix. The [version and setup record](https://titancsa.github.io/assets/vdevice-signed-versions-2026-11-25.json) identifies the tested Windows 10 and Windows 11 installers. The current private Release delivery resolves to 1.0.4.1. The commercial checks cover installation, upgrade and readiness before activation.
+| Signed edition | Verified scope |
+|---|---|
+| [Demo 1.0.6.0](https://github.com/TitanCSA/Vdevice/releases/tag/v1.0.6.0-demo) | The Windows 11 Hyper-V guest with Secure Boot enabled passed 100 create/delete cycles, 100 early owner-close cycles, and ten rounds of the five device examples, including virtual DS4 and Xbox One/GIP. The controller filter service was running. Windows stayed on the same boot and recorded no bugcheck. |
+| [Demo 1.0.6.1](https://github.com/TitanCSA/Vdevice/releases/tag/v1.0.6.1-demo) | Includes the queue-lifetime fix. The signed installer passed the Windows 10 and Windows 11 upgrade and removal checks. [Package and setup evidence](https://titancsa.github.io/assets/vdevice-signed-versions-2026-11-25.json). |
+| Commercial Release 1.0.4.1 | The signed installer passed the Windows 10 and Windows 11 upgrade and removal checks. A separate Windows 11 test with Secure Boot and Memory Integrity enabled confirmed that the matching Release SDK could read the new driver after restart, before activation. [Package and setup evidence](https://titancsa.github.io/assets/vdevice-signed-versions-2026-11-25.json). |
 
 **Two real guest bugchecks interrupted separate controller campaigns.** Two DS4 series passed the per-run validation before the next repetition crashed. In a later Xbox One/GIP campaign, two producer/receiver sequences completed before another crash; those filter series remain excluded from latency comparisons because the adapter captured extra protocol reports without one-to-one generated-state correlation. Both minidumps have the same WDF queue-purge signature at `Vdevice+0x651e`. Successful latency rows do not erase this incident and do not establish safe repeated teardown.
 
@@ -23,10 +27,10 @@ description: An evidence record of a Windows WDF bugcheck observed in the dedica
 
 Windows recorded the bugcheck and saved a minidump and kernel dump. Microsoft CDB analysis reaches Vdevice at an asynchronous WDF queue-purge call. The WDF in-flight log explicitly reports that the queue **is already deleted**, with `0xC0000056 (STATUS_DELETE_PENDING)`. The public source has `WdfIoQueuePurge` calls in `VdEndpointPurge` and queue deletion in `DeleteVirtual`. This establishes the invalid queue state at the failing call; it does not yet establish the complete ordering of the initiating callbacks.
 
-**The exact lifetime race and initiating sequence are still under investigation.** Private matching driver symbols were not loaded in the first analysis. Stack involvement does not prove that every Vdevice configuration fails or that another component is irrelevant. No driver was patched or rebuilt to change the benchmark outcome.
+The original crash analysis established a deleted queue at the failing call. It left the exact sequence of initiating callbacks open. The fix keeps queue operations alive until completion and drains them before retirement. [Source change](https://github.com/TitanCSA/Vdevice/commit/9aee17beccafeec33f839c428a6f368d82fe73ab).
 
 ## Follow-up after the demo fix
 
-Preserve the original binaries, dump evidence and raw runs. The next delivery milestone is validating the signed commercial kernel. Longer-duration tests and additional hardware coverage remain separate work.
+The commercial test establishes readiness before activation. Repeated activated Release teardown, longer-duration testing and additional hardware coverage remain to be measured.
 
-The dumps remain local because a kernel dump contains broad system state. Their SHA-256 fingerprints and a sanitized incident record are published in `reports/incident-wdf-001.json`. Raw completed and interrupted runs remain in the dataset. The incident record describes the affected 1.0.5.0 campaign. See the update above for the separate 1.0.6.0 demo validation.
+The dumps remain local because a kernel dump contains broad system state. Their SHA-256 fingerprints and a sanitized incident record are published in `reports/incident-wdf-001.json`. The dataset retains the completed and interrupted runs from the original 1.0.5.0 campaign.

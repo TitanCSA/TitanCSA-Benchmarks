@@ -30,7 +30,7 @@ for name,filter_name in [('Interceptor','Combined'),('Interceptor-Keyboard-Mouse
 | Tested scope | Verified result |
 |---|---|
 {table}
-**Vdevice benchmark status.** The original campaign recorded a controller teardown crash with demo 1.0.5.0. The signed 1.0.6.0 demo passed separate teardown tests. Commercial Vdevice qualification remains pending. [Incident and edition status]({base}methodology/incident-wdf-001/).
+**Vdevice benchmark status.** The original campaign recorded controller teardown crashes with demo 1.0.5.0. Separate tests covered teardown in the signed demo and setup before activation in the signed commercial Release. [Incident and edition status]({base}methodology/incident-wdf-001/).
 '''
     repo='TitanCSA/'+name
     existing=api.call('GET','/repos/'+repo+'/readme')
