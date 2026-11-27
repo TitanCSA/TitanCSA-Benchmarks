@@ -6,11 +6,11 @@ description: Follow the original Vdevice 1.0.5.0 controller crash, the signed de
 
 The original 1.0.5.0 controller campaigns recorded the bugchecks described below. The queue-lifetime fix is available in the signed demo and the signed commercial Release. [Vdevice issue #1](https://github.com/TitanCSA/Vdevice/issues/1).
 
-| Signed edition | Verified scope |
+| Edition with signed driver | Verified scope |
 |---|---|
 | [Demo 1.0.6.0](https://github.com/TitanCSA/Vdevice/releases/tag/v1.0.6.0-demo) | The Windows 11 Hyper-V guest with Secure Boot enabled passed 100 create/delete cycles, 100 early owner-close cycles, and ten rounds of the five device examples, including virtual DS4 and Xbox One/GIP. The controller filter service was running. Windows stayed on the same boot and recorded no bugcheck. |
-| [Demo 1.0.6.1](https://github.com/TitanCSA/Vdevice/releases/tag/v1.0.6.1-demo) | Includes the queue-lifetime fix. The signed installer passed the Windows 10 and Windows 11 upgrade and removal checks. [Package and setup evidence](https://titancsa.github.io/assets/vdevice-signed-versions-2026-11-25.json). |
-| Commercial Release 1.0.4.1 | The signed installer passed the Windows 10 and Windows 11 upgrade and removal checks. A separate Windows 11 test with Secure Boot and Memory Integrity enabled confirmed that the matching Release SDK could read the new driver after restart, before activation. [Package and setup evidence](https://titancsa.github.io/assets/vdevice-signed-versions-2026-11-25.json). |
+| [Demo 1.0.6.1](https://github.com/TitanCSA/Vdevice/releases/tag/v1.0.6.1-demo) | Includes the queue-lifetime fix. Setup passed the Windows 10 and Windows 11 upgrade and removal checks. [Package and setup evidence](https://titancsa.github.io/assets/vdevice-signed-versions-2026-11-25.json). |
+| Commercial Release 1.0.4.1 | Setup passed the Windows 10 and Windows 11 upgrade and removal checks. A separate Windows 11 test with Secure Boot and Memory Integrity enabled confirmed that the matching Release SDK could read the new driver after restart, before activation. [Package and setup evidence](https://titancsa.github.io/assets/vdevice-signed-versions-2026-11-25.json). |
 
 **Two real guest bugchecks interrupted separate controller campaigns.** Two DS4 series passed the per-run validation before the next repetition crashed. In a later Xbox One/GIP campaign, two producer/receiver sequences completed before another crash; those filter series remain excluded from latency comparisons because the adapter captured extra protocol reports without one-to-one generated-state correlation. Both minidumps have the same WDF queue-purge signature at `Vdevice+0x651e`. Successful latency rows do not erase this incident and do not establish safe repeated teardown.
 
